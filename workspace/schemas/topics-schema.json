@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scout Output — topics.json",
+  "description": "Single topic selected by Scout for the pipeline to process",
+  "type": "object",
+  "required": ["generated_at", "mode", "urgency"],
+  "oneOf": [
+    {
+      "properties": {
+        "generated_at": { "type": "string", "format": "date-time" },
+        "mode": { "enum": ["breaking_news", "planned", "audit_action"] },
+        "urgency": { "enum": ["high", "normal"] },
+        "topic": {
+          "type": "object",
+          "required": ["title", "slug", "type", "cluster_id", "target_keywords", "intent", "target_words", "angle", "sources", "links_to", "experience_seeds", "reasoning"],
+          "properties": {
+            "title": { "type": "string" },
+            "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+            "type": { "enum": ["pillar", "sub-pillar", "cluster"] },
+            "cluster_id": { "type": "string" },
+            "sub_cluster_id": { "type": ["string", "null"] },
+            "target_keywords": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 1
+            },
+            "intent": { "enum": ["informational", "informational-commercial", "transactional"] },
+            "target_words": { "type": "integer", "minimum": 800, "maximum": 4000 },
+            "angle": { "type": "string" },
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["url", "title"],
+                "properties": {
+                  "url": { "type": "string", "format": "uri" },
+                  "title": { "type": "string" },
+                  "published": { "type": "string" }
+                }
+              }
+            },
+            "links_to": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "experience_seeds": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 2
+            },
+            "reasoning": { "type": "string" }
+          }
+        }
+      },
+      "required": ["topic"]
+    },
+    {
+      "properties": {
+        "generated_at": { "type": "string", "format": "date-time" },
+        "mode": { "const": "update" },
+        "urgency": { "enum": ["high", "normal"] },
+        "update": {
+          "type": "object",
+          "required": ["existing_slug", "what_changed", "sections_to_update", "new_info_sources", "reasoning"],
+          "properties": {
+            "existing_slug": { "type": "string" },
+            "what_changed": { "type": "string" },
+            "sections_to_update": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "new_info_sources": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["url"],
+                "properties": {
+                  "url": { "type": "string", "format": "uri" },
+                  "title": { "type": "string" }
+                }
+              }
+            },
+            "reasoning": { "type": "string" }
+          }
+        }
+      },
+      "required": ["update"]
+    },
+    {
+      "properties": {
+        "generated_at": { "type": "string", "format": "date-time" },
+        "mode": { "const": "no_action" },
+        "urgency": { "const": "normal" },
+        "reasoning": { "type": "string" }
+      },
+      "required": ["reasoning"]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Auditor Output — audit-report-YYYY-MM.json",
+  "description": "Monthly SEO health report with prioritised actions",
+  "type": "object",
+  "required": ["report_date", "overall_health", "summary", "cluster_completeness", "ranking_performance", "cannibalisation_issues", "internal_link_health", "content_freshness", "cluster_expansion_signals", "priority_actions"],
+  "properties": {
+    "report_date": { "type": "string", "format": "date" },
+    "overall_health": { "enum": ["good", "needs_attention", "critical"] },
+    "summary": { "type": "string" },
+    "cluster_completeness": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["cluster_id", "planned_articles", "published_articles", "completion", "pillar_published"],
+        "properties": {
+          "cluster_id": { "type": "string" },
+          "planned_articles": { "type": "integer" },
+          "published_articles": { "type": "integer" },
+          "completion": { "type": "string" },
+          "pillar_published": { "type": "boolean" },
+          "sub_pillars": { "type": "object" },
+          "highest_priority_gaps": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "ranking_performance": {
+      "type": "object",
+      "required": ["rising", "stable", "declining", "page_2_opportunities", "zero_traffic"],
+      "properties": {
+        "rising": { "type": "integer" },
+        "stable": { "type": "integer" },
+        "declining": { "type": "integer" },
+        "page_2_opportunities": { "type": "integer" },
+        "zero_traffic": { "type": "integer" },
+        "articles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["slug", "status", "primary_keyword"],
+            "properties": {
+              "slug": { "type": "string" },
+              "status": { "enum": ["rising", "stable", "declining", "page_2_opportunity", "zero_traffic"] },
+              "current_position": { "type": "number" },
+              "position_30d_ago": { "type": "number" },
+              "impressions_30d": { "type": "integer" },
+              "clicks_30d": { "type": "integer" },
+              "ctr": { "type": "string" },
+              "primary_keyword": { "type": "string" },
+              "recommendation": { "type": "string" },
+              "reasoning": { "type": "string" },
+              "refresh_priority": { "enum": ["high", "medium", "low"] }
+            }
+          }
+        }
+      }
+    },
+    "cannibalisation_issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["keyword", "competing_pages", "severity", "recommendation", "action_type"],
+        "properties": {
+          "keyword": { "type": "string" },
+          "competing_pages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "slug": { "type": "string" },
+                "position": { "type": "number" }
+              }
+            }
+          },
+          "severity": { "enum": ["critical", "moderate", "low"] },
+          "recommendation": { "type": "string" },
+          "action_type": { "enum": ["consolidate", "retarget", "deoptimise"] }
+        }
+      }
+    },
+    "internal_link_health": {
+      "type": "object",
+      "properties": {
+        "orphan_pages": { "type": "array", "items": { "type": "string" } },
+        "missing_pillar_links": { "type": "array", "items": { "type": "string" } },
+        "suggested_cross_links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "from": { "type": "string" },
+              "to": { "type": "string" },
+              "anchor_text": { "type": "string" },
+              "reasoning": { "type": "string" }
+            }
+          }
+        },
+        "broken_links": { "type": "array", "items": { "type": "string" } },
+        "weak_anchor_text": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "content_freshness": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slug", "published_date", "staleness_flags", "freshness_priority", "recommendation"],
+        "properties": {
+          "slug": { "type": "string" },
+          "published_date": { "type": "string", "format": "date" },
+          "last_updated": { "type": "string", "format": "date" },
+          "staleness_flags": { "type": "array", "items": { "type": "string" } },
+          "freshness_priority": { "enum": ["high", "medium", "low"] },
+          "recommendation": { "enum": ["update", "rewrite", "no_action"] }
+        }
+      }
+    },
+    "cluster_expansion_signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "signal_type": { "enum": ["orphan_accumulation", "sub_pillar_threshold", "search_demand_shift", "competitor_gap"] },
+          "description": { "type": "string" },
+          "recommendation": { "type": "string" }
+        }
+      }
+    },
+    "priority_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["priority", "action", "target", "reason"],
+        "properties": {
+          "priority": { "type": "integer" },
+          "action": { "enum": ["refresh", "consolidate", "publish_sub_pillar", "add_internal_links", "optimise_page_2", "new_article", "retarget"] },
+          "target": { "type": "string" },
+          "reason": { "type": "string" }
+        }
+      }
+    }
+  }
+}

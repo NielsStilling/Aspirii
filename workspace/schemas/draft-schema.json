@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Writer Output — draft.json",
+  "description": "Complete blog post draft ready for Editor review",
+  "type": "object",
+  "required": ["frontmatter", "body_markdown", "word_count", "outbound_links_used", "inbound_links_needed", "sources_cited", "faq_included", "experience_injections_count"],
+  "properties": {
+    "frontmatter": {
+      "type": "object",
+      "required": ["title", "slug", "meta_description", "tags", "category", "cluster_id", "estimated_read_time", "target_keywords", "intent", "schema_types", "featured_image_prompt"],
+      "properties": {
+        "title": { "type": "string", "maxLength": 65 },
+        "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "meta_description": { "type": "string", "maxLength": 155 },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "category": { "type": "string" },
+        "cluster_id": { "type": "string" },
+        "sub_cluster_id": { "type": ["string", "null"] },
+        "estimated_read_time": { "type": "string" },
+        "target_keywords": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "intent": { "enum": ["informational", "informational-commercial", "transactional"] },
+        "schema_types": {
+          "type": "array",
+          "items": { "enum": ["Article", "FAQPage", "HowTo"] }
+        },
+        "featured_image_prompt": { "type": "string" }
+      }
+    },
+    "body_markdown": { "type": "string" },
+    "word_count": { "type": "integer" },
+    "outbound_links_used": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "inbound_links_needed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_slug", "suggested_anchor_text", "suggested_location"],
+        "properties": {
+          "source_slug": { "type": "string" },
+          "suggested_anchor_text": { "type": "string" },
+          "suggested_location": { "type": "string" }
+        }
+      }
+    },
+    "sources_cited": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "faq_included": { "type": "boolean" },
+    "experience_injections_count": { "type": "integer", "minimum": 1 }
+  }
+}

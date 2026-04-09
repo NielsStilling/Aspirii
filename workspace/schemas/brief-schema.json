@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Analyst Output — brief.json",
+  "description": "Complete research brief for the Writer agent",
+  "type": "object",
+  "required": ["topic", "intent", "research", "outline", "internal_links", "experience_seeds", "style_notes"],
+  "properties": {
+    "topic": {
+      "type": "object",
+      "required": ["title", "slug", "type", "cluster_id", "target_keywords"],
+      "properties": {
+        "title": { "type": "string" },
+        "slug": { "type": "string" },
+        "type": { "enum": ["pillar", "sub-pillar", "cluster"] },
+        "cluster_id": { "type": "string" },
+        "sub_cluster_id": { "type": ["string", "null"] },
+        "target_keywords": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "intent": {
+      "enum": ["informational", "informational-commercial", "transactional"]
+    },
+    "research": {
+      "type": "object",
+      "required": ["key_facts", "statistics", "counter_arguments"],
+      "properties": {
+        "key_facts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["fact", "source", "confidence"],
+            "properties": {
+              "fact": { "type": "string" },
+              "source": { "type": "string", "format": "uri" },
+              "confidence": { "enum": ["high", "medium", "low"] }
+            }
+          }
+        },
+        "expert_quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["who", "said", "source"],
+            "properties": {
+              "who": { "type": "string" },
+              "said": { "type": "string" },
+              "source": { "type": "string", "format": "uri" }
+            }
+          }
+        },
+        "statistics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["stat", "source", "context"],
+            "properties": {
+              "stat": { "type": "string" },
+              "source": { "type": "string", "format": "uri" },
+              "context": { "type": "string" }
+            }
+          }
+        },
+        "counter_arguments": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "related_context": { "type": "string" }
+      }
+    },
+    "outline": {
+      "type": "object",
+      "required": ["working_title", "meta_description", "sections", "faq_questions", "total_target_words"],
+      "properties": {
+        "working_title": { "type": "string" },
+        "meta_description": { "type": "string", "maxLength": 155 },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["heading", "key_points", "target_length_words"],
+            "properties": {
+              "heading": { "type": "string" },
+              "key_points": {
+                "type": "array",
+                "items": { "type": "string" },
+                "minItems": 2
+              },
+              "target_length_words": { "type": "integer" },
+              "schema_hint": { "enum": ["faq", "howto", "comparison_table", "none"] },
+              "featured_snippet_opportunity": { "type": ["string", "null"] }
+            }
+          },
+          "minItems": 5
+        },
+        "faq_questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["question", "source"],
+            "properties": {
+              "question": { "type": "string" },
+              "source": { "type": "string" }
+            }
+          }
+        },
+        "total_target_words": { "type": "integer" }
+      }
+    },
+    "internal_links": {
+      "type": "object",
+      "required": ["outbound_links", "inbound_links"],
+      "properties": {
+        "outbound_links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["target_slug", "anchor_text", "placement_hint"],
+            "properties": {
+              "target_slug": { "type": "string" },
+              "anchor_text": { "type": "string" },
+              "placement_hint": { "type": "string" }
+            }
+          }
+        },
+        "inbound_links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["source_slug", "suggested_anchor_text", "suggested_location"],
+            "properties": {
+              "source_slug": { "type": "string" },
+              "suggested_anchor_text": { "type": "string" },
+              "suggested_location": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "experience_seeds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 2
+    },
+    "style_notes": {
+      "type": "object",
+      "properties": {
+        "tone": { "type": "string" },
+        "avoid": { "type": "array", "items": { "type": "string" } },
+        "include": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

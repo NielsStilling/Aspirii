@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Editor Output — final.json (accepted) or rejection.json (rejected)",
+  "description": "Editor's verdict on the draft — accepted with edits or rejected with guidance",
+  "oneOf": [
+    {
+      "title": "Accepted",
+      "type": "object",
+      "required": ["status", "frontmatter", "body_markdown", "word_count", "edits_log", "humanization_scores", "seo_systems_scores", "post_publish_actions"],
+      "properties": {
+        "status": { "const": "accepted" },
+        "frontmatter": {
+          "type": "object",
+          "required": ["title", "slug", "meta_description", "tags", "category", "cluster_id", "estimated_read_time", "target_keywords", "intent", "schema_types", "featured_image_prompt"],
+          "properties": {
+            "title": { "type": "string", "maxLength": 65 },
+            "slug": { "type": "string" },
+            "meta_description": { "type": "string", "maxLength": 155 },
+            "tags": { "type": "array", "items": { "type": "string" } },
+            "category": { "type": "string" },
+            "cluster_id": { "type": "string" },
+            "sub_cluster_id": { "type": ["string", "null"] },
+            "estimated_read_time": { "type": "string" },
+            "target_keywords": { "type": "array", "items": { "type": "string" } },
+            "intent": { "type": "string" },
+            "schema_types": { "type": "array", "items": { "type": "string" } },
+            "featured_image_prompt": { "type": "string" }
+          }
+        },
+        "body_markdown": { "type": "string" },
+        "word_count": { "type": "integer" },
+        "edits_log": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type", "location", "before", "after", "reason"],
+            "properties": {
+              "type": { "enum": ["humanize", "fact-fix", "seo-fix", "link-fix"] },
+              "location": { "type": "string" },
+              "before": { "type": "string" },
+              "after": { "type": "string" },
+              "reason": { "type": "string" }
+            }
+          }
+        },
+        "humanization_scores": {
+          "type": "object",
+          "required": ["structural_variety", "sentence_length_variance", "opinion_density", "experience_injections", "blacklist_phrases", "summary_blocks"],
+          "properties": {
+            "structural_variety": { "type": "string" },
+            "sentence_length_variance": { "type": "string" },
+            "opinion_density": { "type": "string" },
+            "experience_injections": { "type": "string" },
+            "blacklist_phrases": { "type": "string" },
+            "summary_blocks": { "type": "string" }
+          }
+        },
+        "seo_systems_scores": {
+          "type": "object",
+          "required": ["cluster_fit", "cannibalisation", "internal_links", "intent_match", "faq_section", "featured_snippet_readiness", "schema_readiness"],
+          "properties": {
+            "cluster_fit": { "type": "string" },
+            "cannibalisation": { "type": "string" },
+            "internal_links": { "type": "string" },
+            "intent_match": { "type": "string" },
+            "faq_section": { "type": "string" },
+            "featured_snippet_readiness": { "type": "string" },
+            "schema_readiness": { "type": "string" }
+          }
+        },
+        "post_publish_actions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["action", "target_slug", "anchor_text"],
+            "properties": {
+              "action": { "enum": ["add_inbound_link", "update_pillar_link"] },
+              "target_slug": { "type": "string" },
+              "new_link_slug": { "type": "string" },
+              "anchor_text": { "type": "string" },
+              "location_hint": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Rejected",
+      "type": "object",
+      "required": ["status", "reasons", "specific_examples", "guidance"],
+      "properties": {
+        "status": { "const": "rejected" },
+        "reasons": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "specific_examples": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "guidance": { "type": "string" }
+      }
+    }
+  ]
+}

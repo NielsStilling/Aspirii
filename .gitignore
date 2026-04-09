@@ -1,0 +1,21 @@
+# Environment variables (contains API keys)
+.env
+
+# Google API credentials
+config/gsc-credentials.json
+config/ga4-credentials.json
+
+# Pipeline workspace (regenerated each run)
+workspace/topics.json
+workspace/brief.json
+workspace/draft.json
+workspace/final.json
+workspace/rejection.json
+workspace/publish-log.json
+
+# Error logs
+errors.json
+
+# OS files
+.DS_Store
+Thumbs.db

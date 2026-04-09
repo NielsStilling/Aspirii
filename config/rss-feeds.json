@@ -1,0 +1,61 @@
+{
+  "feeds": [
+    {
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/blog/rss.xml",
+      "category": "ai-models",
+      "priority": "high"
+    },
+    {
+      "name": "Anthropic Blog",
+      "url": "https://www.anthropic.com/blog/rss.xml",
+      "category": "ai-models",
+      "priority": "high"
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "category": "ai-models",
+      "priority": "high"
+    },
+    {
+      "name": "Meta AI Blog",
+      "url": "https://ai.meta.com/blog/rss/",
+      "category": "ai-models",
+      "priority": "high"
+    },
+    {
+      "name": "Mistral AI Blog",
+      "url": "https://mistral.ai/feed.xml",
+      "category": "ai-models",
+      "priority": "medium"
+    },
+    {
+      "name": "Hacker News — AI",
+      "url": "https://hnrss.org/newest?q=AI+LLM+GPT+Claude&points=100",
+      "category": "general",
+      "priority": "medium"
+    },
+    {
+      "name": "ArXiv — AI/ML",
+      "url": "https://rss.arxiv.org/rss/cs.AI",
+      "category": "research",
+      "priority": "low"
+    },
+    {
+      "name": "The Verge — AI",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "category": "general",
+      "priority": "medium"
+    },
+    {
+      "name": "TechCrunch — AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "category": "general",
+      "priority": "medium"
+    }
+  ],
+  "check_interval_hours": 24,
+  "breaking_news_window_hours": 48,
+  "min_points_hacker_news": 100
+}

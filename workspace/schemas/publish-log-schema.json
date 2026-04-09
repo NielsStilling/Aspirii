@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Publisher Output — publish-log.json",
+  "description": "Record of all actions taken by the Publisher agent",
+  "type": "object",
+  "required": ["published", "schema_applied", "cluster_updates", "indexnow_submitted", "social_teasers", "article_plan_updated"],
+  "properties": {
+    "published": {
+      "type": "object",
+      "required": ["url", "post_id", "published_at", "status"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "post_id": { "type": "integer" },
+        "published_at": { "type": "string", "format": "date-time" },
+        "status": { "enum": ["published", "scheduled"] }
+      }
+    },
+    "schema_applied": {
+      "type": "array",
+      "items": { "enum": ["Article", "FAQPage", "HowTo"] }
+    },
+    "cluster_updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["action", "target_slug", "status"],
+        "properties": {
+          "action": { "enum": ["inbound_link_added", "pillar_updated"] },
+          "target_slug": { "type": "string" },
+          "target_post_id": { "type": "integer" },
+          "anchor_text": { "type": "string" },
+          "link_added": { "type": "string" },
+          "status": { "enum": ["success", "failed", "skipped"] },
+          "error": { "type": "string" }
+        }
+      }
+    },
+    "indexnow_submitted": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "social_teasers": {
+      "type": "object",
+      "properties": {
+        "linkedin": { "type": "string" },
+        "twitter": { "type": "string" }
+      }
+    },
+    "article_plan_updated": { "type": "boolean" }
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "plan_version": "1.0",
+  "last_updated": "2026-04-01",
+  "notes": "This file is the Scout's article backlog. When no breaking news exists, the Scout picks the next unpublished article from the highest-priority cluster. Mark articles as 'published' with their URL and date once live. Add new clusters or articles at any time — the Scout reads this file fresh on every run.",
+
+  "clusters": [
+    {
+      "cluster_id": "ai-models",
+      "cluster_name": "AI Models in 2026",
+      "status": "building",
+      "priority": 1,
+
+      "pillar": {
+        "title": "The 5 Best AI Models in 2026 — And When to Use Each One",
+        "slug": "best-ai-models-2026",
+        "type": "pillar",
+        "target_keywords": ["best AI models 2026", "AI model comparison", "which AI model to use"],
+        "intent": "informational",
+        "target_words": 3500,
+        "status": "unpublished",
+        "notes": "Comprehensive overview. Cover all 5 models at a high level. Link to every cluster article and sub-pillar as they get published. UPDATE this page every time a new cluster article goes live."
+      },
+
+      "core_articles": [
+        {
+          "title": "LLM Pricing in Q1 2026: What You're Actually Paying Per Token",
+          "slug": "llm-pricing-q1-2026",
+          "type": "cluster",
+          "target_keywords": ["LLM pricing 2026", "AI model cost comparison", "cost per token"],
+          "intent": "informational-commercial",
+          "target_words": 1200,
+          "status": "unpublished",
+          "links_to": ["best-ai-models-2026"],
+          "notes": "Cross-cutting article. Links to all sub-clusters. Include real cost scenarios with dollar amounts."
+        },
+        {
+          "title": "AI Model Benchmarks Explained: What the Scores Actually Mean",
+          "slug": "ai-model-benchmarks-explained",
+          "type": "cluster",
+          "target_keywords": ["AI benchmarks 2026", "LLM benchmark comparison", "MMLU HumanEval explained"],
+          "intent": "informational",
+          "target_words": 1500,
+          "status": "unpublished",
+          "links_to": ["best-ai-models-2026"],
+          "notes": "Explain what MMLU, HumanEval, MATH etc actually measure. Why benchmark scores don't always predict real-world performance."
+        },
+        {
+          "title": "How to Pick the Right AI Model for Your Workload",
+          "slug": "pick-right-ai-model-workload",
+          "type": "cluster",
+          "target_keywords": ["which AI model should I use", "AI model selection guide", "LLM for enterprise"],
+          "intent": "informational-commercial",
+          "target_words": 1200,
+          "status": "unpublished",
+          "links_to": ["best-ai-models-2026", "llm-pricing-q1-2026"],
+          "notes": "Decision framework. Match workload types to model tiers. Link to all sub-cluster deep dives."
+        },
+        {
+          "title": "How to Migrate Between AI Models Without Breaking Your Pipeline",
+          "slug": "migrate-ai-models-guide",
+          "type": "cluster",
+          "target_keywords": ["migrate LLM provider", "switch AI models", "LLM migration guide"],
+          "intent": "informational",
+          "target_words": 1500,
+          "status": "unpublished",
+          "links_to": ["best-ai-models-2026"],
+          "notes": "Practical guide. Cover API differences, prompt format changes, eval testing approach. Include code snippets."
+        },
+        {
+          "title": "Running Multiple AI Models: How to Route Traffic by Workload",
+          "slug": "ai-model-routing-workloads",
+          "type": "cluster",
+          "target_keywords": ["LLM routing", "multiple AI models", "AI model orchestration"],
+          "intent": "informational",
+          "target_words": 1200,
+          "status": "unpublished",
+          "links_to": ["best-ai-models-2026", "pick-right-ai-model-workload", "llm-pricing-q1-2026"],
+          "notes": "Flagship for budget model, mid-tier workhorse, cheap model for volume. Practical architecture."
+        },
+        {
+          "title": "Open-Source vs Closed-Source AI Models: What Actually Matters in 2026",
+          "slug": "open-source-vs-closed-source-ai-2026",
+          "type": "cluster",
+          "target_keywords": ["open source AI models", "Llama vs GPT", "open weight LLM"],
+          "intent": "informational",
+          "target_words": 1200,
+          "status": "unpublished",
+          "links_to": ["best-ai-models-2026"],
+          "notes": "Cover the real trade-offs: cost, control, quality, ops burden, compliance. Not an ideological argument."
+        }
+      ],
+
+      "sub_clusters": [
+        {
+          "sub_cluster_id": "claude",
+          "sub_cluster_name": "Claude (Anthropic)",
+          "status": "not_started",
+          "trigger": "Start once pillar + 2 core articles are published",
+
+          "sub_pillar": {
+            "title": "Claude in 2026: Everything You Need to Know",
+            "slug": "claude-2026-complete-guide",
+            "type": "sub-pillar",
+            "target_keywords": ["Claude AI 2026", "Claude guide", "Anthropic Claude overview"],
+            "intent": "informational",
+            "target_words": 2500,
+            "status": "unpublished",
+            "links_to": ["best-ai-models-2026"],
+            "notes": "Write this AFTER 4-5 Claude articles exist. Comprehensive overview linking to all Claude cluster articles."
+          },
+
+          "articles": [
+            {
+              "title": "Claude Opus 4.6 Deep Dive: What It's Good At and Where It Falls Short",
+              "slug": "claude-opus-46-deep-dive",
+              "type": "cluster",
+              "target_keywords": ["Claude Opus 4.6 review", "Claude Opus capabilities", "Opus 4.6 vs Sonnet"],
+              "intent": "informational",
+              "target_words": 1500,
+              "status": "unpublished",
+              "links_to": ["best-ai-models-2026", "claude-2026-complete-guide"],
+              "notes": "Honest assessment. Cover reasoning, coding, agentic workflows. Include limitations."
+            },
+            {
+              "title": "Claude Sonnet 4.6 vs Opus 4.6: Which One Do You Actually Need?",
+              "slug": "claude-sonnet-vs-opus-46",
+              "type": "cluster",
+              "target_keywords": ["Claude Sonnet vs Opus", "which Claude model", "Sonnet 4.6 review"],
+              "intent": "informational-commercial",
+              "target_words": 1200,
+              "status": "unpublished",
+              "links_to": ["claude-opus-46-deep-dive", "claude-2026-complete-guide", "llm-pricing-q1-2026"],
+              "notes": "Direct comparison with specific use cases. When Sonnet is enough, when you need Opus."
+            },
+            {
+              "title": "Claude's Batch API and Prompt Caching: A Practical Cost Guide",
+              "slug": "claude-batch-api-prompt-caching-guide",
+              "type": "cluster",
+              "target_keywords": ["Claude Batch API", "Claude prompt caching", "reduce Claude API cost"],
+              "intent": "informational",
+              "target_words": 1500,
+              "status": "unpublished",
+              "links_to": ["claude-2026-complete-guide", "llm-pricing-q1-2026"],
+              "notes": "Tutorial-style. Include code examples. Show real cost savings with before/after calculations."
+            },
+            {
+              "title": "Claude Code: What It Can Actually Do in 2026",
+              "slug": "claude-code-what-it-can-do-2026",
+              "type": "cluster",
+              "target_keywords": ["Claude Code review", "Claude Code capabilities", "AI coding agent"],
+              "intent": "informational",
+              "target_words": 1200,
+              "status": "unpublished",
+              "links_to": ["claude-opus-46-deep-dive", "claude-2026-complete-guide"],
+              "notes": "Practical walkthrough. What tasks it handles well, where it struggles, when to use it."
+            },
+            {
+              "title": "Building AI Agents with Claude: Architecture and Lessons Learned",
+              "slug": "building-ai-agents-claude",
+              "type": "cluster",
+              "target_keywords": ["Claude AI agent", "build agent Claude", "Claude agentic workflow"],
+              "intent": "informational",
+              "target_words": 1500,
+              "status": "unpublished",
+              "links_to": ["claude-opus-46-deep-dive", "claude-2026-complete-guide"],
+              "notes": "Technical but accessible. Cover tool use, system prompts, error handling patterns."
+            },
+            {
+              "title": "Claude vs GPT-5.4: An Honest Comparison for Real Workloads",
+              "slug": "claude-vs-gpt-54-comparison",
+              "type": "cluster",
+              "target_keywords": ["Claude vs GPT", "Claude vs GPT-5.4", "best AI model coding"],
+              "intent": "informational-commercial",
+              "target_words": 1500,
+              "status": "unpublished",
+              "links_to": ["claude-opus-46-deep-dive", "gpt-54-deep-dive", "best-ai-models-2026"],
+              "notes": "Cross-links to both Claude and GPT sub-clusters. Test on specific tasks, show results."
+            }
+          ]
+        },
+
+        {
+          "sub_cluster_id": "openai",
+          "sub_cluster_name": "OpenAI GPT",
+          "status": "not_started",
+          "trigger": "Start once Claude sub-cluster has 3+ published articles",
+
+          "sub_pillar": {
+            "title": "OpenAI GPT in 2026: The Full Picture",
+            "slug": "openai-gpt-2026-complete-guide",
+            "type": "sub-pillar",
+            "target_keywords": ["OpenAI GPT 2026", "GPT-5 guide", "OpenAI models overview"],
+            "intent": "informational",
+            "target_words": 2500,
+            "status": "unpublished",
+            "links_to": ["best-ai-models-2026"]
+          },
+
+          "articles": [
+            {
+              "title": "GPT-5.4 Deep Dive: Capabilities, Limitations, and Real-World Performance",
+              "slug": "gpt-54-deep-dive",
+              "type": "cluster",
+              "target_keywords": ["GPT-5.4 review", "GPT-5.4 capabilities", "GPT-5.4 performance"],
+              "intent": "informational",
+              "target_words": 1500,
+              "status": "unpublished",
+              "links_to": ["best-ai-models-2026", "openai-gpt-2026-complete-guide"]
+            },
+            {
+              "title": "OpenAI's Model Deprecation Problem: How to Stay Ahead of Retirements",
+              "slug": "openai-model-deprecation-guide",
+              "type": "cluster",
+              "target_keywords": ["OpenAI deprecation", "GPT model retirement", "OpenAI migration"],
+              "intent": "informational",
+              "target_words": 1200,
+              "status": "unpublished",
+              "links_to": ["openai-gpt-2026-complete-guide", "migrate-ai-models-guide"]
+            },
+            {
+              "title": "GPT-5 Nano for High-Volume Tasks: When Cheap Tokens Make Sense",
+              "slug": "gpt-5-nano-high-volume-tasks",
+              "type": "cluster",
+              "target_keywords": ["GPT-5 nano review", "cheap LLM classification", "budget AI model"],
+              "intent": "informational",
+              "target_words": 1000,
+              "status": "unpublished",
+              "links_to": ["openai-gpt-2026-complete-guide", "llm-pricing-q1-2026"]
+            },
+            {
+              "title": "Fine-Tuning GPT Models: When It's Worth It and When It's Not",
+              "slug": "fine-tuning-gpt-when-worth-it",
+              "type": "cluster",
+              "target_keywords": ["fine-tune GPT", "OpenAI fine-tuning guide", "custom GPT model"],
+              "intent": "informational",
+              "target_words": 1500,
+              "status": "unpublished",
+              "links_to": ["openai-gpt-2026-complete-guide", "gpt-54-deep-dive"]
+            },
+            {
+              "title": "OpenAI's API Ecosystem: Assistants, Function Calling, and What's Actually Useful",
+              "slug": "openai-api-ecosystem-guide",
+              "type": "cluster",
+              "target_keywords": ["OpenAI API guide", "GPT function calling", "OpenAI assistants API"],
+              "intent": "informational",
+              "target_words": 1500,
+              "status": "unpublished",
+              "links_to": ["openai-gpt-2026-complete-guide", "gpt-54-deep-dive"]
+            }
+          ]
+        },
+
+        {
+          "sub_cluster_id": "gemini",
+          "sub_cluster_name": "Google Gemini",
+          "status": "not_started",
+          "trigger": "Start once OpenAI sub-cluster has 3+ published articles",
+
+          "sub_pillar": {
+            "title": "Google Gemini in 2026: The Budget Powerhouse",
+            "slug": "google-gemini-2026-complete-guide",
+            "type": "sub-pillar",
+            "target_keywords": ["Gemini AI 2026", "Google Gemini guide", "Gemini models overview"],
+            "intent": "informational",
+            "target_words": 2500,
+            "status": "unpublished",
+            "links_to": ["best-ai-models-2026"]
+          },
+
+          "articles": [
+            {
+              "title": "Gemini 2.5 Pro Deep Dive: Google's Best Value AI Model",
+              "slug": "gemini-25-pro-deep-dive",
+              "type": "cluster",
+              "target_keywords": ["Gemini 2.5 Pro review", "Gemini Pro capabilities", "Google AI model"],
+              "intent": "informational",
+              "target_words": 1500,
+              "status": "unpublished",
+              "links_to": ["best-ai-models-2026", "google-gemini-2026-complete-guide"]
+            },
+            {
+              "title": "Gemini's Free Tier: What You Can Actually Build Without Paying",
+              "slug": "gemini-free-tier-what-you-can-build",
+              "type": "cluster",
+              "target_keywords": ["Gemini free tier", "Google AI Studio free", "free AI API"],
+              "intent": "informational",
+              "target_words": 1200,
+              "status": "unpublished",
+              "links_to": ["google-gemini-2026-complete-guide", "llm-pricing-q1-2026"]
+            },
+            {
+              "title": "Gemini for Multimodal Workflows: Processing Audio, Video, and Images",
+              "slug": "gemini-multimodal-workflows",
+              "type": "cluster",
+              "target_keywords": ["Gemini multimodal", "AI video processing", "Gemini audio input"],
+              "intent": "informational",
+              "target_words": 1500,
+              "status": "unpublished",
+              "links_to": ["google-gemini-2026-complete-guide", "gemini-25-pro-deep-dive"]
+            },
+            {
+              "title": "Gemini's Context Window Pricing Trap: What Happens Above 200K Tokens",
+              "slug": "gemini-context-window-pricing",
+              "type": "cluster",
+              "target_keywords": ["Gemini context window", "Gemini pricing tiers", "Gemini long context cost"],
+              "intent": "informational",
+              "target_words": 1000,
+              "status": "unpublished",
+              "links_to": ["google-gemini-2026-complete-guide", "llm-pricing-q1-2026"]
+            },
+            {
+              "title": "Gemini vs Claude vs GPT: The Three-Way Comparison That Actually Helps",
+              "slug": "gemini-vs-claude-vs-gpt-comparison",
+              "type": "cluster",
+              "target_keywords": ["Gemini vs Claude vs GPT", "AI model comparison 2026", "best LLM comparison"],
+              "intent": "informational-commercial",
+              "target_words": 2000,
+              "status": "unpublished",
+              "links_to": ["best-ai-models-2026", "google-gemini-2026-complete-guide", "claude-2026-complete-guide", "openai-gpt-2026-complete-guide"],
+              "notes": "Major cross-linking article. Bridges all 3 sub-clusters. High search volume keyword."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "future_clusters": [
+    {
+      "cluster_id": "ai-agents",
+      "cluster_name": "AI Agents and Automation",
+      "status": "planned",
+      "priority": 2,
+      "notes": "Start after AI Models cluster reaches 20+ published articles. Natural bridge articles: 'Building AI Agents with Claude' already exists in Cluster 1."
+    },
+    {
+      "cluster_id": "ai-for-business",
+      "cluster_name": "AI for Business and Enterprise",
+      "status": "planned",
+      "priority": 3,
+      "notes": "Start after AI Agents cluster is underway. Bridge articles: workload selection guide, cost optimization guides."
+    },
+    {
+      "cluster_id": "ai-dev-tools",
+      "cluster_name": "AI Developer Tools and Infrastructure",
+      "status": "planned",
+      "priority": 4,
+      "notes": "RAG, vector databases, LangChain, fine-tuning, prompt engineering. Technical audience focus."
+    },
+    {
+      "cluster_id": "ai-safety-ethics",
+      "cluster_name": "AI Safety, Ethics, and Regulation",
+      "status": "planned",
+      "priority": 5,
+      "notes": "EU AI Act, responsible deployment, bias, prompt injection. Bridge to security content."
+    }
+  ]
+}

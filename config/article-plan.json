@@ -1,7 +1,7 @@
 {
-  "plan_version": "2.0",
+  "plan_version": "3.0",
   "last_updated": "2026-04-09",
-  "notes": "Restructured to reflect what's actually published on aspirii.com. Claude sub-cluster is the primary focus — highest keyword volume, fastest growing demand. Main cluster gets updated reactively (breaking news, model releases). Scout reads this file on every run.",
+  "notes": "Execution order: (1) Update main pillar to 'Best AI Models in 2026' (drop the number). (2) Write 4 high-volume deep dives to bring main cluster to 10. (3) Build out Claude sub-cluster to 10 articles. Scout reads this file on every run.",
 
   "clusters": [
     {
@@ -9,19 +9,23 @@
       "cluster_name": "AI Models in 2026",
       "status": "building",
       "priority": 1,
-      "strategy": "Claude sub-cluster first (highest search volume). Main cluster articles added reactively for news or when Claude sub-cluster hits 10. GPT and Gemini sub-clusters build later.",
+      "strategy": "Phase 1: Update pillar + write Grok/Perplexity/Meta/DeepSeek deep dives (main cluster to 10). Phase 2: Build Claude sub-cluster to 10. Phase 3: Fill GPT and Gemini sub-clusters.",
 
       "pillar": {
-        "title": "The 5 Best AI Models in 2026 — And When to Use Each One",
+        "title": "Best AI Models in 2026 — And When to Use Each One",
         "slug": "the-5-best-ai-models-in-2026-and-when-to-use-each-one",
         "type": "pillar",
         "target_keywords": ["best AI models 2026", "AI model comparison", "which AI model to use"],
         "intent": "informational",
-        "target_words": 3500,
         "status": "published",
         "published_url": "https://aspirii.com/the-5-best-ai-models-in-2026-and-when-to-use-each-one/",
         "published_date": "2026-04-02",
-        "notes": "UPDATE this page every time a new cluster article goes live. Add links to new articles as they publish."
+        "notes": "ACTION: Rename from '5 Best' to 'Best AI Models in 2026'. Restructure as a living hub with sections per provider (Claude, GPT, Gemini, Grok, Meta/Llama, Mistral, DeepSeek, Perplexity). Update every time a new deep dive publishes. Each section links to the deep dive.",
+        "pending_update": {
+          "new_title": "Best AI Models in 2026 — And When to Use Each One",
+          "reason": "Remove number constraint. The pillar should grow as we cover more models.",
+          "add_sections": ["Grok / xAI", "Meta AI / Llama", "DeepSeek", "Perplexity AI", "Mistral"]
+        }
       },
 
       "core_articles": [
@@ -29,7 +33,7 @@
           "title": "Claude vs ChatGPT in 2026: Which AI Is Actually Better?",
           "slug": "claude-vs-chatgpt-2026",
           "type": "cluster",
-          "target_keywords": ["Claude vs ChatGPT", "Claude vs GPT 2026", "best AI comparison"],
+          "target_keywords": ["Claude vs ChatGPT", "Claude vs GPT 2026"],
           "intent": "informational-commercial",
           "status": "published",
           "published_url": "https://aspirii.com/claude-vs-chatgpt-2026/",
@@ -40,7 +44,7 @@
           "title": "ChatGPT for Business 2026: GPT-5, Pricing & Custom GPTs",
           "slug": "chatgpt-for-business-2026",
           "type": "cluster",
-          "target_keywords": ["ChatGPT for business", "GPT-5 business", "ChatGPT pricing 2026"],
+          "target_keywords": ["ChatGPT for business", "GPT-5 business"],
           "intent": "informational-commercial",
           "status": "published",
           "published_url": "https://aspirii.com/chatgpt-for-business-2026/",
@@ -51,7 +55,7 @@
           "title": "Google Gemma 4 Released: Unique Local Open-Source AI",
           "slug": "google-gemma-4-released",
           "type": "cluster",
-          "target_keywords": ["Google Gemma 4", "Gemma open source AI", "local AI model"],
+          "target_keywords": ["Google Gemma 4", "Gemma open source AI"],
           "intent": "informational",
           "status": "published",
           "published_url": "https://aspirii.com/google-gemma-4-released/",
@@ -67,53 +71,62 @@
           "status": "draft",
           "wordpress_post_id": 129,
           "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-          "notes": "Ready for review and publish."
+          "search_volume": 22200
         },
         {
-          "title": "LLM Pricing in 2026: What You're Actually Paying Per Token",
-          "slug": "llm-pricing-q1-2026",
+          "title": "Grok AI in 2026: What xAI Built and Whether It's Worth Using",
+          "slug": "grok-ai-2026-deep-dive",
           "type": "cluster",
-          "target_keywords": ["LLM pricing 2026", "AI model cost comparison", "cost per token"],
-          "intent": "informational-commercial",
-          "target_words": 1200,
-          "status": "unpublished",
-          "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-          "notes": "Cross-cutting pricing article. Write after Claude sub-cluster has 6+ articles. Links to all sub-clusters."
-        },
-        {
-          "title": "AI Model Benchmarks Explained: What the Scores Actually Mean",
-          "slug": "ai-model-benchmarks-explained",
-          "type": "cluster",
-          "target_keywords": ["AI benchmarks 2026", "LLM benchmark comparison", "MMLU HumanEval explained"],
+          "target_keywords": ["Grok AI", "Grok AI review", "xAI Grok 2026"],
           "intent": "informational",
           "target_words": 1500,
           "status": "unpublished",
+          "priority": 1,
           "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-          "notes": "Write after Claude sub-cluster has 6+ articles."
+          "notes": "673K monthly searches, growing to 1M. Massive gap in our coverage.",
+          "search_volume": 673000,
+          "format": "analysis-piece"
         },
         {
-          "title": "Best LLM for Coding in 2026: Every Model Ranked",
-          "slug": "best-llm-for-coding-2026",
+          "title": "Perplexity AI: Is AI Search Actually Better Than Google in 2026?",
+          "slug": "perplexity-ai-2026-review",
           "type": "cluster",
-          "target_keywords": ["best LLM for coding", "AI coding model comparison", "best AI for developers"],
-          "intent": "informational-commercial",
+          "target_keywords": ["Perplexity AI", "AI search engine", "Perplexity vs Google"],
+          "intent": "informational",
           "target_words": 1500,
           "status": "unpublished",
+          "priority": 2,
           "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-          "notes": "2,400 monthly searches. Cross-cutting comparison. Write after Claude sub-cluster has 6+ articles.",
-          "search_volume": 2400,
-          "format": "comparison"
+          "notes": "450K monthly searches. AI search is a major category we don't cover at all.",
+          "search_volume": 450000,
+          "format": "contrarian-take"
         },
         {
-          "title": "Open-Source vs Closed-Source AI Models: What Actually Matters in 2026",
-          "slug": "open-source-vs-closed-source-ai-2026",
+          "title": "Meta AI and Llama in 2026: The Open-Source Giant Nobody Talks About",
+          "slug": "meta-ai-llama-2026-deep-dive",
           "type": "cluster",
-          "target_keywords": ["open source AI models", "Llama vs GPT", "open weight LLM"],
+          "target_keywords": ["Meta AI", "Llama AI model", "Meta Llama 2026"],
           "intent": "informational",
-          "target_words": 1200,
+          "target_words": 1500,
           "status": "unpublished",
+          "priority": 3,
           "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one", "mistral-ai-2026-deep-dive"],
-          "notes": "Write after Claude sub-cluster has 6+ articles.",
+          "notes": "301K monthly searches. Pairs with Mistral article — both open-weight players.",
+          "search_volume": 301000,
+          "format": "analysis-piece"
+        },
+        {
+          "title": "DeepSeek AI: The Chinese Open-Source Model Shaking Up the Market",
+          "slug": "deepseek-ai-2026-deep-dive",
+          "type": "cluster",
+          "target_keywords": ["DeepSeek AI", "DeepSeek model review", "DeepSeek vs GPT"],
+          "intent": "informational",
+          "target_words": 1500,
+          "status": "unpublished",
+          "priority": 4,
+          "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
+          "notes": "74K monthly searches. Controversial and high-interest. Contrarian angle on Chinese AI.",
+          "search_volume": 74000,
           "format": "contrarian-take"
         }
       ],
@@ -124,7 +137,7 @@
           "sub_cluster_name": "Claude (Anthropic)",
           "status": "active",
           "priority": 1,
-          "notes": "PRIMARY FOCUS. Highest keyword volume in the cluster. Claude Code alone has 368K monthly searches growing to 1M. Build to 10 articles before expanding other sub-clusters.",
+          "notes": "Build to 10 articles AFTER main cluster hits 10. Highest keyword volume sub-cluster. Claude Code alone has 368K monthly searches.",
 
           "sub_pillar": {
             "title": "Claude AI in 2026: Complete Guide to Models, Pricing & Use",
@@ -136,7 +149,7 @@
             "published_url": "https://aspirii.com/claude-ai-2026-complete-guide/",
             "published_date": "2026-04-08",
             "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-            "notes": "UPDATE this page as new Claude articles publish. Add links to each new article."
+            "notes": "UPDATE as new Claude articles publish. Add links to each new article."
           },
 
           "articles": [
@@ -144,7 +157,7 @@
               "title": "Claude Mythos: Anthropic's Most Powerful AI Model Yet",
               "slug": "claude-mythos-preview-anthropic-cybersecurity",
               "type": "cluster",
-              "target_keywords": ["Claude Mythos", "Anthropic new model", "Claude cybersecurity"],
+              "target_keywords": ["Claude Mythos", "Anthropic new model"],
               "intent": "informational",
               "status": "published",
               "published_url": "https://aspirii.com/claude-mythos-preview-anthropic-cybersecurity/",
@@ -172,7 +185,7 @@
               "status": "unpublished",
               "priority": 1,
               "links_to": ["claude-ai-2026-complete-guide", "the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-              "notes": "HIGHEST PRIORITY. 368K monthly searches, growing to 1M. Practitioner-story format.",
+              "notes": "HIGHEST PRIORITY in Claude sub-cluster. 368K monthly searches, growing to 1M.",
               "search_volume": 368000,
               "format": "practitioner-story"
             },
@@ -186,7 +199,7 @@
               "status": "unpublished",
               "priority": 2,
               "links_to": ["claude-ai-2026-complete-guide", "the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-              "notes": "18,100 monthly searches, growing to 49K. How-it-works/tutorial format. Cover auth, SDKs, rate limits, streaming, tool use.",
+              "notes": "18,100 monthly searches, growing to 49K. Cover auth, SDKs, rate limits, streaming, tool use.",
               "search_volume": 18100,
               "format": "how-it-works"
             },
@@ -200,7 +213,6 @@
               "status": "unpublished",
               "priority": 3,
               "links_to": ["claude-ai-2026-complete-guide", "the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-              "notes": "12,100 monthly searches. Comparison format. When Sonnet is enough, when you need Opus.",
               "search_volume": 12100,
               "format": "comparison"
             },
@@ -214,7 +226,6 @@
               "status": "unpublished",
               "priority": 4,
               "links_to": ["claude-ai-2026-complete-guide", "claude-code-what-it-can-do-2026"],
-              "notes": "5,400 monthly searches, growing to 9,900. How-it-works format. Practical setup guide with examples.",
               "search_volume": 5400,
               "format": "how-it-works"
             },
@@ -228,7 +239,6 @@
               "status": "unpublished",
               "priority": 5,
               "links_to": ["claude-ai-2026-complete-guide", "the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-              "notes": "5,400 monthly searches. Analysis format. Cover Opus, Sonnet, Haiku pricing, batch API, prompt caching savings.",
               "search_volume": 5400,
               "format": "analysis-piece"
             },
@@ -242,7 +252,6 @@
               "status": "unpublished",
               "priority": 6,
               "links_to": ["claude-ai-2026-complete-guide", "claude-api-pricing-guide"],
-              "notes": "1,900 monthly searches. Practitioner-story format. Focus on high-volume use cases where Haiku saves money.",
               "search_volume": 1900,
               "format": "practitioner-story"
             }
@@ -336,8 +345,7 @@
             "intent": "informational",
             "status": "draft",
             "wordpress_post_id": 127,
-            "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-            "notes": "Ready for review and publish."
+            "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"]
           },
 
           "articles": [
@@ -348,8 +356,7 @@
               "target_keywords": ["Gemini 2.5 Pro review", "Gemini Pro capabilities"],
               "intent": "informational",
               "status": "draft",
-              "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one", "google-gemini-2026-complete-guide"],
-              "notes": "In repo, not yet in WordPress."
+              "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one", "google-gemini-2026-complete-guide"]
             },
             {
               "title": "Gemini's Free Tier: What You Can Actually Build Without Paying",
@@ -390,7 +397,7 @@
               "target_words": 2000,
               "status": "unpublished",
               "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one", "google-gemini-2026-complete-guide", "claude-ai-2026-complete-guide"],
-              "notes": "Cross-linking article. Write after all 3 sub-pillars are published."
+              "notes": "Cross-linking article. Write after all 3 sub-pillars published."
             }
           ]
         }
@@ -404,7 +411,8 @@
       "cluster_name": "AI Agents and Automation",
       "status": "planned",
       "priority": 2,
-      "notes": "Start after Claude sub-cluster hits 10 articles. Bridge: 'Building AI Agents with Claude' lives in Claude sub-cluster but opens the door."
+      "notes": "Start after Claude sub-cluster hits 10. Bridge: agentic AI (110K vol) could be the pillar.",
+      "keyword_opportunity": "agentic AI — 110,000 monthly searches"
     },
     {
       "cluster_id": "ai-for-business",
@@ -418,7 +426,8 @@
       "cluster_name": "AI Developer Tools and Infrastructure",
       "status": "planned",
       "priority": 4,
-      "notes": "RAG, vector databases, LangChain, fine-tuning, prompt engineering."
+      "notes": "RAG, vector databases, LangChain, fine-tuning. AI coding assistant (22K vol) could bridge from AI Models cluster.",
+      "keyword_opportunity": "AI coding assistant — 22,200 monthly searches"
     },
     {
       "cluster_id": "ai-safety-ethics",

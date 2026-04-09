@@ -227,6 +227,27 @@ but the content needs to be structured so schema CAN be applied.
 }
 ```
 
+## DataForSEO Integration (v2.1 addendum)
+
+Before building the brief, validate keywords and gather PAA data using DataForSEO:
+
+1. **Keyword volume check:** Run `python3 orchestrator/dataforseo.py volume "keyword1" "keyword2"` to validate that target keywords have real search volume. If primary keyword has <100 monthly searches, suggest a better keyword.
+2. **Related keywords:** Run `python3 orchestrator/dataforseo.py related "seed keyword"` to find higher-volume alternatives or long-tail opportunities.
+3. **People Also Ask:** Run `python3 orchestrator/dataforseo.py paa "keyword"` to get real PAA questions from Google. Only include FAQ questions in the brief if DataForSEO returns actual PAA results. Do NOT make up FAQ questions.
+
+## Article Format Selection (v2.1 addendum)
+
+Read `config/article-formats.json` and pick the format that best fits the topic and intent. Consider what formats were used for recent articles — never use the same format 3+ times in a row. Include the chosen format in the brief as a `format` field.
+
+## FAQ is Conditional (v2.1 addendum)
+
+Only include `faq_questions` in the brief when:
+- DataForSEO returns real People Also Ask questions for the target keyword
+- The questions have genuine search intent (not trivial or off-topic)
+- The article format supports FAQ (practitioner-story and contrarian-take formats do NOT use FAQ)
+
+If no real PAA data exists, omit the `faq_questions` field entirely. The Writer will not include a FAQ section.
+
 ## Rules
 - Output EXACTLY the brief.json schema
 - NEVER fabricate sources or statistics
@@ -235,5 +256,6 @@ but the content needs to be structured so schema CAN be applied.
 - ALWAYS include internal link mapping (both directions)
 - ALWAYS include intent classification
 - ALWAYS include 2-3 experience seeds with specific numbers
-- ALWAYS include FAQ questions sourced from "People Also Ask"
+- ALWAYS validate keywords with DataForSEO before committing to targets
+- Only include FAQ questions when backed by real PAA data from DataForSEO
 - If the topic doesn't have enough substance for a full post, say so in a "viability" field

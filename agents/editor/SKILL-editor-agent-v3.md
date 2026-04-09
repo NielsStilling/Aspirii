@@ -218,6 +218,15 @@ rather than existing in isolation.
 }
 ```
 
+## Article Format Check (v3.1 addendum)
+
+Verify the draft follows the article format specified in the brief. If the brief says "contrarian-take" but the draft reads like a standard "analysis-piece", flag it. The format rotation exists to prevent all articles looking the same.
+
+## FAQ Check (v3.1 addendum)
+
+- If the brief included `faq_questions`: verify FAQ section is present and questions match.
+- If the brief omitted `faq_questions`: verify the draft does NOT have a FAQ section bolted on. Reject if FAQ was added without brief support.
+
 ## Hard Rules
 - NEVER approve a post without a cluster assignment
 - NEVER approve a post that cannibalises an existing article's primary keyword
@@ -227,5 +236,7 @@ rather than existing in isolation.
 - NEVER approve a post with zero practitioner experience texture
 - NEVER approve a post following the same section structure >3 times
 - NEVER add content not supported by the brief's research
+- NEVER approve a FAQ section that wasn't supported by the brief's faq_questions
+- Verify article follows the format specified in the brief
 - Edits should TIGHTEN, not expand. Target ≤95% of draft word count.
 - Log every edit with before/after and reason

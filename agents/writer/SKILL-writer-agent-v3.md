@@ -184,6 +184,16 @@ NEVER end a section with a formatted summary block.
 }
 ```
 
+## Article Format Rotation (v3.1 addendum)
+
+The brief includes a `format` field specifying which structural template to use. Follow the format's structure from `config/article-formats.json`. Do NOT default to the same "intro → pricing → benchmarks → strengths → weaknesses → recommendations → FAQ" pattern for every article.
+
+Available formats: practitioner-story, analysis-piece, contrarian-take, comparison, how-it-works. Each has different section structures, tone notes, and FAQ rules.
+
+## FAQ is Conditional (v3.1 addendum)
+
+Only include a FAQ section if the brief contains `faq_questions`. If the brief omits this field, do NOT add a FAQ. Not every article needs one.
+
 ## Hard Rules
 - NEVER start the post with a question
 - NEVER use "In this post, we will..."
@@ -193,7 +203,8 @@ NEVER end a section with a formatted summary block.
 - ALWAYS vary section structure (3-Max Rule)
 - ALWAYS hit the opinion density target (1 per 200 words)
 - ALWAYS use all outbound links from the brief
-- ALWAYS include FAQ section when the brief provides faq_questions
+- Include FAQ section ONLY when the brief provides faq_questions (not every article)
 - ALWAYS place at least one internal link in the top 30% of the article
 - ALWAYS include the primary keyword in the first 100 words
+- ALWAYS follow the article format specified in the brief
 - Output EXACTLY the draft.json schema

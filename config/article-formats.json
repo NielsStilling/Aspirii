@@ -1,0 +1,85 @@
+{
+  "description": "Article format templates for structural variety. The Analyst picks the format based on topic, intent, and what was used recently. Never use the same format for 3+ articles in a row.",
+  "last_formats_used": [],
+
+  "formats": {
+    "practitioner-story": {
+      "name": "Practitioner Story",
+      "description": "Lead with a real scenario or experience, then expand into analysis. The story IS the hook and the structure.",
+      "best_for": ["tutorials", "migration guides", "tool reviews where hands-on experience matters"],
+      "structure": [
+        "Open with a specific practitioner scenario (the problem, the numbers, the outcome)",
+        "What we learned / what went wrong",
+        "The broader context (how this applies to others)",
+        "Technical deep-dive on the key decision points",
+        "What we'd do differently",
+        "Takeaway (1-2 sentences, no summary block)"
+      ],
+      "avoid_faq": true,
+      "tone_notes": "Most personal. Heavy on 'we' and 'I'. Specific dollar amounts and dates throughout."
+    },
+
+    "analysis-piece": {
+      "name": "Analysis / Deep Dive",
+      "description": "Structured examination of a topic with clear sections. The standard review format, but sections should NOT all follow the same pattern.",
+      "best_for": ["model reviews", "technology overviews", "market analysis"],
+      "structure": [
+        "Hook: concrete claim or surprising fact (2-3 sentences)",
+        "Context: where this fits in the market (short)",
+        "3-5 analytical sections (VARY structure: some data-led, some anecdote-led, some opinion-led)",
+        "Honest assessment of limitations",
+        "When to use / when not to use",
+        "Optional: FAQ only if DataForSEO returns real PAA questions with volume"
+      ],
+      "avoid_faq": false,
+      "tone_notes": "Balanced but opinionated. Lead sections with the most interesting point, not background."
+    },
+
+    "contrarian-take": {
+      "name": "Contrarian / Hot Take",
+      "description": "Lead with an opinion that challenges conventional wisdom. Back it up with evidence. This format stands out in a sea of neutral AI coverage.",
+      "best_for": ["opinion pieces", "challenging popular narratives", "topics where the consensus is wrong or oversimplified"],
+      "structure": [
+        "Open with the contrarian claim (bold, specific, no hedging)",
+        "Why most people get this wrong",
+        "The evidence (data, experience, specific examples)",
+        "The strongest counter-argument (steelman it honestly)",
+        "Where the nuance lives",
+        "What to actually do about it"
+      ],
+      "avoid_faq": true,
+      "tone_notes": "Strongest voice. More 'I' statements. Take a clear position and defend it."
+    },
+
+    "comparison": {
+      "name": "Head-to-Head Comparison",
+      "description": "Compare 2-3 options with asymmetric coverage. Spend more words on what matters more. NOT a balanced pro/con for each.",
+      "best_for": ["X vs Y articles", "selection guides", "informational-commercial intent"],
+      "structure": [
+        "Why this comparison matters right now (not a generic intro)",
+        "The criteria that actually matter (3-4, not 10)",
+        "Asymmetric comparison sections: go deep on differentiators, skip what's similar",
+        "Pricing reality check (table or inline, not both)",
+        "The verdict: specific recommendations by use case",
+        "Optional: FAQ if DataForSEO returns real PAA"
+      ],
+      "avoid_faq": false,
+      "tone_notes": "Decision-oriented. Reader should know what to pick by the end."
+    },
+
+    "how-it-works": {
+      "name": "How It Works / Tutorial",
+      "description": "Teach something practical. Show, don't just tell. Code examples, CLI commands, real configurations.",
+      "best_for": ["tutorials", "API guides", "setup guides", "workflow articles"],
+      "structure": [
+        "What you'll be able to do after reading this (specific outcome, not vague promise)",
+        "Prerequisites (keep short — 2-3 bullets max)",
+        "The walkthrough (numbered steps with real code/commands)",
+        "What to watch out for (gotchas from experience)",
+        "Next steps (what to build on top of this)"
+      ],
+      "avoid_faq": false,
+      "tone_notes": "Most practical. Heavy on code blocks and specific commands. Fewer opinions, more 'here's exactly how'."
+    }
+  }
+}

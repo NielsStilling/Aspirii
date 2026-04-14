@@ -1,7 +1,7 @@
 {
-  "plan_version": "3.0",
-  "last_updated": "2026-04-09",
-  "notes": "Execution order: (1) Update main pillar to 'Best AI Models in 2026' (drop the number). (2) Write 4 high-volume deep dives to bring main cluster to 10. (3) Build out Claude sub-cluster to 10 articles. Scout reads this file on every run.",
+  "plan_version": "4.0",
+  "last_updated": "2026-04-14",
+  "notes": "Audited against WordPress on 2026-04-14. All slugs, statuses, and post IDs synced. Execution order: (1) Finish main cluster to 10. (2) Build Claude sub-cluster to 10. (3) Launch AI Tools pillar. Scout reads this file on every run.",
 
   "clusters": [
     {
@@ -75,59 +75,62 @@
         },
         {
           "title": "Grok AI in 2026: What xAI Built and Whether It's Worth Using",
-          "slug": "grok-ai-2026-deep-dive",
+          "slug": "grok-ai-2026-review",
           "type": "cluster",
           "target_keywords": ["Grok AI", "Grok AI review", "xAI Grok 2026"],
           "intent": "informational",
-          "target_words": 1500,
-          "status": "unpublished",
-          "priority": 1,
+          "status": "draft",
+          "wordpress_post_id": 156,
           "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-          "notes": "673K monthly searches, growing to 1M. Massive gap in our coverage.",
-          "search_volume": 673000,
-          "format": "analysis-piece"
+          "search_volume": 673000
         },
         {
-          "title": "Perplexity AI: Is AI Search Actually Better Than Google in 2026?",
+          "title": "Perplexity AI in 2026: Is AI Search Actually Better Than Google?",
           "slug": "perplexity-ai-2026-review",
           "type": "cluster",
           "target_keywords": ["Perplexity AI", "AI search engine", "Perplexity vs Google"],
           "intent": "informational",
-          "target_words": 1500,
-          "status": "unpublished",
-          "priority": 2,
+          "status": "draft",
+          "wordpress_post_id": 159,
           "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-          "notes": "450K monthly searches. AI search is a major category we don't cover at all.",
-          "search_volume": 450000,
-          "format": "contrarian-take"
+          "search_volume": 450000
         },
         {
-          "title": "Meta AI and Llama in 2026: The Open-Source Giant Nobody Talks About",
-          "slug": "meta-ai-llama-2026-deep-dive",
+          "title": "Meta AI's Muse Spark: First Look at the Model Taking on Claude and ChatGPT",
+          "slug": "muse-spark-meta-ai-making-moves-in-the-ai-era",
           "type": "cluster",
-          "target_keywords": ["Meta AI", "Llama AI model", "Meta Llama 2026"],
+          "target_keywords": ["Meta AI", "Muse Spark", "Meta AI model"],
           "intent": "informational",
-          "target_words": 1500,
-          "status": "unpublished",
-          "priority": 3,
-          "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one", "mistral-ai-2026-deep-dive"],
-          "notes": "301K monthly searches. Pairs with Mistral article — both open-weight players.",
-          "search_volume": 301000,
-          "format": "analysis-piece"
+          "status": "published",
+          "published_url": "https://aspirii.com/muse-spark-meta-ai-making-moves-in-the-ai-era/",
+          "published_date": "2026-04-13",
+          "wordpress_post_id": 140,
+          "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one", "claude-ai-2026-complete-guide"],
+          "search_volume": 301000
         },
         {
-          "title": "DeepSeek AI: The Chinese Open-Source Model Shaking Up the Market",
-          "slug": "deepseek-ai-2026-deep-dive",
+          "title": "DeepSeek AI: The Chinese Open-Source Model That Shook the Market",
+          "slug": "deepseek-ai-2026-review",
           "type": "cluster",
           "target_keywords": ["DeepSeek AI", "DeepSeek model review", "DeepSeek vs GPT"],
           "intent": "informational",
-          "target_words": 1500,
-          "status": "unpublished",
-          "priority": 4,
+          "status": "draft",
+          "wordpress_post_id": 161,
           "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-          "notes": "74K monthly searches. Controversial and high-interest. Contrarian angle on Chinese AI.",
-          "search_volume": 74000,
-          "format": "contrarian-take"
+          "search_volume": 74000
+        },
+        {
+          "title": "Google Gemini in 2026: The Full Picture — Models, Pricing, Strengths and Limitations",
+          "slug": "google-gemini-2026",
+          "type": "cluster",
+          "target_keywords": ["Gemini AI 2026", "Google Gemini guide"],
+          "intent": "informational",
+          "status": "published",
+          "published_url": "https://aspirii.com/google-gemini-2026/",
+          "published_date": "2026-04-10",
+          "wordpress_post_id": 124,
+          "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
+          "notes": "Has broken link to 'best-ai-models-2026' — should be updated to correct pillar slug."
         }
       ],
 
@@ -176,45 +179,49 @@
               "links_to": ["claude-ai-2026-complete-guide"]
             },
             {
-              "title": "Claude Code in 2026: What It Can Actually Do",
+              "title": "Claude Code Pricing and Capabilities in 2026: The Honest Verdict",
               "slug": "claude-code-what-it-can-do-2026",
               "type": "cluster",
               "target_keywords": ["Claude Code review", "Claude Code capabilities", "Claude Code 2026"],
               "intent": "informational",
-              "target_words": 1500,
-              "status": "unpublished",
-              "priority": 1,
-              "links_to": ["claude-ai-2026-complete-guide", "the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-              "notes": "HIGHEST PRIORITY in Claude sub-cluster. 368K monthly searches, growing to 1M.",
-              "search_volume": 368000,
-              "format": "practitioner-story"
+              "status": "draft",
+              "wordpress_post_id": 170,
+              "links_to": ["claude-ai-2026-complete-guide", "claude-vs-chatgpt-2026", "the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
+              "search_volume": 368000
             },
             {
-              "title": "Anthropic API: The Complete Developer Guide",
+              "title": "Claude API: Your Guide to Getting Started in 2026",
               "slug": "anthropic-api-developer-guide",
               "type": "cluster",
               "target_keywords": ["Anthropic API", "Claude API guide", "Anthropic SDK"],
               "intent": "informational",
-              "target_words": 1500,
-              "status": "unpublished",
-              "priority": 2,
+              "status": "draft",
+              "wordpress_post_id": 172,
               "links_to": ["claude-ai-2026-complete-guide", "the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-              "notes": "18,100 monthly searches, growing to 49K. Cover auth, SDKs, rate limits, streaming, tool use.",
-              "search_volume": 18100,
-              "format": "how-it-works"
+              "search_volume": 18100
             },
             {
-              "title": "Claude Sonnet 4.6 vs Opus 4.6: Which One Do You Actually Need?",
+              "title": "Claude Sonnet 4.6 vs Opus 4.6: Efficient vs Amazing",
               "slug": "claude-sonnet-vs-opus-46",
               "type": "cluster",
               "target_keywords": ["Claude Sonnet vs Opus", "which Claude model", "Claude Sonnet 4.6"],
               "intent": "informational-commercial",
-              "target_words": 1200,
-              "status": "unpublished",
-              "priority": 3,
-              "links_to": ["claude-ai-2026-complete-guide", "the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
-              "search_volume": 12100,
-              "format": "comparison"
+              "status": "draft",
+              "wordpress_post_id": 175,
+              "links_to": ["claude-ai-2026-complete-guide", "anthropic-api-developer-guide", "the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
+              "search_volume": 12100
+            },
+            {
+              "title": "Claude Cowork Review: What GA Actually Means for Your Workflow",
+              "slug": "claude-cowork-review-2026",
+              "type": "cluster",
+              "target_keywords": ["Claude Cowork", "Claude Cowork review"],
+              "intent": "informational",
+              "status": "published",
+              "published_url": "https://aspirii.com/claude-cowork-review-2026/",
+              "published_date": "2026-04-14",
+              "wordpress_post_id": 179,
+              "links_to": ["claude-ai-2026-complete-guide", "the-5-best-ai-models-in-2026-and-when-to-use-each-one"]
             },
             {
               "title": "Claude MCP Servers: What They Are and How to Use Them",
@@ -338,14 +345,17 @@
           "trigger": "Start once OpenAI sub-cluster has 3+ published articles",
 
           "sub_pillar": {
-            "title": "Google Gemini in 2026: The Budget Powerhouse",
-            "slug": "google-gemini-2026-complete-guide",
+            "title": "Google Gemini in 2026: The Full Picture",
+            "slug": "google-gemini-2026",
             "type": "sub-pillar",
             "target_keywords": ["Gemini AI 2026", "Google Gemini guide", "Gemini models overview"],
             "intent": "informational",
-            "status": "draft",
-            "wordpress_post_id": 127,
-            "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"]
+            "status": "published",
+            "published_url": "https://aspirii.com/google-gemini-2026/",
+            "published_date": "2026-04-10",
+            "wordpress_post_id": 124,
+            "links_to": ["the-5-best-ai-models-in-2026-and-when-to-use-each-one"],
+            "notes": "This is also listed in core_articles since it was published at cluster level. Has broken pillar link — uses wrong slug 'best-ai-models-2026'."
           },
 
           "articles": [

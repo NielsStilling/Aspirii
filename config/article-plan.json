@@ -407,34 +407,261 @@
 
   "future_clusters": [
     {
-      "cluster_id": "ai-agents",
-      "cluster_name": "AI Agents and Automation",
+      "cluster_id": "ai-tools",
+      "cluster_name": "AI Tools in 2026",
       "status": "planned",
       "priority": 2,
-      "notes": "Start after Claude sub-cluster hits 10. Bridge: agentic AI (110K vol) could be the pillar.",
-      "keyword_opportunity": "agentic AI — 110,000 monthly searches"
+      "trigger": "Start after AI Models main cluster (10) + Claude sub-cluster (10) are published",
+      "strategy": "Combined pillar covering dev tools, business tools, creative tools, and AI agents under one roof. Split into separate sub-clusters when any sub-topic hits 5+ articles.",
+      "notes": "Bridge articles from AI Models cluster: 'Claude Code' bridges to coding tools, 'ChatGPT for Business' bridges to business tools, 'Building AI Agents with Claude' bridges to agents.",
+
+      "pillar": {
+        "title": "Best AI Tools in 2026: The Complete Guide",
+        "slug": "best-ai-tools-2026",
+        "type": "pillar",
+        "target_keywords": ["AI tools", "best AI tools", "AI apps"],
+        "intent": "informational",
+        "target_words": 3500,
+        "status": "unpublished",
+        "notes": "Living hub page. Sections for coding, writing/creative, business, and agents. Link to every tool review. Update as new articles publish.",
+        "keyword_data": {"AI tools": 40500, "AI apps": 49500, "best AI tools": 6600}
+      },
+
+      "sub_clusters": [
+        {
+          "sub_cluster_id": "ai-coding-tools",
+          "sub_cluster_name": "AI Coding Tools",
+          "notes": "Natural bridge from Claude Code article in AI Models cluster.",
+          "articles": [
+            {
+              "title": "Cursor AI in 2026: The IDE That Codes With You",
+              "slug": "cursor-ai-2026-review",
+              "target_keywords": ["Cursor AI", "Cursor AI review", "AI code editor"],
+              "intent": "informational",
+              "target_words": 1500,
+              "search_volume": 110000,
+              "format": "practitioner-story"
+            },
+            {
+              "title": "GitHub Copilot in 2026: What's Changed and Whether It's Still Worth It",
+              "slug": "github-copilot-2026-review",
+              "target_keywords": ["GitHub Copilot", "GitHub Copilot review", "Copilot 2026"],
+              "intent": "informational",
+              "target_words": 1500,
+              "search_volume": 90500,
+              "format": "analysis-piece"
+            },
+            {
+              "title": "Best AI Coding Assistants in 2026: Every Tool Ranked",
+              "slug": "best-ai-coding-assistants-2026",
+              "target_keywords": ["AI coding assistant", "AI coding tools", "best AI for coding"],
+              "intent": "informational-commercial",
+              "target_words": 2000,
+              "search_volume": 22200,
+              "format": "comparison"
+            },
+            {
+              "title": "Replit AI: Can You Build a Full App Without Local Setup?",
+              "slug": "replit-ai-2026-review",
+              "target_keywords": ["Replit AI", "Replit AI review", "AI app builder"],
+              "intent": "informational",
+              "target_words": 1200,
+              "search_volume": 12100,
+              "format": "practitioner-story"
+            },
+            {
+              "title": "Cursor vs GitHub Copilot: Which AI Coding Tool Actually Saves Time?",
+              "slug": "cursor-vs-github-copilot",
+              "target_keywords": ["Cursor vs Copilot", "GitHub Copilot vs Cursor"],
+              "intent": "informational-commercial",
+              "target_words": 1500,
+              "search_volume": 2400,
+              "format": "comparison"
+            }
+          ]
+        },
+
+        {
+          "sub_cluster_id": "ai-creative-tools",
+          "sub_cluster_name": "AI Writing & Creative Tools",
+          "notes": "Highest raw volume in the cluster. Midjourney and Grammarly are massive.",
+          "articles": [
+            {
+              "title": "Midjourney in 2026: Is It Still the Best AI Image Generator?",
+              "slug": "midjourney-2026-review",
+              "target_keywords": ["Midjourney", "AI image generator", "Midjourney review"],
+              "intent": "informational",
+              "target_words": 1500,
+              "search_volume": 301000,
+              "format": "analysis-piece"
+            },
+            {
+              "title": "Grammarly AI in 2026: More Than a Grammar Checker Now",
+              "slug": "grammarly-ai-2026-review",
+              "target_keywords": ["Grammarly AI", "Grammarly AI review", "AI writing tool"],
+              "intent": "informational",
+              "target_words": 1200,
+              "search_volume": 135000,
+              "format": "practitioner-story"
+            },
+            {
+              "title": "Canva AI: What the AI Features Actually Do (and What They Don't)",
+              "slug": "canva-ai-2026-review",
+              "target_keywords": ["Canva AI", "Canva AI features", "AI design tool"],
+              "intent": "informational",
+              "target_words": 1200,
+              "search_volume": 110000,
+              "format": "practitioner-story"
+            },
+            {
+              "title": "DALL-E in 2026: How It Compares to Midjourney and Flux",
+              "slug": "dall-e-2026-review",
+              "target_keywords": ["DALL-E", "DALL-E review", "DALL-E vs Midjourney"],
+              "intent": "informational",
+              "target_words": 1200,
+              "search_volume": 60500,
+              "format": "comparison"
+            },
+            {
+              "title": "Runway AI: The Video Generation Tool That's Actually Usable",
+              "slug": "runway-ai-2026-review",
+              "target_keywords": ["Runway AI", "AI video generator", "Runway review"],
+              "intent": "informational",
+              "target_words": 1200,
+              "search_volume": 40500,
+              "format": "analysis-piece"
+            },
+            {
+              "title": "Jasper AI: Is It Still Worth Paying For in 2026?",
+              "slug": "jasper-ai-2026-review",
+              "target_keywords": ["Jasper AI", "Jasper AI review", "AI writing assistant"],
+              "intent": "informational",
+              "target_words": 1200,
+              "search_volume": 27100,
+              "format": "contrarian-take"
+            }
+          ]
+        },
+
+        {
+          "sub_cluster_id": "ai-business-tools",
+          "sub_cluster_name": "AI Business & Productivity Tools",
+          "notes": "Microsoft Copilot is the volume anchor. High CPCs signal commercial intent — good for sponsored content.",
+          "articles": [
+            {
+              "title": "Microsoft Copilot in 2026: What It Does Across the Microsoft Stack",
+              "slug": "microsoft-copilot-2026-review",
+              "target_keywords": ["Microsoft Copilot", "Copilot AI", "Copilot review"],
+              "intent": "informational",
+              "target_words": 1500,
+              "search_volume": 823000,
+              "format": "analysis-piece"
+            },
+            {
+              "title": "Notion AI in 2026: Is the Built-In AI Worth the Upgrade?",
+              "slug": "notion-ai-2026-review",
+              "target_keywords": ["Notion AI", "Notion AI review", "Notion AI features"],
+              "intent": "informational",
+              "target_words": 1200,
+              "search_volume": 27100,
+              "format": "practitioner-story"
+            },
+            {
+              "title": "Copilot vs ChatGPT: Which One Should Your Business Use?",
+              "slug": "copilot-vs-chatgpt-2026",
+              "target_keywords": ["Copilot vs ChatGPT", "Microsoft Copilot vs ChatGPT"],
+              "intent": "informational-commercial",
+              "target_words": 1500,
+              "search_volume": 8100,
+              "format": "comparison"
+            },
+            {
+              "title": "AI for Marketing in 2026: Tools That Actually Move the Needle",
+              "slug": "ai-for-marketing-2026",
+              "target_keywords": ["AI for marketing", "AI marketing tools"],
+              "intent": "informational-commercial",
+              "target_words": 1500,
+              "search_volume": 3600,
+              "cpc": 22.14,
+              "format": "analysis-piece",
+              "notes": "High CPC ($22) = strong commercial intent. Good sponsored content candidate."
+            }
+          ]
+        },
+
+        {
+          "sub_cluster_id": "ai-agents",
+          "sub_cluster_name": "AI Agents & Autonomous Systems",
+          "notes": "Fastest growing sub-topic. OpenClaw went from 0 to 1M searches in 3 months. Bridge from 'Building AI Agents with Claude' in AI Models cluster. When this hits 5+ articles, consider spinning into its own pillar.",
+          "articles": [
+            {
+              "title": "OpenClaw: The Autonomous AI Agent Everyone's Talking About",
+              "slug": "openclaw-ai-agent-review",
+              "target_keywords": ["OpenClaw", "OpenClaw AI", "OpenClaw agent"],
+              "intent": "informational",
+              "target_words": 1500,
+              "search_volume": 165000,
+              "trend": "Exploded from 0 to 1M in March 2026",
+              "format": "analysis-piece"
+            },
+            {
+              "title": "Agentic AI Explained: What It Is, How It Works, and Why It Matters",
+              "slug": "agentic-ai-explained",
+              "target_keywords": ["agentic AI", "agentic AI explained", "what is agentic AI"],
+              "intent": "informational",
+              "target_words": 1500,
+              "search_volume": 110000,
+              "cpc": 20.65,
+              "format": "analysis-piece"
+            },
+            {
+              "title": "AI Agents in 2026: What They Can Actually Do (and What They Can't)",
+              "slug": "ai-agents-2026-guide",
+              "target_keywords": ["AI agents", "AI agents 2026", "autonomous AI agent"],
+              "intent": "informational",
+              "target_words": 1500,
+              "search_volume": 60500,
+              "cpc": 24.34,
+              "format": "contrarian-take"
+            },
+            {
+              "title": "LangChain in 2026: Is It Still the Go-To Agent Framework?",
+              "slug": "langchain-2026-review",
+              "target_keywords": ["LangChain", "LangChain review", "LangChain 2026"],
+              "intent": "informational",
+              "target_words": 1500,
+              "search_volume": 60500,
+              "format": "practitioner-story"
+            },
+            {
+              "title": "n8n AI: Building Automations Without Writing Code",
+              "slug": "n8n-ai-automation-review",
+              "target_keywords": ["n8n AI", "n8n automation", "no-code AI"],
+              "intent": "informational",
+              "target_words": 1200,
+              "search_volume": 9900,
+              "format": "how-it-works"
+            },
+            {
+              "title": "AutoGPT in 2026: What Happened to the AI Agent That Went Viral",
+              "slug": "autogpt-2026-review",
+              "target_keywords": ["AutoGPT", "AutoGPT review", "AutoGPT 2026"],
+              "intent": "informational",
+              "target_words": 1200,
+              "search_volume": 3600,
+              "format": "contrarian-take"
+            }
+          ]
+        }
+      ]
     },
-    {
-      "cluster_id": "ai-for-business",
-      "cluster_name": "AI for Business and Enterprise",
-      "status": "planned",
-      "priority": 3,
-      "notes": "Start after AI Agents cluster is underway."
-    },
-    {
-      "cluster_id": "ai-dev-tools",
-      "cluster_name": "AI Developer Tools and Infrastructure",
-      "status": "planned",
-      "priority": 4,
-      "notes": "RAG, vector databases, LangChain, fine-tuning. AI coding assistant (22K vol) could bridge from AI Models cluster.",
-      "keyword_opportunity": "AI coding assistant — 22,200 monthly searches"
-    },
+
     {
       "cluster_id": "ai-safety-ethics",
       "cluster_name": "AI Safety, Ethics, and Regulation",
       "status": "planned",
-      "priority": 5,
-      "notes": "EU AI Act, responsible deployment, bias, prompt injection."
+      "priority": 3,
+      "notes": "EU AI Act, responsible deployment, bias, prompt injection. Start after AI Tools cluster is underway."
     }
   ]
 }

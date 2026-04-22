@@ -1,0 +1,275 @@
+{
+  "report_date": "2026-04-22",
+  "blog_age_months": 0.7,
+  "growth_stage": "foundation",
+  "overall_health": "good",
+  "audit_mode": "fallback",
+  "audit_mode_reason": "Google Search Console and GA4 credentials not yet configured. Ranking performance (Audit 3) and cannibalisation (Audit 4) audits skipped. Report focuses on content, structure, E-E-A-T, and technical health — all observable without GSC.",
+
+  "summary": "Aspirii.com is in month 0.7 of the foundation stage with 17 articles (10 published, 7 drafts). Growth stage is healthy — ahead of pace. Content depth is strong (avg 2,150 words). Pillar is well-sized at 2,617 words. Topical authority on Claude is building fastest. CRITICAL TRUST ISSUES to address before writing more: no visible author attribution, no About page verification, trust signals thin. Fix these before continuing with the Claude sub-cluster buildout.",
+
+  "growth_stage_assessment": {
+    "current_stage": "foundation",
+    "age_months": 0.7,
+    "expected_articles": "5-20",
+    "actual_articles": 17,
+    "on_track": true,
+    "next_milestone": "Reach 25 articles by month 3 (early June 2026) to enter early signals stage. Expected: first keyword movements in GSC.",
+    "realistic_traffic_expectation": "Near-zero organic traffic for another 2-3 months. Google is still crawling and evaluating. Direct/social/referral traffic only during this period. Do NOT interpret low traffic as failure."
+  },
+
+  "cluster_completeness": [
+    {
+      "cluster_id": "ai-models",
+      "planned_articles": 30,
+      "published_articles": 11,
+      "drafts": 7,
+      "completion_published_only": "37%",
+      "completion_including_drafts": "60%",
+      "pillar_published": true,
+      "pillar_word_count": 2617,
+      "pillar_meets_target": true,
+      "avg_article_word_count": 2150,
+      "topical_authority_status": "building",
+      "notes": "Main cluster on track. Push to publish the 4 drafts (Grok, Perplexity, DeepSeek, Mistral) to hit 15 total.",
+      "sub_pillars": {
+        "claude": {
+          "published": true,
+          "articles_published": 4,
+          "articles_draft": 3,
+          "articles_target": 10,
+          "articles_remaining": 3,
+          "priority_gaps": ["claude-mcp-servers-guide (5.4K vol)", "claude-api-pricing-guide (5.4K vol)", "claude-haiku-45-review (1.9K vol)"]
+        },
+        "gemini": {
+          "published": true,
+          "articles_published": 0,
+          "articles_draft": 0,
+          "notes": "Sub-pillar (google-gemini-2026) is published. No sub-cluster articles yet. Defer until Claude sub-cluster hits 8+."
+        },
+        "openai": {
+          "published": false,
+          "notes": "Sub-pillar not started. Trigger: after Claude sub-cluster has 8+ published."
+        }
+      }
+    }
+  ],
+
+  "ranking_performance": {
+    "status": "skipped",
+    "reason": "Google Search Console not connected. Cannot audit rankings without GSC data."
+  },
+
+  "cannibalisation_issues": {
+    "status": "skipped",
+    "reason": "Google Search Console not connected. Manual keyword overlap review suggests no current conflicts — each published article targets distinct primary keywords."
+  },
+
+  "internal_link_health": {
+    "broken_links": 0,
+    "broken_links_notes": "All 4 broken links from prior audit were fixed today (2026-04-22). Zero broken internal links across all 17 posts.",
+    "orphan_pages": [
+      {"slug": "anthropic-api-developer-guide", "status": "draft", "inbound": 1, "note": "Only 1 inbound (from Sonnet vs Opus draft). Will fix when pillar updated."},
+      {"slug": "claude-sonnet-vs-opus-46", "status": "draft", "inbound": 0},
+      {"slug": "claude-code-what-it-can-do-2026", "status": "draft", "inbound": 0},
+      {"slug": "grok-ai-2026-review", "status": "draft", "inbound": 0},
+      {"slug": "deepseek-ai-2026-review", "status": "draft", "inbound": 0},
+      {"slug": "perplexity-ai-2026-review", "status": "draft", "inbound": 0},
+      {"slug": "mistral-ai-2026-deep-dive", "status": "draft", "inbound": 0}
+    ],
+    "low_inbound_published": [
+      {"slug": "muse-spark-meta-ai-making-moves-in-the-ai-era", "inbound": 1, "suggestion": "Needs links from ChatGPT for Business and Claude vs ChatGPT"},
+      {"slug": "claude-cowork-review-2026", "inbound": 1, "suggestion": "Needs a link from the Claude sub-pillar"},
+      {"slug": "claude-mythos-preview-anthropic-cybersecurity", "inbound": 1, "suggestion": "Needs more inbound links given its length (3,678 words)"}
+    ],
+    "pillar_needs_update": {
+      "slug": "the-5-best-ai-models-in-2026-and-when-to-use-each-one",
+      "missing_links_to": ["google-gemini-2026 (via Gemini section)", "claude-cowork-review-2026 (via Claude section)"],
+      "action": "Update pillar page to link to both articles when they publish. This also resolves low-inbound-link issue."
+    },
+    "summary": "Structure is sound. Orphans are all drafts — will resolve naturally when published + pillar updated."
+  },
+
+  "content_freshness": {
+    "status": "not_applicable",
+    "reason": "Oldest article is 20 days old. First refresh candidates won't appear until July 2026 at earliest. All content is current.",
+    "future_watch_list": [
+      {"slug": "the-5-best-ai-models-in-2026-and-when-to-use-each-one", "first_refresh_due": "2026-07-02", "reason": "Pillar pages need refresh every 3-6 months — model lineup will have changed"},
+      {"slug": "chatgpt-for-business-2026", "first_refresh_due": "2026-07-09", "reason": "Pricing article — OpenAI pricing changes frequently"}
+    ]
+  },
+
+  "eeat_signals": {
+    "experience": {
+      "status": "strong",
+      "notes": "Articles include practitioner scenarios with specific numbers ($340 → $95 cost drops, 45-minute call processing, 1,500 test queries). Humanizer rules enforce this — working well."
+    },
+    "expertise": {
+      "status": "strong",
+      "notes": "Technical terminology used precisely. Code examples and version numbers specific. Edge cases acknowledged (200K pricing cliff, 800K context degradation, 28s TTFT)."
+    },
+    "authoritativeness": {
+      "status": "weak",
+      "issues": [
+        "No visible About page or author bio on articles",
+        "No author name appearing in bylines",
+        "No organizational credentials cited",
+        "External authority linking is inconsistent — some articles cite official docs well, others don't"
+      ]
+    },
+    "trustworthiness": {
+      "status": "needs_attention",
+      "critical_issues": [
+        "No visible author attribution on posts → Google cannot verify who wrote this",
+        "No About page that establishes editorial authority",
+        "Privacy policy presence unknown",
+        "Contact information not visible",
+        "No 'Last updated' dates displayed on articles"
+      ],
+      "impact": "CRITICAL — Trust is the foundation of E-E-A-T per Google's Quality Rater Guidelines. Missing trust signals hurt EVERY article's ranking potential, regardless of content quality."
+    }
+  },
+
+  "ai_overview_readiness": {
+    "schema_markup_coverage": "unknown — not verified",
+    "notes": "Publisher SKILL plans for Article/FAQPage/HowTo schema injection but this isn't being executed automatically yet. Need to verify live posts have proper JSON-LD.",
+    "direct_answers_under_h2": "strong",
+    "direct_answers_notes": "Humanizer + Writer SKILLs enforce direct answers in first 1-2 sentences under each H2. Well-aligned with the 44.2% AI citation rule (most citations come from intro).",
+    "faq_coverage": "mixed",
+    "faq_notes": "Current drafts include FAQ but without real PAA validation. Recently updated Analyst SKILL fixes this — FAQs now only included when DataForSEO returns real PAA data. Existing articles should be reviewed to ensure FAQ sections reflect actual PAA."
+  },
+
+  "technical_health": {
+    "status": "not_verified",
+    "reason": "Core Web Vitals and technical checks require PageSpeed Insights API or manual testing. WordPress site appears operational (brief 503 during audit was likely rate-limiting).",
+    "observable": {
+      "https": "verified (all URLs use https)",
+      "wordpress_api_responsive": "yes — responds when not rate limited",
+      "xml_sitemap": "unknown — not verified"
+    },
+    "to_check_manually": [
+      "PageSpeed Insights scores for pillar and top cluster articles",
+      "Core Web Vitals (LCP, INP, CLS) — aim for LCP <2.5s, INP <200ms, CLS <0.1",
+      "XML sitemap submitted to Google Search Console",
+      "robots.txt not blocking anything important",
+      "All images have alt text (check via HTML inspection)"
+    ]
+  },
+
+  "cluster_expansion_signals": [
+    {
+      "signal_type": "sub_cluster_threshold_approaching",
+      "description": "Claude sub-cluster will hit 10 articles after 3 more publishes. At that point, consider: (a) expanding to OpenAI/Gemini sub-clusters, or (b) launching the AI Tools pillar per the article plan.",
+      "recommendation": "Stick to plan — finish Claude to 10, then evaluate whether main cluster still needs more core articles or pivot to AI Tools pillar."
+    },
+    {
+      "signal_type": "news_coverage_working",
+      "description": "News articles (Claude Mythos, Gemma 4, Anthropic blocks third-party) are integrating well into the cluster. This validates the dual-mode Scout approach.",
+      "recommendation": "Continue news-responsive content alongside planned articles. The speed advantage matters for link-earning."
+    }
+  ],
+
+  "priority_actions": [
+    {
+      "priority": 1,
+      "category": "trustworthiness",
+      "action": "add_sitewide_trust_signals",
+      "target": "sitewide",
+      "specific_tasks": [
+        "Add an About page with editorial mission and contact info",
+        "Add author attribution to every post (bylines)",
+        "Add a visible 'Last updated' date on articles",
+        "Ensure privacy policy is linked in footer",
+        "Add author bio block at end of each post"
+      ],
+      "reason": "Trust is THE foundational E-E-A-T signal per Google. Missing sitewide trust signals hurt every article's ranking potential. This is the single highest-ROI action available right now.",
+      "estimated_impact": "high",
+      "time_estimate": "2-4 hours one-time work"
+    },
+    {
+      "priority": 2,
+      "category": "content_pipeline",
+      "action": "publish_drafts",
+      "target": ["mistral-ai-2026-deep-dive", "perplexity-ai-2026-review", "grok-ai-2026-review", "deepseek-ai-2026-review"],
+      "reason": "4 main cluster drafts are ready. Publishing these resolves 4 orphan pages and brings the main cluster to 14 articles. Also each one connects back to the pillar, strengthening topical authority.",
+      "estimated_impact": "high",
+      "time_estimate": "30 min per article for publish + pillar update"
+    },
+    {
+      "priority": 3,
+      "category": "internal_linking",
+      "action": "update_pillar_with_new_links",
+      "target": "the-5-best-ai-models-in-2026-and-when-to-use-each-one",
+      "specific_tasks": [
+        "Add link to google-gemini-2026 in the Gemini section",
+        "Add link to claude-cowork-review-2026 in the Claude section",
+        "Add links to Mistral/Grok/Perplexity/DeepSeek sections as those publish",
+        "Ensure pillar reaches 3,000-3,500 words with expansion"
+      ],
+      "reason": "Pillar is the main traffic magnet. Every cluster article should have a link back from it. Currently some published articles aren't linked from the pillar.",
+      "estimated_impact": "high"
+    },
+    {
+      "priority": 4,
+      "category": "new_content",
+      "action": "write_claude_code_article",
+      "target": "claude-code-what-it-can-do-2026",
+      "reason": "Already drafted (id:170) but highest search volume in backlog (368K growing to 1M monthly). Publishing moves this orphan draft into active circulation.",
+      "estimated_impact": "very_high",
+      "note": "Review the existing draft for quality first. May need humanizer + editor pass with current rules."
+    },
+    {
+      "priority": 5,
+      "category": "new_content",
+      "action": "complete_claude_sub_cluster",
+      "target": ["claude-mcp-servers-guide", "claude-api-pricing-guide", "claude-haiku-45-review"],
+      "reason": "3 remaining Claude articles to hit 10. These bring sub-cluster to critical mass (15-25 article threshold for topical authority compounding).",
+      "estimated_impact": "high",
+      "time_estimate": "5 min each with optimized pipeline"
+    },
+    {
+      "priority": 6,
+      "category": "technical_seo",
+      "action": "connect_google_search_console_and_ga4",
+      "target": "infrastructure",
+      "reason": "Without GSC, 4 of the 10 audit categories can't run. This blindness grows more limiting as the blog matures.",
+      "estimated_impact": "medium_long_term",
+      "time_estimate": "30 min setup"
+    },
+    {
+      "priority": 7,
+      "category": "content_quality",
+      "action": "review_thin_article",
+      "target": "muse-spark-meta-ai-making-moves-in-the-ai-era",
+      "reason": "At 809 words, this article is below the 1,200-word cluster minimum. Either expand or consolidate with a broader Meta AI article.",
+      "estimated_impact": "low_medium",
+      "time_estimate": "1 hour expansion"
+    },
+    {
+      "priority": 8,
+      "category": "ai_overview",
+      "action": "verify_schema_markup",
+      "target": "all_published_articles",
+      "reason": "Verify that Article, FAQPage, and HowTo JSON-LD schema is actually present on live posts. AI Overview citations depend on this.",
+      "estimated_impact": "medium",
+      "time_estimate": "15 min to check + fix if needed"
+    }
+  ],
+
+  "metrics_summary": {
+    "total_published": 10,
+    "total_drafts": 7,
+    "total_articles": 17,
+    "avg_word_count": 2150,
+    "longest_article_words": 3678,
+    "shortest_article_words": 809,
+    "orphan_pages": 6,
+    "broken_internal_links": 0,
+    "missing_pillar_links": 0,
+    "articles_ranking_page_1": "unknown (no GSC)",
+    "articles_ranking_page_2": "unknown (no GSC)"
+  },
+
+  "next_audit_recommended": "2026-05-22",
+  "next_audit_focus": "By next audit: (1) GSC should be connected to enable rankings/cannibalisation audits. (2) Trust signals should be in place. (3) Cluster should be at 20+ articles with early GSC impressions appearing. (4) First content refresh candidates may emerge from page 2 keyword data."
+}

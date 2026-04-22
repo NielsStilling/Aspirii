@@ -1,7 +1,21 @@
 {
-  "plan_version": "5.0",
+  "plan_version": "5.1",
   "last_updated": "2026-04-22",
-  "notes": "Audited and synced against WordPress on 2026-04-22 (16 published, 13 drafts). All slugs, statuses, and post IDs verified. Execution: finish Claude sub-cluster to 10, publish Mistral + Claude API drafts, then build AI Tools cluster. Scout reads this file on every run.",
+  "notes": "Synced with WordPress 2026-04-22 (16 published, 13 drafts). CURRENT FOCUS: AI Tools cluster. Pillar is drafted (id:214, 2901 words, needs internal links + publish). Then write new articles prioritised by LOW competition + high volume. Scout reads this file fresh on every run.",
+
+  "execution_order": {
+    "next_actions": [
+      "1. Add internal links to AI Tools pillar draft (id:214) and publish it",
+      "2. Review + publish existing AI Tools drafts (10 drafted articles)",
+      "3. Write new articles in this priority order (LOW competition, high volume):",
+      "   a. Grammarly AI review (135K vol, LOW comp, affiliate program)",
+      "   b. Canva AI review (110K vol, LOW comp, affiliate potential)",
+      "   c. GitHub Copilot in 2026 (90.5K vol, LOW comp, partner program)",
+      "   d. Notion AI — already drafted, review + publish (27K vol, LOW comp)",
+      "   e. Microsoft Copilot review (823K vol, LOW comp — verify intent match)",
+      "4. Continue Claude sub-cluster: MCP guide, API pricing, Haiku review (3 remaining)"
+    ]
+  },
 
   "clusters": [
     {

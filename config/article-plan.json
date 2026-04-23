@@ -1,14 +1,13 @@
 {
-  "plan_version": "5.2",
-  "last_updated": "2026-04-22",
-  "notes": "Synced with WordPress 2026-04-22 (16 published, 18 drafts). CURRENT FOCUS: AI Tools cluster. Pillar drafted + edited (id:214). 5 new tool reviews drafted 2026-04-22 (Grammarly 239, Cursor 240, Canva 241, GH Copilot 242, MS Copilot 243). Publishing order: existing drafts 1/day → pillar → new drafts.",
+  "plan_version": "5.3",
+  "last_updated": "2026-04-23",
+  "notes": "AI Tools pillar PUBLISHED 2026-04-23 (id:214) with only 6 published-article links — draft links stripped. 17 published, 16 drafts. Now publishing AI Tools sub-cluster articles 1/day. After each one goes live, update the pillar to add an inbound link.",
 
   "execution_order": {
     "next_actions": [
-      "1. Review + publish existing AI Tools drafts 1/day (10 drafted articles). Progressive linking on pillar as each goes live.",
-      "2. Publish pillar (id:214) once 5+ drafts are live, update remaining links as they publish.",
-      "3. Review + publish the 5 new drafts (239, 240, 241, 242, 243) — Grammarly, Cursor, Canva, GH Copilot, MS Copilot. Verify facts before publish (Cursor MEDIUM comp, MS Copilot intent).",
-      "4. Continue Claude sub-cluster: MCP guide, API pricing, Haiku review (3 remaining) to hit 10 in sub-cluster."
+      "1. Publish 1 AI Tools sub-cluster draft per day. Suggested order by SEO value: OpenClaw (210, 165K) → Cursor AI (240, 110K) → Canva AI (241, 110K) → AI Agents 2026 (211, 60K) → LangChain (212, 60K) → Grammarly (239, 135K, affiliate) → GitHub Copilot (242, 90.5K) → Microsoft Copilot (243, 823K) → Runway (216, 40.5K) → Jasper (220, 27.1K) → Notion AI (219, 27.1K) → n8n (223, 9.9K) → Replit AI (226, 12.1K) → Agentic AI (206, 110K) → Cursor vs Copilot (225, 2.4K).",
+      "2. After each publish, edit pillar 214 to add the matching internal link in the relevant section.",
+      "3. Continue Claude sub-cluster: publish Mistral (129) and Anthropic API (172) drafts; write MCP, API Pricing, Haiku to hit 10 in sub-cluster."
     ]
   },
 
@@ -151,10 +150,13 @@
       "pillar": {
         "title": "Best AI Tools in 2026: The Complete Guide",
         "slug": "best-ai-tools-2026",
-        "status": "draft",
+        "status": "published",
         "wordpress_post_id": 214,
+        "published_url": "https://aspirii.com/best-ai-tools-2026/",
+        "published_date": "2026-04-23",
         "target_keywords": ["AI tools", "best AI tools", "AI apps"],
-        "keyword_data": {"AI tools": 40500, "AI apps": 49500}
+        "keyword_data": {"AI tools": 40500, "AI apps": 49500},
+        "notes": "Published 2026-04-23 with 6 internal links — all to existing published articles (Claude pillar, Claude Code, Claude Cowork, AI Models pillar, ChatGPT for Business, Claude vs ChatGPT). Draft tool-review links stripped. Add inbound links progressively as each AI Tools sub-cluster article publishes."
       },
 
       "sub_clusters": [

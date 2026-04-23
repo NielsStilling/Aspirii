@@ -12,27 +12,53 @@ You take the final, edited blog post and:
 
 ## WordPress Publishing
 
+### Authentication
+Use HTTP Basic auth with `WORDPRESS_USERNAME` and `WORDPRESS_APP_PASSWORD` from `.env`.
+The app password contains spaces — keep it quoted.
+
 ### API Call Structure
+
+**Step 1: Create or update the post.** Yoast fields go at the TOP LEVEL of the
+request body — NOT inside `meta`. Standard WP REST does not expose Yoast meta;
+aspirii.com exposes them via the active Code Snippet `Aspirii Security & Yoast
+REST` (ID 5, `register_rest_field` for `post`/`page`).
+
 ```bash
 POST https://{site}/wp-json/wp/v2/posts
-Authorization: Bearer {token}
+Authorization: Basic {base64(user:app_password)}
 Content-Type: application/json
 
 {
   "title": "...",
   "content": "...",
-  "status": "publish",
+  "status": "draft",
   "slug": "...",
   "excerpt": "...",
   "categories": [id],
   "tags": [id1, id2],
   "featured_media": media_id,
-  "meta": {
-    "_yoast_wpseo_metadesc": "...",
-    "_yoast_wpseo_focuskw": "..."
-  }
+
+  "_yoast_wpseo_focuskw": "...",
+  "_yoast_wpseo_metadesc": "... (≤155 chars)",
+  "_yoast_wpseo_title": "... (optional, defaults to post title)",
+  "_yoast_wpseo_canonical": "... (optional)",
+  "_yoast_wpseo_opengraph-title": "... (optional)",
+  "_yoast_wpseo_opengraph-description": "... (optional)",
+  "_yoast_wpseo_twitter-title": "... (optional)",
+  "_yoast_wpseo_twitter-description": "... (optional)"
 }
 ```
+
+### Do NOT use `meta: { _yoast_wpseo_* }`
+That shape returns HTTP 200 but silently drops the values — the fields are not
+registered against the `meta` object on this install. If the Code Snippet gets
+deactivated, neither shape will work; check `/wp-json/code-snippets/v1/snippets`
+to confirm snippet 5 is active before large batch publishes.
+
+### Retries
+Aspirii's WordPress host occasionally returns HTTP 503 ("DNS cache overflow")
+for 1-3 requests in a row. Retry with exponential backoff (2s, 4s, 8s, 16s)
+up to 4 times before surfacing the error.
 
 ### Markdown to HTML Conversion
 - Convert ## to <h2>, ### to <h3>

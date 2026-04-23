@@ -139,4 +139,4 @@ Auth: Basic (WORDPRESS_USERNAME:WORDPRESS_APP_PASSWORD)
 Status: draft
 ```
 
-Yoast SEO fields (meta description, focus keyword) are set via the post meta API.
+Yoast SEO fields (`_yoast_wpseo_focuskw`, `_yoast_wpseo_metadesc`, etc.) are written as **top-level fields** on the post object — NOT inside `meta`. This is made possible by the active Code Snippet `Aspirii Security & Yoast REST` (snippet ID 5). Full API shape and field list in `agents/publisher/SKILL-publisher-agent-v2.md`.

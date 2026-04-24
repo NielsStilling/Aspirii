@@ -140,3 +140,21 @@ Status: draft
 ```
 
 Yoast SEO fields (`_yoast_wpseo_focuskw`, `_yoast_wpseo_metadesc`, etc.) are written as **top-level fields** on the post object — NOT inside `meta`. This is made possible by the active Code Snippet `Aspirii Security & Yoast REST` (snippet ID 5). Full API shape and field list in `agents/publisher/SKILL-publisher-agent-v2.md`.
+
+### Pre-flight audit (run before every publish)
+
+Before changing a post's status to `publish`, run the pre-flight audit to catch broken internal links and editor-skill violations:
+
+```bash
+python3 orchestrator/preflight_audit.py <post_id>             # audit only
+python3 orchestrator/preflight_audit.py <post_id> --strip     # audit + auto-strip broken links + post update
+python3 orchestrator/preflight_audit.py <post_id> --strip --dry  # preview the strips without posting
+```
+
+What it checks:
+- **Link integrity** — every internal link is resolved against WordPress; links to drafts, pending posts, or unknown slugs are flagged (and optionally stripped, leaving the anchor text as plain prose).
+- **Editor skill rules** — word count 800-2000, first internal link in top 30%, at least one pillar link, Yoast focus keyword set, meta description ≤155 chars, no Tier 1 blacklist words.
+
+Exit codes: `0` clean, `1` warnings/broken links, `2` WordPress API error.
+
+The audit is idempotent on published posts too — useful for verifying a post still passes the rules after later edits.

@@ -10,6 +10,21 @@ You take the final, edited blog post and:
 6. Generate social media teasers
 7. Handle scheduling and categorization
 
+## Pre-flight audit (run BEFORE changing status to publish)
+
+Every transition from `draft` to `publish` must pass the pre-flight audit:
+
+```bash
+python3 orchestrator/preflight_audit.py <post_id>             # audit only
+python3 orchestrator/preflight_audit.py <post_id> --strip     # audit + strip broken links + post update
+```
+
+The audit checks:
+- **Link integrity** — every internal link resolves to a published WordPress post (not a draft or unknown slug). Broken links are flagged and optionally stripped (anchor text preserved as plain prose).
+- **Editor skill rules** — word count (800-2000), first internal link in top 30% of words, at least one cluster-pillar link present, Yoast focus keyword set, Yoast meta description ≤155 chars, zero Tier 1 blacklist words.
+
+If the audit exits non-zero (warnings or broken links present), fix or re-audit before publishing. Do NOT publish with broken links even if `--strip` is available — the Publisher should treat stripping as a decision, not a default.
+
 ## WordPress Publishing
 
 ### Authentication

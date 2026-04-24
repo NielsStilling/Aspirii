@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.3",
-  "last_updated": "2026-04-23",
-  "notes": "AI Tools pillar PUBLISHED 2026-04-23 (id:214) with only 6 published-article links — draft links stripped. 17 published, 16 drafts. Now publishing AI Tools sub-cluster articles 1/day. After each one goes live, update the pillar to add an inbound link.",
+  "plan_version": "5.4",
+  "last_updated": "2026-04-24",
+  "notes": "AI Tools pillar live (id:214, 7 internal links). Canva AI published 2026-04-24 (id:241) — first sub-cluster article live. Pillar updated with new AI Design Tools section linking to Canva review. 18 published, 16 drafts. Next: publish 1 sub-cluster article per day, update pillar outbound link after each.",
 
   "execution_order": {
     "next_actions": [
@@ -179,7 +179,7 @@
             {"title": "Jasper AI: Is It Still Worth Paying For in 2026?", "slug": "jasper-ai-2026-review", "status": "draft", "wordpress_post_id": 220, "search_volume": 27100},
             {"title": "Midjourney in 2026", "slug": "midjourney-2026-review", "status": "unpublished", "search_volume": 301000},
             {"title": "Grammarly AI in 2026: Still Worth Paying For, or Has Claude Killed It?", "slug": "grammarly-ai-2026-review", "status": "draft", "wordpress_post_id": 239, "search_volume": 135000, "competition": "LOW"},
-            {"title": "Canva AI in 2026: What Magic Studio Actually Does for Small Teams", "slug": "canva-ai-2026-review", "status": "draft", "wordpress_post_id": 241, "search_volume": 110000, "competition": "LOW"},
+            {"title": "Canva AI in 2026: What Magic Studio Actually Does for Small Teams", "slug": "canva-ai-2026-review", "status": "published", "wordpress_post_id": 241, "published_url": "https://aspirii.com/canva-ai-2026-review/", "published_date": "2026-04-24", "search_volume": 110000, "competition": "LOW"},
             {"title": "DALL-E in 2026", "slug": "dall-e-2026-review", "status": "unpublished", "search_volume": 60500}
           ]
         },

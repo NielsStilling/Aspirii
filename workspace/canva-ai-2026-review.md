@@ -76,7 +76,7 @@ I don't use Canva AI for:
 - Anything requiring original illustration
 - Serious photo editing (I use Photoshop for real retouching)
 
-If you're producing mostly long-form written content with occasional visuals, [Notion AI's more workspace-native approach](/notion-ai-2026-review) might fit better — it doesn't generate beautiful visuals but handles the write-publish cycle end-to-end. If you're producing serious marketing copy alongside the visuals, [Jasper AI](/jasper-ai-2026-review) is built around that workflow. Canva AI and Jasper actually pair well — use Jasper for the caption, Canva for the visual.
+If you're producing mostly long-form written content with occasional visuals, Notion AI's more workspace-native approach might fit better — it doesn't generate beautiful visuals but handles the write-publish cycle end-to-end. If you're producing serious marketing copy alongside the visuals, Jasper AI is built around that workflow. Canva AI and Jasper actually pair well — use Jasper for the caption, Canva for the visual.
 
 ## The verdict for small teams
 

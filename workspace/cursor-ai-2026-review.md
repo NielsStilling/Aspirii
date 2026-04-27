@@ -54,13 +54,13 @@ Three areas where I genuinely wish it worked better.
 
 ## Where Cursor wins vs where Copilot still wins
 
-I wrote a longer breakdown in the [Cursor vs GitHub Copilot comparison](/cursor-vs-github-copilot), but here's the short version.
+I wrote a longer breakdown in the Cursor vs GitHub Copilot comparison, but here's the short version.
 
 Cursor wins when you're an individual developer or small team writing code that requires deep context. Refactoring, migrations, net-new features with real architectural decisions, agent-assisted work. It wins on model quality because it can use Claude Opus 4.7 and GPT-5 side by side.
 
 Copilot wins when you need frictionless enterprise rollout. If your org already runs GitHub Enterprise, Copilot's admin tooling, audit logs, and compliance story beat Cursor's. It also wins on IDE breadth — Copilot works in JetBrains, Vim, Neovim, and a dozen other environments where Cursor doesn't have a presence.
 
-If you're on Replit for other reasons, [Replit's AI story](/replit-ai-2026-review) is a different value proposition entirely — browser-based, deploy-in-one-click, less control but zero setup.
+If you're on Replit for other reasons, Replit's AI story is a different value proposition entirely — browser-based, deploy-in-one-click, less control but zero setup.
 
 ## When to use Cursor, when not to
 

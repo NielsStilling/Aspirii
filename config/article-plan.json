@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.5",
-  "last_updated": "2026-04-27",
-  "notes": "AI Tools pillar live (id:214, 8 internal links). Canva AI 241 + Cursor AI 240 published. Pillar Cursor subsection now links to dedicated review. 19 published, 15 drafts. Pre-flight audit script in place at orchestrator/preflight_audit.py — run --strip before every publish.",
+  "plan_version": "5.6",
+  "last_updated": "2026-04-28",
+  "notes": "AI Tools pillar live (id:214). Canva 241 + Cursor 240 published. New: GPT-5.5 reactive news article drafted (id:263) — first piece in OpenAI sub-cluster. 19 published, 16 drafts. Pre-flight audit at orchestrator/preflight_audit.py.",
 
   "execution_order": {
     "next_actions": [
@@ -109,11 +109,12 @@
         {
           "sub_cluster_id": "openai",
           "sub_cluster_name": "OpenAI GPT",
-          "status": "planned",
+          "status": "started",
           "priority": 2,
-          "trigger": "Start once Claude sub-cluster has 10 published",
+          "trigger": "First news article added reactively (GPT-5.5 release). Claude sub-cluster still priority for completion.",
           "sub_pillar": {"title": "OpenAI GPT in 2026: The Full Picture", "slug": "openai-gpt-2026-complete-guide", "status": "unpublished"},
           "articles": [
+            {"title": "GPT-5.5 Is Out: Better Coding, Doubled API Pricing, and a Six-Week Cycle", "slug": "gpt-5-5-release", "status": "draft", "wordpress_post_id": 263, "published_date": null, "notes": "Reactive news article — GPT-5.5 released 2026-04-23. Drafted 2026-04-28."},
             {"title": "GPT-5.4 Deep Dive", "slug": "gpt-54-deep-dive", "status": "unpublished"},
             {"title": "OpenAI's Model Deprecation Problem", "slug": "openai-model-deprecation-guide", "status": "unpublished"},
             {"title": "GPT-5 Nano for High-Volume Tasks", "slug": "gpt-5-nano-high-volume-tasks", "status": "unpublished"},

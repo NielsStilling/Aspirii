@@ -1,6 +1,6 @@
 # Grammarly AI in 2026: Still Worth Paying For, or Has Claude Killed It?
 
-I've been using Grammarly for nine years. When I cancelled my Premium subscription last June after testing Claude and ChatGPT as writing partners for a month, I thought I was done with it. I re-subscribed in September. Not because the LLMs got worse, but because Grammarly does something they can't: it edits my writing *where I'm writing it*, at the moment I'm writing it.
+I've been using Grammarly for nine years. When I cancelled my Premium subscription last June after testing [Claude](/claude-ai-2026-complete-guide) and ChatGPT as writing partners for a month, I thought I was done with it. I re-subscribed in September. Not because the LLMs got worse, but because Grammarly does something they can't: it edits my writing *where I'm writing it*, at the moment I'm writing it.
 
 That distinction matters more than the AI tool comparison articles usually admit.
 
@@ -84,7 +84,7 @@ I'd also skip Premium if I only write casually. The free tier plus an occasional
 
 For teams, I'd only pay for Business tier if tone consistency across multiple writers actively matters — for example, if clients have flagged inconsistent voice before. For most internal teams, Premium is fine.
 
-If you're trying to decide between writing-focused AI tools, it's worth comparing against [Jasper AI's more aggressive marketing-team positioning](/jasper-ai-2026-review) and [Notion AI's workspace-native approach](/notion-ai-2026-review). They serve different workflows than Grammarly does.
+If you're trying to decide between writing-focused AI tools, it's worth comparing against Jasper AI's more aggressive marketing-team positioning and Notion AI's workspace-native approach. They serve different workflows than Grammarly does.
 
 ## The verdict
 

@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.6",
-  "last_updated": "2026-04-28",
-  "notes": "AI Tools pillar live (id:214). Canva 241 + Cursor 240 published. New: GPT-5.5 reactive news article drafted (id:263) — first piece in OpenAI sub-cluster. 19 published, 16 drafts. Pre-flight audit at orchestrator/preflight_audit.py.",
+  "plan_version": "5.7",
+  "last_updated": "2026-04-29",
+  "notes": "AI Tools pillar live (id:214, 9 internal links). Canva 241 + Cursor 240 + Grammarly 239 published. GPT-5.5 reactive news drafted (id:263). 20 published, 15 drafts. Pre-flight audit at orchestrator/preflight_audit.py.",
 
   "execution_order": {
     "next_actions": [
@@ -179,7 +179,7 @@
             {"title": "Runway AI: The Video Generation Tool That's Actually Usable", "slug": "runway-ai-2026-review", "status": "draft", "wordpress_post_id": 216, "search_volume": 40500},
             {"title": "Jasper AI: Is It Still Worth Paying For in 2026?", "slug": "jasper-ai-2026-review", "status": "draft", "wordpress_post_id": 220, "search_volume": 27100},
             {"title": "Midjourney in 2026", "slug": "midjourney-2026-review", "status": "unpublished", "search_volume": 301000},
-            {"title": "Grammarly AI in 2026: Still Worth Paying For, or Has Claude Killed It?", "slug": "grammarly-ai-2026-review", "status": "draft", "wordpress_post_id": 239, "search_volume": 135000, "competition": "LOW"},
+            {"title": "Grammarly AI in 2026: Still Worth Paying For, or Has Claude Killed It?", "slug": "grammarly-ai-2026-review", "status": "published", "wordpress_post_id": 239, "published_url": "https://aspirii.com/grammarly-ai-2026-review/", "published_date": "2026-04-29", "search_volume": 135000, "competition": "LOW"},
             {"title": "Canva AI in 2026: What Magic Studio Actually Does for Small Teams", "slug": "canva-ai-2026-review", "status": "published", "wordpress_post_id": 241, "published_url": "https://aspirii.com/canva-ai-2026-review/", "published_date": "2026-04-24", "search_volume": 110000, "competition": "LOW"},
             {"title": "DALL-E in 2026", "slug": "dall-e-2026-review", "status": "unpublished", "search_volume": 60500}
           ]

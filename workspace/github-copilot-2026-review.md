@@ -12,7 +12,7 @@ At no point does anyone stop to ask whether Copilot is still the best tool for t
 
 This made sense for two years. Before Cursor hit real maturity — somewhere around late 2024 — Copilot's combination of autocomplete quality, IDE integration, and enterprise compliance was genuinely best-in-class. There was no obvious alternative for a team operating at scale. You'd be paying to be a beta tester.
 
-That calculation has changed. Cursor in 2026 has crossed the "good enough for enterprise" line, and its productivity delta over Copilot is big enough that the old default doesn't hold up to scrutiny. For a full side-by-side walkthrough, I wrote [Cursor vs GitHub Copilot](/cursor-vs-github-copilot).
+That calculation has changed. Cursor in 2026 has crossed the "good enough for enterprise" line, and its productivity delta over Copilot is big enough that the old default doesn't hold up to scrutiny.
 
 ## The evidence
 

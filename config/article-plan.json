@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.7",
-  "last_updated": "2026-04-29",
-  "notes": "AI Tools pillar live (id:214, 9 internal links). Canva 241 + Cursor 240 + Grammarly 239 published. GPT-5.5 reactive news drafted (id:263). 20 published, 15 drafts. Pre-flight audit at orchestrator/preflight_audit.py.",
+  "plan_version": "5.8",
+  "last_updated": "2026-04-30",
+  "notes": "AI Tools pillar live (id:214, 10 internal links). Canva 241 + Cursor 240 + Grammarly 239 + GH Copilot 242 published. GPT-5.5 reactive news drafted (id:263). 21 published, 14 drafts.",
 
   "execution_order": {
     "next_actions": [
@@ -168,7 +168,7 @@
             {"title": "Cursor vs GitHub Copilot: Which AI Coding Tool Actually Saves Time?", "slug": "cursor-vs-github-copilot", "status": "draft", "wordpress_post_id": 225, "search_volume": 2400},
             {"title": "Replit AI: Can You Build a Full App Without Local Setup?", "slug": "replit-ai-2026-review", "status": "draft", "wordpress_post_id": 226, "search_volume": 12100},
             {"title": "Cursor AI in 2026: The IDE That Thinks Alongside You", "slug": "cursor-ai-2026-review", "status": "published", "wordpress_post_id": 240, "published_url": "https://aspirii.com/cursor-ai-2026-review/", "published_date": "2026-04-27", "search_volume": 110000, "competition": "MEDIUM"},
-            {"title": "GitHub Copilot in 2026: It's No Longer the Obvious Choice", "slug": "github-copilot-2026-review", "status": "draft", "wordpress_post_id": 242, "search_volume": 90500, "competition": "LOW"},
+            {"title": "GitHub Copilot in 2026: It's No Longer the Obvious Choice", "slug": "github-copilot-2026-review", "status": "published", "wordpress_post_id": 242, "published_url": "https://aspirii.com/github-copilot-2026-review/", "published_date": "2026-04-30", "search_volume": 90500, "competition": "LOW"},
             {"title": "Best AI Coding Assistants in 2026", "slug": "best-ai-coding-assistants-2026", "status": "unpublished", "search_volume": 22200}
           ]
         },

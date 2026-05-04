@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.9",
-  "last_updated": "2026-05-01",
-  "notes": "AI Tools pillar live (id:214, 11 internal links, 3148 words). Canva 241 + Cursor 240 + Grammarly 239 + GH Copilot 242 + OpenClaw 210 published. GPT-5.5 reactive news drafted (id:263). 22 published, 13 drafts. Pillar word count exceeds article rule (>2000) — monitor; may need split into sub-pillars at 15+ outbound links.",
+  "plan_version": "5.10",
+  "last_updated": "2026-05-04",
+  "notes": "AI Tools pillar live (id:214, 12 internal links, 3173 words). Published in cluster: Canva 241, Cursor 240, Grammarly 239, GH Copilot 242, OpenClaw 210, Agentic AI 206. GPT-5.5 reactive news drafted (id:263). 23 published, 12 drafts.",
 
   "execution_order": {
     "next_actions": [
@@ -199,7 +199,7 @@
           "sub_cluster_name": "AI Agents & Autonomous Systems",
           "articles": [
             {"title": "OpenClaw: The Autonomous AI Agent Everyone's Talking About", "slug": "openclaw-ai-agent-review", "status": "published", "wordpress_post_id": 210, "published_url": "https://aspirii.com/openclaw-ai-agent-review/", "published_date": "2026-05-01", "search_volume": 165000},
-            {"title": "Agentic AI Explained: What It Is, How It Works, and Why It Matters", "slug": "agentic-ai-explained", "status": "draft", "wordpress_post_id": 206, "search_volume": 110000},
+            {"title": "Agentic AI Explained: What It Is, How It Works, and Why It Matters", "slug": "agentic-ai-explained", "status": "published", "wordpress_post_id": 206, "published_url": "https://aspirii.com/agentic-ai-explained/", "published_date": "2026-05-04", "search_volume": 110000},
             {"title": "AI Agents in 2026: What They Can Actually Do (and What They Can't)", "slug": "ai-agents-2026-guide", "status": "draft", "wordpress_post_id": 211, "search_volume": 60500},
             {"title": "LangChain in 2026: Is It Still the Go-To Agent Framework?", "slug": "langchain-2026-review", "status": "draft", "wordpress_post_id": 212, "search_volume": 60500},
             {"title": "n8n AI: Building Automations Without Writing Code", "slug": "n8n-ai-automation-review", "status": "draft", "wordpress_post_id": 223, "search_volume": 9900},

@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.11",
-  "last_updated": "2026-05-05",
-  "notes": "AI Tools pillar live (id:214, 13 internal links, 3173 words). Published in cluster: Canva 241, Cursor 240, Grammarly 239, GH Copilot 242, OpenClaw 210, Agentic AI 206, AI Agents Guide 211. GPT-5.5 reactive news drafted (id:263). 24 published, 11 drafts.",
+  "plan_version": "5.12",
+  "last_updated": "2026-05-08",
+  "notes": "AI Tools pillar live (id:214, 14 internal links, 3186 words). Published in cluster: Canva 241, Cursor 240, Grammarly 239, GH Copilot 242, OpenClaw 210, Agentic AI 206, AI Agents Guide 211, LangChain 212. Agents sub-cluster nearly complete. GPT-5.5 reactive news drafted (id:263). 25 published, 10 drafts.",
 
   "execution_order": {
     "next_actions": [
@@ -201,7 +201,7 @@
             {"title": "OpenClaw: The Autonomous AI Agent Everyone's Talking About", "slug": "openclaw-ai-agent-review", "status": "published", "wordpress_post_id": 210, "published_url": "https://aspirii.com/openclaw-ai-agent-review/", "published_date": "2026-05-01", "search_volume": 165000},
             {"title": "Agentic AI Explained: What It Is, How It Works, and Why It Matters", "slug": "agentic-ai-explained", "status": "published", "wordpress_post_id": 206, "published_url": "https://aspirii.com/agentic-ai-explained/", "published_date": "2026-05-04", "search_volume": 110000},
             {"title": "AI Agents in 2026: What They Can Actually Do (and What They Can't)", "slug": "ai-agents-2026-guide", "status": "published", "wordpress_post_id": 211, "published_url": "https://aspirii.com/ai-agents-2026-guide/", "published_date": "2026-05-05", "search_volume": 60500},
-            {"title": "LangChain in 2026: Is It Still the Go-To Agent Framework?", "slug": "langchain-2026-review", "status": "draft", "wordpress_post_id": 212, "search_volume": 60500},
+            {"title": "LangChain in 2026: Is It Still the Go-To Agent Framework?", "slug": "langchain-2026-review", "status": "published", "wordpress_post_id": 212, "published_url": "https://aspirii.com/langchain-2026-review/", "published_date": "2026-05-08", "search_volume": 60500},
             {"title": "n8n AI: Building Automations Without Writing Code", "slug": "n8n-ai-automation-review", "status": "draft", "wordpress_post_id": 223, "search_volume": 9900},
             {"title": "AutoGPT in 2026", "slug": "autogpt-2026-review", "status": "unpublished", "search_volume": 3600}
           ]

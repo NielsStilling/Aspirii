@@ -143,7 +143,25 @@ Yoast SEO fields (`_yoast_wpseo_focuskw`, `_yoast_wpseo_metadesc`, etc.) are wri
 
 ### Pre-flight audit (run before every publish)
 
-Before changing a post's status to `publish`, run the pre-flight audit to catch broken internal links and editor-skill violations:
+Before changing a post's status to `publish`, run **both** audits in this order:
+
+**1. Fact-check audit** — surfaces what to verify since the draft was written:
+
+```bash
+python3 orchestrator/factcheck_audit.py <post_id>
+```
+
+What it surfaces:
+- **Stale model / product references** — known patterns like GPT-4o, Claude 3.5, Opus 4.6, Codeium (rebranded to Windsurf), Bard, etc.
+- **Relative time phrases** ("recently", "last month") that may have stopped being accurate
+- **All pricing references** — for sanity-checking against the vendor's current public page
+- **Sibling articles published since this draft was created** — flags whether they're linked, identifying potential new link opportunities
+- **Suggested WebSearches** — based on focus keyword + draft age
+- **Pre-publish checklist** — operator-facing items
+
+This is informational (always exits 0). The operator (Claude) then runs the suggested WebSearches and applies any factual updates via the WP API before moving on.
+
+**2. Link integrity + editor-skill audit** (existing):
 
 ```bash
 python3 orchestrator/preflight_audit.py <post_id>             # audit only
@@ -158,3 +176,13 @@ What it checks:
 Exit codes: `0` clean, `1` warnings/broken links, `2` WordPress API error.
 
 The audit is idempotent on published posts too — useful for verifying a post still passes the rules after later edits.
+
+### Full publish workflow
+
+1. `factcheck_audit.py` → run suggested WebSearches → apply any fact updates
+2. `preflight_audit.py --strip` → fix broken links
+3. Set Yoast fields if missing
+4. Change status to `publish` via WP API
+5. Update pillar 214 to add the new article in the relevant section
+6. Update `config/article-plan.json` (status → published, published_url, published_date)
+7. Commit + push

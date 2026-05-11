@@ -48,7 +48,7 @@ If your organization isn't all-in on Microsoft 365 — meaning you're also using
 
 If you're fully committed to Microsoft 365 — SharePoint as the primary document store, Teams as the primary comms tool, Outlook for email — then the $30/month tier starts earning its keep for knowledge workers who spend most of their day in Microsoft apps. My rough threshold: users who spend 4+ hours a day in Word, Excel, Outlook, or Teams will see ROI. Users who mainly work in specialized tools (engineers in IDEs, designers in Figma, analysts in Tableau) will not.
 
-For general AI assistance without the M365 integration, [ChatGPT for Business](/chatgpt-for-business-2026) often delivers more value per dollar. If your team lives in a specific knowledge platform, [Notion AI](/notion-ai-2026-review) gets you the "chat with your data" experience without the M365 cost structure. The [best AI tools in 2026 guide](/best-ai-tools-2026) covers the broader decision tree.
+For general AI assistance without the M365 integration, [ChatGPT for Business](/chatgpt-for-business-2026) often delivers more value per dollar. If your team lives in a specific knowledge platform, Notion AI gets you the "chat with your data" experience without the M365 cost structure. The [best AI tools in 2026 guide](/best-ai-tools-2026) covers the broader decision tree.
 
 ## The consumer tier vs the business tier
 

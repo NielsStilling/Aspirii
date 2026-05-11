@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.12",
-  "last_updated": "2026-05-08",
-  "notes": "AI Tools pillar live (id:214, 14 internal links, 3186 words). Published in cluster: Canva 241, Cursor 240, Grammarly 239, GH Copilot 242, OpenClaw 210, Agentic AI 206, AI Agents Guide 211, LangChain 212. Agents sub-cluster nearly complete. GPT-5.5 reactive news drafted (id:263). 25 published, 10 drafts.",
+  "plan_version": "5.13",
+  "last_updated": "2026-05-11",
+  "notes": "AI Tools pillar live (id:214, 15 internal links, 3349 words). Published in cluster: Canva 241, Cursor 240, Grammarly 239, GH Copilot 242, OpenClaw 210, Agentic AI 206, AI Agents Guide 211, LangChain 212, MS Copilot 243. GPT-5.5 reactive news drafted (id:263). 26 published, 9 drafts. Pillar at 15+ links and 3349 words — sub-pillar split decision worth considering soon.",
 
   "execution_order": {
     "next_actions": [
@@ -189,7 +189,7 @@
           "sub_cluster_name": "AI Business & Productivity Tools",
           "articles": [
             {"title": "Notion AI in 2026: Is the Built-In AI Worth the Upgrade?", "slug": "notion-ai-2026-review", "status": "draft", "wordpress_post_id": 219, "search_volume": 27100},
-            {"title": "Microsoft Copilot in 2026: Worth $30/User/Month, or Expensive Autocomplete?", "slug": "microsoft-copilot-2026-review", "status": "draft", "wordpress_post_id": 243, "search_volume": 823000, "competition": "LOW", "notes": "CPC $0.38 signals mostly navigational intent — angled for 'microsoft copilot review 2026' long-tail."},
+            {"title": "Microsoft Copilot in 2026: Worth $30/User/Month, or Expensive Autocomplete?", "slug": "microsoft-copilot-2026-review", "status": "published", "wordpress_post_id": 243, "published_url": "https://aspirii.com/microsoft-copilot-2026-review/", "published_date": "2026-05-11", "search_volume": 823000, "competition": "LOW", "notes": "CPC $0.38 signals mostly navigational intent — angled for 'microsoft copilot review 2026' long-tail."},
             {"title": "Copilot vs ChatGPT", "slug": "copilot-vs-chatgpt-2026", "status": "unpublished", "search_volume": 8100},
             {"title": "AI for Marketing in 2026", "slug": "ai-for-marketing-2026", "status": "unpublished", "search_volume": 3600}
           ]

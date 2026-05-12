@@ -70,6 +70,14 @@ The competitive landscape is genuinely interesting.
 
 For most practitioners I talk to, the choice in 2026 is: managed convenience with opaque cost (Manus) vs. transparent control with setup overhead (OpenClaw, CrewAI). Neither is wrong, but the trade-off is real and you should pick deliberately.
 
+## Recent moves: Meta acquisition attempt, Cloud Computer, and the geopolitics
+
+The story around Manus in 2026 isn't just about credits and features — it's about geopolitics. In May 2026, Meta announced an attempt to acquire Manus for roughly $2 billion. Within weeks, Chinese authorities blocked the deal on national security grounds, leaving the acquisition's status unresolved. The signal: Manus is significant enough that major tech wants to own it, and significant enough that the Chinese government considers it strategic infrastructure.
+
+For practitioners, that has practical implications. If you're building production workflows on a platform that may or may not have a US-based owner in twelve months, that's a real consideration. Data residency, support continuity, and pricing structure can all shift after acquisitions complete — or after they collapse.
+
+Manus also launched **Cloud Computer** in mid-2026: a 24/7 always-on cloud machine that hosts persistent agents, scheduled scrapers, and self-hosted open-source tools without local infrastructure. The technical capability is impressive. The credit consumption story for always-on agents is still opaque, and that's the same problem the rest of the platform has.
+
 ## The verdict
 
 Manus AI is genuinely useful for open-ended research and one-off automation tasks when you can absorb unpredictable credit consumption. The multi-agent architecture and model-routing capability are real architectural advantages over single-LLM tools.

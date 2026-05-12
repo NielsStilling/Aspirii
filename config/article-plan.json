@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.14",
-  "last_updated": "2026-05-11",
-  "notes": "AI Tools pillar live (id:214, 15 internal links, 3349 words). 26 published, 12 drafts. Plan now includes 4 sub-pillar entries (one per sub-cluster) + 11 new article candidates from DataForSEO research. 3 new high-priority drafts pushed today: Sora 2 (289, 368K LOW), Manus AI (290, 74K LOW), Adobe Firefly (291, 110K LOW). Manus is publish-ready (0 broken links).",
+  "plan_version": "5.15",
+  "last_updated": "2026-05-12",
+  "notes": "AI Tools pillar live (id:214, 16 internal links, 3519 words). 28 published, 9 drafts. Manus AI 290 published (factcheck caught Meta-acquisition-blocked-by-China news to add). Sora 2 draft 289 needs major rewrite — Sora was DISCONTINUED on Apr 26, 2026; current draft framing is invalid. Adobe Firefly 291 has 2 Sora references to update.",
 
   "execution_order": {
     "next_actions": [
@@ -217,7 +217,7 @@
             {"title": "LangChain in 2026: Is It Still the Go-To Agent Framework?", "slug": "langchain-2026-review", "status": "published", "wordpress_post_id": 212, "published_url": "https://aspirii.com/langchain-2026-review/", "published_date": "2026-05-08", "search_volume": 60500},
             {"title": "n8n AI: Building Automations Without Writing Code", "slug": "n8n-ai-automation-review", "status": "draft", "wordpress_post_id": 223, "search_volume": 9900},
             {"title": "AutoGPT in 2026", "slug": "autogpt-2026-review", "status": "unpublished", "search_volume": 3600},
-            {"title": "Manus AI in 2026: What the Hyped Multi-Agent Platform Actually Does", "slug": "manus-ai-2026-review", "status": "draft", "wordpress_post_id": 290, "search_volume": 74000, "competition": "LOW", "notes": "Drafted 2026-05-11. Clean draft — 0 broken outbound links, publish-ready."},
+            {"title": "Manus AI in 2026: What the Hyped Multi-Agent Platform Actually Does", "slug": "manus-ai-2026-review", "status": "published", "wordpress_post_id": 290, "published_url": "https://aspirii.com/manus-ai-2026-review/", "published_date": "2026-05-12", "search_volume": 74000, "competition": "LOW", "notes": "Drafted 2026-05-11, factcheck added Meta acquisition attempt + Cloud Computer launch before publish."},
             {"title": "CrewAI in 2026: The Multi-Agent Framework for Production Teams", "slug": "crewai-2026-review", "status": "planned", "search_volume": 14800, "competition": "LOW"}
           ]
         }

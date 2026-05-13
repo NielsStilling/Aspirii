@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.15",
-  "last_updated": "2026-05-12",
-  "notes": "AI Tools pillar live (id:214, 16 internal links, 3519 words). 28 published, 9 drafts. Manus AI 290 published (factcheck caught Meta-acquisition-blocked-by-China news to add). Sora 2 draft 289 needs major rewrite — Sora was DISCONTINUED on Apr 26, 2026; current draft framing is invalid. Adobe Firefly 291 has 2 Sora references to update.",
+  "plan_version": "5.16",
+  "last_updated": "2026-05-13",
+  "notes": "AI Tools pillar live (id:214, 17 internal links, 3663 words). 29 published, 8 drafts. Adobe Firefly 291 published — factcheck added AI Assistant + 30-model roster + Translation/Dubbing news, stripped Sora references. Sora 2 draft 289 still needs major rewrite (discontinuation angle).",
 
   "execution_order": {
     "next_actions": [
@@ -187,7 +187,7 @@
             {"title": "Canva AI in 2026: What Magic Studio Actually Does for Small Teams", "slug": "canva-ai-2026-review", "status": "published", "wordpress_post_id": 241, "published_url": "https://aspirii.com/canva-ai-2026-review/", "published_date": "2026-04-24", "search_volume": 110000, "competition": "LOW"},
             {"title": "DALL-E in 2026", "slug": "dall-e-2026-review", "status": "unpublished", "search_volume": 60500},
             {"title": "Sora 2 in 2026: OpenAI's Video Model and Whether It's Worth $20+/Month", "slug": "sora-ai-2026-review", "status": "draft", "wordpress_post_id": 289, "search_volume": 368000, "competition": "LOW", "notes": "Drafted 2026-05-11. Largest LOW-comp opportunity."},
-            {"title": "Adobe Firefly in 2026: The Multi-Model AI Studio for Commercial Work", "slug": "adobe-firefly-2026-review", "status": "draft", "wordpress_post_id": 291, "search_volume": 110000, "competition": "LOW", "notes": "Drafted 2026-05-11."},
+            {"title": "Adobe Firefly in 2026: The Multi-Model AI Studio for Commercial Work", "slug": "adobe-firefly-2026-review", "status": "published", "wordpress_post_id": 291, "published_url": "https://aspirii.com/adobe-firefly-2026-review/", "published_date": "2026-05-13", "search_volume": 110000, "competition": "LOW", "notes": "Drafted 2026-05-11, factcheck added Firefly AI Assistant + 30-model roster + AI Translation/Dubbing news; stripped Sora 2 references."},
             {"title": "ElevenLabs in 2026: The Voice AI Worth Knowing", "slug": "elevenlabs-2026-review", "status": "planned", "search_volume": 301000, "competition": "MEDIUM", "notes": "Voice AI category leader."}
           ]
         },

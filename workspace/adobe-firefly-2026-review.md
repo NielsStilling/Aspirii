@@ -16,13 +16,15 @@ The first-party stack:
 - **Firefly Vector Model** for AI-generated SVG and editable vector art
 - **Topaz Astra** integration for upscaling video to 1080p or 4K
 
-The third-party integrations are what changed the game:
-- Google's **Nano Banana Pro** (image)
-- OpenAI's **GPT-Image 1.5** (image)
-- Runway's **Gen-4** image model
-- **FLUX.2** from Black Forest Labs (photorealistic detail)
+The third-party model roster is what changed the game. By mid-2026, Firefly hosted over 30 third-party AI models from major providers, including Google's **Nano Banana** (image) and **Veo 3.1** (video), OpenAI's **GPT-Image**, Runway's **Gen-4.5** (image and video), **Kling 3.0** and **Kling 3.0 Omni** (video), **FLUX.2** from Black Forest Labs (photorealistic detail), and **ElevenLabs' Multilingual v2** (voice).
 
 You select the model per generation. The same Firefly subscription gets you access to all of them. For broader context on how Firefly fits alongside other creative AI tools, the [best AI tools in 2026 guide](/best-ai-tools-2026) covers the landscape.
+
+## Firefly AI Assistant: the conversational layer
+
+In April 2026, Adobe added the **Firefly AI Assistant** — a conversational creative agent that orchestrates multi-step workflows across Photoshop, Premiere, Lightroom, Illustrator, Express, and Firefly itself. You describe the outcome you want in natural language; the assistant plans and executes the work across whichever Adobe app makes sense for that step.
+
+In practice: "take this photo, remove the background, generate three social-sized variants in our brand colors, and export them" runs as one prompt instead of five tool switches. For team workflows where you'd previously hand the same photo to three different specialists, the time saved compounds. Adobe also released **AI Translation and Generative Dubbing** in May 2026 — both of which sit inside the same assistant flow and turn translation/localization work from a multi-vendor project into a single prompt.
 
 ## The commercial-safe positioning still matters
 
@@ -77,10 +79,10 @@ Use Firefly if you're:
 
 Skip Firefly if you're:
 - A casual creator with no commercial needs (Midjourney's $10/month tier is more fun for experimentation)
-- A pure video creator (Runway, Sora 2, or Pika serve better)
+- A pure video creator (Runway, Pika, or Google Veo serve better)
 - Looking for the absolute frontier in aesthetic image quality
 
-For comparison against the rest of the AI image and video field, the [Sora 2 review](/sora-ai-2026-review) covers OpenAI's video offering, and the AI Models 2026 piece covers [the underlying models powering all these tools](/the-5-best-ai-models-in-2026-and-when-to-use-each-one).
+For broader context on the AI models powering these creative tools, see [the 2026 AI models guide](/the-5-best-ai-models-in-2026-and-when-to-use-each-one).
 
 ## The verdict
 

@@ -10,29 +10,87 @@ You take the final, edited blog post and:
 6. Generate social media teasers
 7. Handle scheduling and categorization
 
+## Pre-publish audits (run BEFORE changing status to publish)
+
+Every transition from `draft` to `publish` requires TWO audit passes, in this order:
+
+### Step 1 — Fact-check audit
+
+```bash
+python3 orchestrator/factcheck_audit.py <post_id>
+```
+
+Surfaces what may need updating since the draft was written:
+- Known-stale model/product names (GPT-4o, Claude 3.5, Opus 4.6, Codeium-not-Windsurf, etc.)
+- Relative time phrases ("recently", "last month") in light of draft age
+- Pricing references — for verification against vendor pages
+- Sibling articles published since this draft was created (potential new internal links)
+- Suggested WebSearches per topic
+
+Run the WebSearches the audit suggests. Apply factual updates to the draft via the WP API before continuing. The audit is informational (always exits 0); the operator is responsible for the decision to update vs. leave.
+
+### Step 2 — Link + editor-skill audit
+
+```bash
+python3 orchestrator/preflight_audit.py <post_id>             # audit only
+python3 orchestrator/preflight_audit.py <post_id> --strip     # audit + strip broken links + post update
+```
+
+Checks:
+- **Link integrity** — every internal link resolves to a published WordPress post (not a draft or unknown slug). Broken links are flagged and optionally stripped (anchor text preserved as plain prose).
+- **Editor skill rules** — word count (800-2000), first internal link in top 30% of words, at least one cluster-pillar link present, Yoast focus keyword set, Yoast meta description ≤155 chars, zero Tier 1 blacklist words.
+
+If the audit exits non-zero (warnings or broken links present), fix or re-audit before publishing. Do NOT publish with broken links even if `--strip` is available — the Publisher should treat stripping as a decision, not a default.
+
 ## WordPress Publishing
 
+### Authentication
+Use HTTP Basic auth with `WORDPRESS_USERNAME` and `WORDPRESS_APP_PASSWORD` from `.env`.
+The app password contains spaces — keep it quoted.
+
 ### API Call Structure
+
+**Step 1: Create or update the post.** Yoast fields go at the TOP LEVEL of the
+request body — NOT inside `meta`. Standard WP REST does not expose Yoast meta;
+aspirii.com exposes them via the active Code Snippet `Aspirii Security & Yoast
+REST` (ID 5, `register_rest_field` for `post`/`page`).
+
 ```bash
 POST https://{site}/wp-json/wp/v2/posts
-Authorization: Bearer {token}
+Authorization: Basic {base64(user:app_password)}
 Content-Type: application/json
 
 {
   "title": "...",
   "content": "...",
-  "status": "publish",
+  "status": "draft",
   "slug": "...",
   "excerpt": "...",
   "categories": [id],
   "tags": [id1, id2],
   "featured_media": media_id,
-  "meta": {
-    "_yoast_wpseo_metadesc": "...",
-    "_yoast_wpseo_focuskw": "..."
-  }
+
+  "_yoast_wpseo_focuskw": "...",
+  "_yoast_wpseo_metadesc": "... (≤155 chars)",
+  "_yoast_wpseo_title": "... (optional, defaults to post title)",
+  "_yoast_wpseo_canonical": "... (optional)",
+  "_yoast_wpseo_opengraph-title": "... (optional)",
+  "_yoast_wpseo_opengraph-description": "... (optional)",
+  "_yoast_wpseo_twitter-title": "... (optional)",
+  "_yoast_wpseo_twitter-description": "... (optional)"
 }
 ```
+
+### Do NOT use `meta: { _yoast_wpseo_* }`
+That shape returns HTTP 200 but silently drops the values — the fields are not
+registered against the `meta` object on this install. If the Code Snippet gets
+deactivated, neither shape will work; check `/wp-json/code-snippets/v1/snippets`
+to confirm snippet 5 is active before large batch publishes.
+
+### Retries
+Aspirii's WordPress host occasionally returns HTTP 503 ("DNS cache overflow")
+for 1-3 requests in a row. Retry with exponential backoff (2s, 4s, 8s, 16s)
+up to 4 times before surfacing the error.
 
 ### Markdown to HTML Conversion
 - Convert ## to <h2>, ### to <h3>

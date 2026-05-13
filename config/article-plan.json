@@ -1,19 +1,13 @@
 {
-  "plan_version": "5.1",
-  "last_updated": "2026-04-22",
-  "notes": "Synced with WordPress 2026-04-22 (16 published, 13 drafts). CURRENT FOCUS: AI Tools cluster. Pillar is drafted (id:214, 2901 words, needs internal links + publish). Then write new articles prioritised by LOW competition + high volume. Scout reads this file fresh on every run.",
+  "plan_version": "5.16",
+  "last_updated": "2026-05-13",
+  "notes": "AI Tools pillar live (id:214, 17 internal links, 3663 words). 29 published, 8 drafts. Adobe Firefly 291 published — factcheck added AI Assistant + 30-model roster + Translation/Dubbing news, stripped Sora references. Sora 2 draft 289 still needs major rewrite (discontinuation angle).",
 
   "execution_order": {
     "next_actions": [
-      "1. Add internal links to AI Tools pillar draft (id:214) and publish it",
-      "2. Review + publish existing AI Tools drafts (10 drafted articles)",
-      "3. Write new articles in this priority order (LOW competition, high volume):",
-      "   a. Grammarly AI review (135K vol, LOW comp, affiliate program)",
-      "   b. Canva AI review (110K vol, LOW comp, affiliate potential)",
-      "   c. GitHub Copilot in 2026 (90.5K vol, LOW comp, partner program)",
-      "   d. Notion AI — already drafted, review + publish (27K vol, LOW comp)",
-      "   e. Microsoft Copilot review (823K vol, LOW comp — verify intent match)",
-      "4. Continue Claude sub-cluster: MCP guide, API pricing, Haiku review (3 remaining)"
+      "1. Publish 1 AI Tools sub-cluster draft per day. Suggested order by SEO value: OpenClaw (210, 165K) → Cursor AI (240, 110K) → Canva AI (241, 110K) → AI Agents 2026 (211, 60K) → LangChain (212, 60K) → Grammarly (239, 135K, affiliate) → GitHub Copilot (242, 90.5K) → Microsoft Copilot (243, 823K) → Runway (216, 40.5K) → Jasper (220, 27.1K) → Notion AI (219, 27.1K) → n8n (223, 9.9K) → Replit AI (226, 12.1K) → Agentic AI (206, 110K) → Cursor vs Copilot (225, 2.4K).",
+      "2. After each publish, edit pillar 214 to add the matching internal link in the relevant section.",
+      "3. Continue Claude sub-cluster: publish Mistral (129) and Anthropic API (172) drafts; write MCP, API Pricing, Haiku to hit 10 in sub-cluster."
     ]
   },
 
@@ -115,11 +109,12 @@
         {
           "sub_cluster_id": "openai",
           "sub_cluster_name": "OpenAI GPT",
-          "status": "planned",
+          "status": "started",
           "priority": 2,
-          "trigger": "Start once Claude sub-cluster has 10 published",
+          "trigger": "First news article added reactively (GPT-5.5 release). Claude sub-cluster still priority for completion.",
           "sub_pillar": {"title": "OpenAI GPT in 2026: The Full Picture", "slug": "openai-gpt-2026-complete-guide", "status": "unpublished"},
           "articles": [
+            {"title": "GPT-5.5 Is Out: Better Coding, Doubled API Pricing, and a Six-Week Cycle", "slug": "gpt-5-5-release", "status": "draft", "wordpress_post_id": 263, "published_date": null, "notes": "Reactive news article — GPT-5.5 released 2026-04-23. Drafted 2026-04-28."},
             {"title": "GPT-5.4 Deep Dive", "slug": "gpt-54-deep-dive", "status": "unpublished"},
             {"title": "OpenAI's Model Deprecation Problem", "slug": "openai-model-deprecation-guide", "status": "unpublished"},
             {"title": "GPT-5 Nano for High-Volume Tasks", "slug": "gpt-5-nano-high-volume-tasks", "status": "unpublished"},
@@ -156,56 +151,74 @@
       "pillar": {
         "title": "Best AI Tools in 2026: The Complete Guide",
         "slug": "best-ai-tools-2026",
-        "status": "draft",
+        "status": "published",
         "wordpress_post_id": 214,
+        "published_url": "https://aspirii.com/best-ai-tools-2026/",
+        "published_date": "2026-04-23",
         "target_keywords": ["AI tools", "best AI tools", "AI apps"],
-        "keyword_data": {"AI tools": 40500, "AI apps": 49500}
+        "keyword_data": {"AI tools": 40500, "AI apps": 49500},
+        "notes": "Published 2026-04-23 with 6 internal links — all to existing published articles (Claude pillar, Claude Code, Claude Cowork, AI Models pillar, ChatGPT for Business, Claude vs ChatGPT). Draft tool-review links stripped. Add inbound links progressively as each AI Tools sub-cluster article publishes."
       },
 
       "sub_clusters": [
         {
           "sub_cluster_id": "ai-coding-tools",
           "sub_cluster_name": "AI Coding Tools",
+          "sub_pillar": {"title": "Best AI Coding Assistants in 2026: The Honest Comparison", "slug": "best-ai-coding-assistants-2026", "status": "unpublished", "search_volume": 22200, "notes": "Sub-pillar for coding tools. Write once sub-cluster has 6+ supporting articles."},
           "articles": [
             {"title": "Cursor vs GitHub Copilot: Which AI Coding Tool Actually Saves Time?", "slug": "cursor-vs-github-copilot", "status": "draft", "wordpress_post_id": 225, "search_volume": 2400},
             {"title": "Replit AI: Can You Build a Full App Without Local Setup?", "slug": "replit-ai-2026-review", "status": "draft", "wordpress_post_id": 226, "search_volume": 12100},
-            {"title": "Cursor AI in 2026: The IDE That Codes With You", "slug": "cursor-ai-2026-review", "status": "unpublished", "search_volume": 110000},
-            {"title": "GitHub Copilot in 2026", "slug": "github-copilot-2026-review", "status": "unpublished", "search_volume": 90500},
-            {"title": "Best AI Coding Assistants in 2026", "slug": "best-ai-coding-assistants-2026", "status": "unpublished", "search_volume": 22200}
+            {"title": "Cursor AI in 2026: The IDE That Thinks Alongside You", "slug": "cursor-ai-2026-review", "status": "published", "wordpress_post_id": 240, "published_url": "https://aspirii.com/cursor-ai-2026-review/", "published_date": "2026-04-27", "search_volume": 110000, "competition": "MEDIUM"},
+            {"title": "GitHub Copilot in 2026: It's No Longer the Obvious Choice", "slug": "github-copilot-2026-review", "status": "published", "wordpress_post_id": 242, "published_url": "https://aspirii.com/github-copilot-2026-review/", "published_date": "2026-04-30", "search_volume": 90500, "competition": "LOW"},
+            {"title": "Windsurf AI in 2026", "slug": "windsurf-ai-2026-review", "status": "planned", "search_volume": 18100, "competition": "MEDIUM", "notes": "Cursor's main IDE competitor (formerly Codeium)."},
+            {"title": "Devin AI in 2026", "slug": "devin-ai-2026-review", "status": "planned", "search_volume": 9900, "competition": "MEDIUM", "notes": "Cognition Labs' autonomous coding agent."},
+            {"title": "v0 by Vercel in 2026", "slug": "v0-vercel-2026-review", "status": "planned", "search_volume": 4400, "competition": "LOW", "notes": "High CPC ($12.21) — commercial intent strong."}
           ]
         },
         {
           "sub_cluster_id": "ai-creative-tools",
           "sub_cluster_name": "AI Writing & Creative Tools",
+          "sub_pillar": {"title": "Best AI Creative Tools in 2026: Writing, Image, Video, and Audio", "slug": "best-ai-creative-tools-2026", "status": "planned", "notes": "Sub-pillar — write once 6+ supporting articles published. Sub-pillar generic keyword has low volume; rely on supporting articles for traffic."},
           "articles": [
             {"title": "Runway AI: The Video Generation Tool That's Actually Usable", "slug": "runway-ai-2026-review", "status": "draft", "wordpress_post_id": 216, "search_volume": 40500},
             {"title": "Jasper AI: Is It Still Worth Paying For in 2026?", "slug": "jasper-ai-2026-review", "status": "draft", "wordpress_post_id": 220, "search_volume": 27100},
             {"title": "Midjourney in 2026", "slug": "midjourney-2026-review", "status": "unpublished", "search_volume": 301000},
-            {"title": "Grammarly AI in 2026", "slug": "grammarly-ai-2026-review", "status": "unpublished", "search_volume": 135000},
-            {"title": "Canva AI in 2026", "slug": "canva-ai-2026-review", "status": "unpublished", "search_volume": 110000},
-            {"title": "DALL-E in 2026", "slug": "dall-e-2026-review", "status": "unpublished", "search_volume": 60500}
+            {"title": "Grammarly AI in 2026: Still Worth Paying For, or Has Claude Killed It?", "slug": "grammarly-ai-2026-review", "status": "published", "wordpress_post_id": 239, "published_url": "https://aspirii.com/grammarly-ai-2026-review/", "published_date": "2026-04-29", "search_volume": 135000, "competition": "LOW"},
+            {"title": "Canva AI in 2026: What Magic Studio Actually Does for Small Teams", "slug": "canva-ai-2026-review", "status": "published", "wordpress_post_id": 241, "published_url": "https://aspirii.com/canva-ai-2026-review/", "published_date": "2026-04-24", "search_volume": 110000, "competition": "LOW"},
+            {"title": "DALL-E in 2026", "slug": "dall-e-2026-review", "status": "unpublished", "search_volume": 60500},
+            {"title": "Sora 2 in 2026: OpenAI's Video Model and Whether It's Worth $20+/Month", "slug": "sora-ai-2026-review", "status": "draft", "wordpress_post_id": 289, "search_volume": 368000, "competition": "LOW", "notes": "Drafted 2026-05-11. Largest LOW-comp opportunity."},
+            {"title": "Adobe Firefly in 2026: The Multi-Model AI Studio for Commercial Work", "slug": "adobe-firefly-2026-review", "status": "published", "wordpress_post_id": 291, "published_url": "https://aspirii.com/adobe-firefly-2026-review/", "published_date": "2026-05-13", "search_volume": 110000, "competition": "LOW", "notes": "Drafted 2026-05-11, factcheck added Firefly AI Assistant + 30-model roster + AI Translation/Dubbing news; stripped Sora 2 references."},
+            {"title": "ElevenLabs in 2026: The Voice AI Worth Knowing", "slug": "elevenlabs-2026-review", "status": "planned", "search_volume": 301000, "competition": "MEDIUM", "notes": "Voice AI category leader."}
           ]
         },
         {
           "sub_cluster_id": "ai-business-tools",
           "sub_cluster_name": "AI Business & Productivity Tools",
+          "sub_pillar": {"title": "Best AI Productivity Tools in 2026: Meetings, CRM, and Workflows", "slug": "best-ai-productivity-tools-2026", "status": "planned", "notes": "Sub-pillar — weakest sub-cluster, needs most expansion before sub-pillar makes sense."},
           "articles": [
             {"title": "Notion AI in 2026: Is the Built-In AI Worth the Upgrade?", "slug": "notion-ai-2026-review", "status": "draft", "wordpress_post_id": 219, "search_volume": 27100},
-            {"title": "Microsoft Copilot in 2026", "slug": "microsoft-copilot-2026-review", "status": "unpublished", "search_volume": 823000},
+            {"title": "Microsoft Copilot in 2026: Worth $30/User/Month, or Expensive Autocomplete?", "slug": "microsoft-copilot-2026-review", "status": "published", "wordpress_post_id": 243, "published_url": "https://aspirii.com/microsoft-copilot-2026-review/", "published_date": "2026-05-11", "search_volume": 823000, "competition": "LOW", "notes": "CPC $0.38 signals mostly navigational intent — angled for 'microsoft copilot review 2026' long-tail."},
             {"title": "Copilot vs ChatGPT", "slug": "copilot-vs-chatgpt-2026", "status": "unpublished", "search_volume": 8100},
-            {"title": "AI for Marketing in 2026", "slug": "ai-for-marketing-2026", "status": "unpublished", "search_volume": 3600}
+            {"title": "AI for Marketing in 2026", "slug": "ai-for-marketing-2026", "status": "unpublished", "search_volume": 3600},
+            {"title": "Otter AI in 2026: The Meeting Notes AI Most Teams Are Using", "slug": "otter-ai-2026-review", "status": "planned", "search_volume": 201000, "competition": "MEDIUM", "notes": "Category leader for meeting transcription."},
+            {"title": "Fireflies AI in 2026: Meeting Notes That Hook Into Your Stack", "slug": "fireflies-ai-2026-review", "status": "planned", "search_volume": 27100, "competition": "MEDIUM", "notes": "Strong Otter competitor."},
+            {"title": "Apollo AI in 2026: Sales Prospecting With AI Built In", "slug": "apollo-ai-2026-review", "status": "planned", "search_volume": 12100, "competition": "MEDIUM"},
+            {"title": "Fathom AI in 2026", "slug": "fathom-ai-2026-review", "status": "planned", "search_volume": 9900, "competition": "MEDIUM"}
           ]
         },
         {
           "sub_cluster_id": "ai-agents",
           "sub_cluster_name": "AI Agents & Autonomous Systems",
+          "sub_pillar": {"title": "Best AI Agents in 2026", "slug": "best-ai-agents-2026", "status": "planned", "notes": "Sub-pillar — agents sub-cluster is strongest (4 published). Sub-pillar could be split off first."},
           "articles": [
-            {"title": "OpenClaw: The Autonomous AI Agent Everyone's Talking About", "slug": "openclaw-ai-agent-review", "status": "draft", "wordpress_post_id": 210, "search_volume": 165000},
-            {"title": "Agentic AI Explained: What It Is, How It Works, and Why It Matters", "slug": "agentic-ai-explained", "status": "draft", "wordpress_post_id": 206, "search_volume": 110000},
-            {"title": "AI Agents in 2026: What They Can Actually Do (and What They Can't)", "slug": "ai-agents-2026-guide", "status": "draft", "wordpress_post_id": 211, "search_volume": 60500},
-            {"title": "LangChain in 2026: Is It Still the Go-To Agent Framework?", "slug": "langchain-2026-review", "status": "draft", "wordpress_post_id": 212, "search_volume": 60500},
+            {"title": "OpenClaw: The Autonomous AI Agent Everyone's Talking About", "slug": "openclaw-ai-agent-review", "status": "published", "wordpress_post_id": 210, "published_url": "https://aspirii.com/openclaw-ai-agent-review/", "published_date": "2026-05-01", "search_volume": 165000},
+            {"title": "Agentic AI Explained: What It Is, How It Works, and Why It Matters", "slug": "agentic-ai-explained", "status": "published", "wordpress_post_id": 206, "published_url": "https://aspirii.com/agentic-ai-explained/", "published_date": "2026-05-04", "search_volume": 110000},
+            {"title": "AI Agents in 2026: What They Can Actually Do (and What They Can't)", "slug": "ai-agents-2026-guide", "status": "published", "wordpress_post_id": 211, "published_url": "https://aspirii.com/ai-agents-2026-guide/", "published_date": "2026-05-05", "search_volume": 60500},
+            {"title": "LangChain in 2026: Is It Still the Go-To Agent Framework?", "slug": "langchain-2026-review", "status": "published", "wordpress_post_id": 212, "published_url": "https://aspirii.com/langchain-2026-review/", "published_date": "2026-05-08", "search_volume": 60500},
             {"title": "n8n AI: Building Automations Without Writing Code", "slug": "n8n-ai-automation-review", "status": "draft", "wordpress_post_id": 223, "search_volume": 9900},
-            {"title": "AutoGPT in 2026", "slug": "autogpt-2026-review", "status": "unpublished", "search_volume": 3600}
+            {"title": "AutoGPT in 2026", "slug": "autogpt-2026-review", "status": "unpublished", "search_volume": 3600},
+            {"title": "Manus AI in 2026: What the Hyped Multi-Agent Platform Actually Does", "slug": "manus-ai-2026-review", "status": "published", "wordpress_post_id": 290, "published_url": "https://aspirii.com/manus-ai-2026-review/", "published_date": "2026-05-12", "search_volume": 74000, "competition": "LOW", "notes": "Drafted 2026-05-11, factcheck added Meta acquisition attempt + Cloud Computer launch before publish."},
+            {"title": "CrewAI in 2026: The Multi-Agent Framework for Production Teams", "slug": "crewai-2026-review", "status": "planned", "search_volume": 14800, "competition": "LOW"}
           ]
         }
       ]

@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.16",
-  "last_updated": "2026-05-13",
-  "notes": "AI Tools pillar live (id:214, 17 internal links, 3663 words). 29 published, 8 drafts. Adobe Firefly 291 published — factcheck added AI Assistant + 30-model roster + Translation/Dubbing news, stripped Sora references. Sora 2 draft 289 still needs major rewrite (discontinuation angle).",
+  "plan_version": "5.17",
+  "last_updated": "2026-05-15",
+  "notes": "AI Tools pillar live (id:214, 18 internal links, 3675 words). 30 published, 7 drafts. Runway AI 216 published — factcheck added Sora-discontinued positioning, Gen-4.5 as flagship, multi-model platform framing (Veo/Kling/FLUX/Seedance/Seedream). Sora 2 draft 289 still needs major rewrite (discontinuation angle).",
 
   "execution_order": {
     "next_actions": [
@@ -180,7 +180,7 @@
           "sub_cluster_name": "AI Writing & Creative Tools",
           "sub_pillar": {"title": "Best AI Creative Tools in 2026: Writing, Image, Video, and Audio", "slug": "best-ai-creative-tools-2026", "status": "planned", "notes": "Sub-pillar — write once 6+ supporting articles published. Sub-pillar generic keyword has low volume; rely on supporting articles for traffic."},
           "articles": [
-            {"title": "Runway AI: The Video Generation Tool That's Actually Usable", "slug": "runway-ai-2026-review", "status": "draft", "wordpress_post_id": 216, "search_volume": 40500},
+            {"title": "Runway AI: The Video Generation Tool That's Actually Usable", "slug": "runway-ai-2026-review", "status": "published", "wordpress_post_id": 216, "published_url": "https://aspirii.com/runway-ai-2026-review/", "published_date": "2026-05-15", "search_volume": 40500, "notes": "Factcheck pivoted Sora positioning (Sora discontinued), Gen-4.5 as flagship, added multi-model platform framing."},
             {"title": "Jasper AI: Is It Still Worth Paying For in 2026?", "slug": "jasper-ai-2026-review", "status": "draft", "wordpress_post_id": 220, "search_volume": 27100},
             {"title": "Midjourney in 2026", "slug": "midjourney-2026-review", "status": "unpublished", "search_volume": 301000},
             {"title": "Grammarly AI in 2026: Still Worth Paying For, or Has Claude Killed It?", "slug": "grammarly-ai-2026-review", "status": "published", "wordpress_post_id": 239, "published_url": "https://aspirii.com/grammarly-ai-2026-review/", "published_date": "2026-04-29", "search_volume": 135000, "competition": "LOW"},

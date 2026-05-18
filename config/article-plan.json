@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.16",
-  "last_updated": "2026-05-13",
-  "notes": "AI Tools pillar live (id:214, 17 internal links, 3663 words). 29 published, 8 drafts. Adobe Firefly 291 published — factcheck added AI Assistant + 30-model roster + Translation/Dubbing news, stripped Sora references. Sora 2 draft 289 still needs major rewrite (discontinuation angle).",
+  "plan_version": "5.17",
+  "last_updated": "2026-05-18",
+  "notes": "AI Tools pillar live (id:214, 17 internal links, 3663 words). 29 published, 8 drafts. All 4 AI Tools sub-pillar articles written 2026-05-18 — ready to push to WordPress once credentials are configured. Sub-pillars: best-ai-agents-2026, best-ai-creative-tools-2026, best-ai-coding-assistants-2026, best-ai-productivity-tools-2026.",
 
   "execution_order": {
     "next_actions": [
@@ -164,7 +164,7 @@
         {
           "sub_cluster_id": "ai-coding-tools",
           "sub_cluster_name": "AI Coding Tools",
-          "sub_pillar": {"title": "Best AI Coding Assistants in 2026: The Honest Comparison", "slug": "best-ai-coding-assistants-2026", "status": "unpublished", "search_volume": 22200, "notes": "Sub-pillar for coding tools. Write once sub-cluster has 6+ supporting articles."},
+          "sub_pillar": {"title": "Best AI Coding Assistants in 2026: IDEs, Agents, and Plugins Compared", "slug": "best-ai-coding-assistants-2026", "status": "written", "search_volume": 22200, "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-coding-assistants-2026.md"},
           "articles": [
             {"title": "Cursor vs GitHub Copilot: Which AI Coding Tool Actually Saves Time?", "slug": "cursor-vs-github-copilot", "status": "draft", "wordpress_post_id": 225, "search_volume": 2400},
             {"title": "Replit AI: Can You Build a Full App Without Local Setup?", "slug": "replit-ai-2026-review", "status": "draft", "wordpress_post_id": 226, "search_volume": 12100},
@@ -178,7 +178,7 @@
         {
           "sub_cluster_id": "ai-creative-tools",
           "sub_cluster_name": "AI Writing & Creative Tools",
-          "sub_pillar": {"title": "Best AI Creative Tools in 2026: Writing, Image, Video, and Audio", "slug": "best-ai-creative-tools-2026", "status": "planned", "notes": "Sub-pillar — write once 6+ supporting articles published. Sub-pillar generic keyword has low volume; rely on supporting articles for traffic."},
+          "sub_pillar": {"title": "Best AI Creative Tools in 2026: Writing, Image, Video, and Audio Tested", "slug": "best-ai-creative-tools-2026", "status": "written", "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-creative-tools-2026.md"},
           "articles": [
             {"title": "Runway AI: The Video Generation Tool That's Actually Usable", "slug": "runway-ai-2026-review", "status": "draft", "wordpress_post_id": 216, "search_volume": 40500},
             {"title": "Jasper AI: Is It Still Worth Paying For in 2026?", "slug": "jasper-ai-2026-review", "status": "draft", "wordpress_post_id": 220, "search_volume": 27100},
@@ -194,7 +194,7 @@
         {
           "sub_cluster_id": "ai-business-tools",
           "sub_cluster_name": "AI Business & Productivity Tools",
-          "sub_pillar": {"title": "Best AI Productivity Tools in 2026: Meetings, CRM, and Workflows", "slug": "best-ai-productivity-tools-2026", "status": "planned", "notes": "Sub-pillar — weakest sub-cluster, needs most expansion before sub-pillar makes sense."},
+          "sub_pillar": {"title": "Best AI Productivity Tools for Teams in 2026: Meetings, Writing, and Workflows", "slug": "best-ai-productivity-tools-2026", "status": "written", "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-productivity-tools-2026.md"},
           "articles": [
             {"title": "Notion AI in 2026: Is the Built-In AI Worth the Upgrade?", "slug": "notion-ai-2026-review", "status": "draft", "wordpress_post_id": 219, "search_volume": 27100},
             {"title": "Microsoft Copilot in 2026: Worth $30/User/Month, or Expensive Autocomplete?", "slug": "microsoft-copilot-2026-review", "status": "published", "wordpress_post_id": 243, "published_url": "https://aspirii.com/microsoft-copilot-2026-review/", "published_date": "2026-05-11", "search_volume": 823000, "competition": "LOW", "notes": "CPC $0.38 signals mostly navigational intent — angled for 'microsoft copilot review 2026' long-tail."},
@@ -209,7 +209,7 @@
         {
           "sub_cluster_id": "ai-agents",
           "sub_cluster_name": "AI Agents & Autonomous Systems",
-          "sub_pillar": {"title": "Best AI Agents in 2026", "slug": "best-ai-agents-2026", "status": "planned", "notes": "Sub-pillar — agents sub-cluster is strongest (4 published). Sub-pillar could be split off first."},
+          "sub_pillar": {"title": "Best AI Agents in 2026: Autonomous Tools, Frameworks, and Platforms Compared", "slug": "best-ai-agents-2026", "status": "written", "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-agents-2026.md"},
           "articles": [
             {"title": "OpenClaw: The Autonomous AI Agent Everyone's Talking About", "slug": "openclaw-ai-agent-review", "status": "published", "wordpress_post_id": 210, "published_url": "https://aspirii.com/openclaw-ai-agent-review/", "published_date": "2026-05-01", "search_volume": 165000},
             {"title": "Agentic AI Explained: What It Is, How It Works, and Why It Matters", "slug": "agentic-ai-explained", "status": "published", "wordpress_post_id": 206, "published_url": "https://aspirii.com/agentic-ai-explained/", "published_date": "2026-05-04", "search_volume": 110000},

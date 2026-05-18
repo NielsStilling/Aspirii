@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.17",
-  "last_updated": "2026-05-15",
-  "notes": "AI Tools pillar live (id:214, 18 internal links, 3675 words). 30 published, 7 drafts. Runway AI 216 published — factcheck added Sora-discontinued positioning, Gen-4.5 as flagship, multi-model platform framing (Veo/Kling/FLUX/Seedance/Seedream). Sora 2 draft 289 still needs major rewrite (discontinuation angle).",
+  "plan_version": "5.18",
+  "last_updated": "2026-05-18",
+  "notes": "AI Tools pillar live (id:214, 18 internal links, 3675 words). Claude pillar (98) updated with link to new Claude API developer guide. 31 published, 6 drafts. Claude API guide 172 published — factcheck swept Opus 4.6→4.7 and added the tokenizer-change caveat (~35% more tokens at same input). Sora 2 draft 289 still needs major rewrite.",
 
   "execution_order": {
     "next_actions": [
@@ -68,7 +68,7 @@
             {"title": "Claude Code Pricing and Capabilities in 2026: The Honest Verdict", "slug": "claude-code-what-it-can-do-2026", "status": "published", "published_date": "2026-04-16", "wordpress_post_id": 170, "search_volume": 368000},
             {"title": "Claude Opus 4.7 Is Out: Better Coding, Same Price, and Still Not Mythos", "slug": "claude-opus-47-release", "status": "published", "published_date": "2026-04-16", "wordpress_post_id": 193, "notes": "News article added reactively — Opus 4.7 released after plan was written."},
             {"title": "Claude Sonnet 4.6 vs Opus 4.7: Is Opus 4.7 actually good?", "slug": "claude-sonnet-vs-opus-46", "status": "published", "published_date": "2026-04-20", "wordpress_post_id": 175, "search_volume": 12100},
-            {"title": "Claude API: Your Guide to Getting Started in 2026", "slug": "anthropic-api-developer-guide", "status": "draft", "wordpress_post_id": 172, "search_volume": 18100, "notes": "Ready to publish. Review and push."},
+            {"title": "Claude API: Your Guide to Getting Started in 2026", "slug": "anthropic-api-developer-guide", "status": "published", "wordpress_post_id": 172, "published_url": "https://aspirii.com/anthropic-api-developer-guide/", "published_date": "2026-05-18", "search_volume": 18100, "notes": "Factcheck: Opus 4.6→4.7 throughout, added Opus 4.7 tokenizer caveat (~35% more tokens). Claude pillar (98) now links to it from the developer-resources section."},
             {
               "title": "Claude MCP Servers: What They Are and How to Use Them",
               "slug": "claude-mcp-servers-guide",

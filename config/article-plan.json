@@ -1,6 +1,6 @@
 {
-  "plan_version": "5.18",
-  "last_updated": "2026-05-19",
+  "plan_version": "5.19",
+  "last_updated": "2026-05-20",
   "notes": "AI Tools pillar live (id:214, 17 internal links, 3663 words). 29 published, 8 drafts. All 4 AI Tools sub-pillar articles written 2026-05-18 — ready to push to WordPress once credentials are configured. Sub-pillars: best-ai-agents-2026, best-ai-creative-tools-2026, best-ai-coding-assistants-2026, best-ai-productivity-tools-2026.",
 
   "execution_order": {
@@ -181,7 +181,7 @@
           "sub_pillar": {"title": "Best AI Creative Tools in 2026: Writing, Image, Video, and Audio Tested", "slug": "best-ai-creative-tools-2026", "status": "written", "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-creative-tools-2026.md"},
           "articles": [
             {"title": "Runway AI: The Video Generation Tool That's Actually Usable", "slug": "runway-ai-2026-review", "status": "draft", "wordpress_post_id": 216, "search_volume": 40500},
-            {"title": "Jasper AI: Is It Still Worth Paying For in 2026?", "slug": "jasper-ai-2026-review", "status": "draft", "wordpress_post_id": 220, "search_volume": 27100},
+            {"title": "Jasper AI: Is It Still Worth Paying For in 2026?", "slug": "jasper-ai-2026-review", "status": "published", "wordpress_post_id": 220, "published_url": "https://aspirii.com/jasper-ai-2026-review/", "published_date": "2026-05-20", "search_volume": 27100, "notes": "Factcheck: GPT-4→frontier models (GPT-5/Claude), ChatGPT-4o model name updated, Jasper Grid (Q1 2026) added, Surfer SEO pricing updated to $79/mo annual. Pillar 214 linked."},
             {"title": "Midjourney in 2026", "slug": "midjourney-2026-review", "status": "unpublished", "search_volume": 301000},
             {"title": "Grammarly AI in 2026: Still Worth Paying For, or Has Claude Killed It?", "slug": "grammarly-ai-2026-review", "status": "published", "wordpress_post_id": 239, "published_url": "https://aspirii.com/grammarly-ai-2026-review/", "published_date": "2026-04-29", "search_volume": 135000, "competition": "LOW"},
             {"title": "Canva AI in 2026: What Magic Studio Actually Does for Small Teams", "slug": "canva-ai-2026-review", "status": "published", "wordpress_post_id": 241, "published_url": "https://aspirii.com/canva-ai-2026-review/", "published_date": "2026-04-24", "search_volume": 110000, "competition": "LOW"},

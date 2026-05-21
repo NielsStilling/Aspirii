@@ -1,6 +1,6 @@
 {
-  "plan_version": "5.19",
-  "last_updated": "2026-05-20",
+  "plan_version": "5.20",
+  "last_updated": "2026-05-21",
   "notes": "AI Tools pillar live (id:214, 17 internal links, 3663 words). 29 published, 8 drafts. All 4 AI Tools sub-pillar articles written 2026-05-18 — ready to push to WordPress once credentials are configured. Sub-pillars: best-ai-agents-2026, best-ai-creative-tools-2026, best-ai-coding-assistants-2026, best-ai-productivity-tools-2026.",
 
   "execution_order": {
@@ -215,7 +215,7 @@
             {"title": "Agentic AI Explained: What It Is, How It Works, and Why It Matters", "slug": "agentic-ai-explained", "status": "published", "wordpress_post_id": 206, "published_url": "https://aspirii.com/agentic-ai-explained/", "published_date": "2026-05-04", "search_volume": 110000},
             {"title": "AI Agents in 2026: What They Can Actually Do (and What They Can't)", "slug": "ai-agents-2026-guide", "status": "published", "wordpress_post_id": 211, "published_url": "https://aspirii.com/ai-agents-2026-guide/", "published_date": "2026-05-05", "search_volume": 60500},
             {"title": "LangChain in 2026: Is It Still the Go-To Agent Framework?", "slug": "langchain-2026-review", "status": "published", "wordpress_post_id": 212, "published_url": "https://aspirii.com/langchain-2026-review/", "published_date": "2026-05-08", "search_volume": 60500},
-            {"title": "n8n AI: Building Automations Without Writing Code", "slug": "n8n-ai-automation-review", "status": "draft", "wordpress_post_id": 223, "search_volume": 9900},
+            {"title": "n8n AI: Building Automations Without Writing Code", "slug": "n8n-ai-automation-review", "status": "published", "wordpress_post_id": 223, "published_url": "https://aspirii.com/n8n-ai-automation-review/", "published_date": "2026-05-21", "search_volume": 9900, "notes": "Factcheck: GPT-4o/o1→GPT-5/GPT-5.5, Claude Sonnet→4.6/Opus→4.7, $24→€24 (currency fix), SAP $5.2B investment (May 12) added. Pillar 214 linked."},
             {"title": "AutoGPT in 2026", "slug": "autogpt-2026-review", "status": "unpublished", "search_volume": 3600},
             {"title": "Manus AI in 2026: What the Hyped Multi-Agent Platform Actually Does", "slug": "manus-ai-2026-review", "status": "published", "wordpress_post_id": 290, "published_url": "https://aspirii.com/manus-ai-2026-review/", "published_date": "2026-05-12", "search_volume": 74000, "competition": "LOW", "notes": "Drafted 2026-05-11, factcheck added Meta acquisition attempt + Cloud Computer launch before publish."},
             {"title": "CrewAI in 2026: The Multi-Agent Framework for Production Teams", "slug": "crewai-2026-review", "status": "planned", "search_volume": 14800, "competition": "LOW"}

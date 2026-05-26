@@ -1,6 +1,6 @@
 {
-  "plan_version": "5.20",
-  "last_updated": "2026-05-21",
+  "plan_version": "5.21",
+  "last_updated": "2026-05-22",
   "notes": "AI Tools pillar live (id:214, 17 internal links, 3663 words). 29 published, 8 drafts. All 4 AI Tools sub-pillar articles written 2026-05-18 — ready to push to WordPress once credentials are configured. Sub-pillars: best-ai-agents-2026, best-ai-creative-tools-2026, best-ai-coding-assistants-2026, best-ai-productivity-tools-2026.",
 
   "execution_order": {
@@ -166,7 +166,7 @@
           "sub_cluster_name": "AI Coding Tools",
           "sub_pillar": {"title": "Best AI Coding Assistants in 2026: IDEs, Agents, and Plugins Compared", "slug": "best-ai-coding-assistants-2026", "status": "written", "search_volume": 22200, "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-coding-assistants-2026.md"},
           "articles": [
-            {"title": "Cursor vs GitHub Copilot: Which AI Coding Tool Actually Saves Time?", "slug": "cursor-vs-github-copilot", "status": "draft", "wordpress_post_id": 225, "search_volume": 2400},
+            {"title": "Cursor vs GitHub Copilot: Which AI Coding Tool Actually Saves Time?", "slug": "cursor-vs-github-copilot", "status": "published", "wordpress_post_id": 225, "published_url": "https://aspirii.com/cursor-vs-github-copilot/", "published_date": "2026-05-22", "search_volume": 2400, "notes": "Factcheck: GPT-4o→GPT-5 (5 occurrences), Claude 3.7 Sonnet→4.6, Copilot June 1 usage-based billing + Pro+ $39 added, JetBrains market share data added. Replit draft link stripped by preflight. Pillar 214 linked."},
             {"title": "Replit AI: Can You Build a Full App Without Local Setup?", "slug": "replit-ai-2026-review", "status": "draft", "wordpress_post_id": 226, "search_volume": 12100},
             {"title": "Cursor AI in 2026: The IDE That Thinks Alongside You", "slug": "cursor-ai-2026-review", "status": "published", "wordpress_post_id": 240, "published_url": "https://aspirii.com/cursor-ai-2026-review/", "published_date": "2026-04-27", "search_volume": 110000, "competition": "MEDIUM"},
             {"title": "GitHub Copilot in 2026: It's No Longer the Obvious Choice", "slug": "github-copilot-2026-review", "status": "published", "wordpress_post_id": 242, "published_url": "https://aspirii.com/github-copilot-2026-review/", "published_date": "2026-04-30", "search_volume": 90500, "competition": "LOW"},

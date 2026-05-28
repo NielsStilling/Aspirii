@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.21",
-  "last_updated": "2026-05-22",
-  "notes": "AI Tools pillar live (id:214, 17 internal links, 3663 words). 29 published, 8 drafts. All 4 AI Tools sub-pillar articles written 2026-05-18 — ready to push to WordPress once credentials are configured. Sub-pillars: best-ai-agents-2026, best-ai-creative-tools-2026, best-ai-coding-assistants-2026, best-ai-productivity-tools-2026.",
+  "plan_version": "5.22",
+  "last_updated": "2026-05-28",
+  "notes": "AI Tools pillar live (id:214, 18 internal links, 3663 words). 30 published, 7 drafts. Replit AI (226) published 2026-05-28 — updated Agent 3→4, $400M funding, pricing fix, early internal link. Next: Sora 2 (289) — major rewrite required (Sora discontinued April 2026, pivot to 'what happened + alternatives'). All 4 AI Tools sub-pillar articles written 2026-05-18.",
 
   "execution_order": {
     "next_actions": [
@@ -167,7 +167,7 @@
           "sub_pillar": {"title": "Best AI Coding Assistants in 2026: IDEs, Agents, and Plugins Compared", "slug": "best-ai-coding-assistants-2026", "status": "written", "search_volume": 22200, "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-coding-assistants-2026.md"},
           "articles": [
             {"title": "Cursor vs GitHub Copilot: Which AI Coding Tool Actually Saves Time?", "slug": "cursor-vs-github-copilot", "status": "published", "wordpress_post_id": 225, "published_url": "https://aspirii.com/cursor-vs-github-copilot/", "published_date": "2026-05-22", "search_volume": 2400, "notes": "Factcheck: GPT-4o→GPT-5 (5 occurrences), Claude 3.7 Sonnet→4.6, Copilot June 1 usage-based billing + Pro+ $39 added, JetBrains market share data added. Replit draft link stripped by preflight. Pillar 214 linked."},
-            {"title": "Replit AI: Can You Build a Full App Without Local Setup?", "slug": "replit-ai-2026-review", "status": "draft", "wordpress_post_id": 226, "search_volume": 12100},
+            {"title": "Replit AI: Can You Build a Full App Without Local Setup?", "slug": "replit-ai-2026-review", "status": "published", "wordpress_post_id": 226, "search_volume": 12100, "published_url": "https://aspirii.com/replit-ai-2026-review/", "published_date": "2026-05-28", "changelog": "Agent 3→4, $400M/$9B funding added, Core pricing clarified ($25/month or $20/mo annual), early internal link added, preflight clean."},
             {"title": "Cursor AI in 2026: The IDE That Thinks Alongside You", "slug": "cursor-ai-2026-review", "status": "published", "wordpress_post_id": 240, "published_url": "https://aspirii.com/cursor-ai-2026-review/", "published_date": "2026-04-27", "search_volume": 110000, "competition": "MEDIUM"},
             {"title": "GitHub Copilot in 2026: It's No Longer the Obvious Choice", "slug": "github-copilot-2026-review", "status": "published", "wordpress_post_id": 242, "published_url": "https://aspirii.com/github-copilot-2026-review/", "published_date": "2026-04-30", "search_volume": 90500, "competition": "LOW"},
             {"title": "Windsurf AI in 2026", "slug": "windsurf-ai-2026-review", "status": "planned", "search_volume": 18100, "competition": "MEDIUM", "notes": "Cursor's main IDE competitor (formerly Codeium)."},

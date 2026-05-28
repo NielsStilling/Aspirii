@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.22",
+  "plan_version": "5.23",
   "last_updated": "2026-05-28",
-  "notes": "AI Tools pillar live (id:214, 18 internal links, 3663 words). 30 published, 7 drafts. Replit AI (226) published 2026-05-28 — updated Agent 3→4, $400M funding, pricing fix, early internal link. Next: Sora 2 (289) — major rewrite required (Sora discontinued April 2026, pivot to 'what happened + alternatives'). All 4 AI Tools sub-pillar articles written 2026-05-18.",
+  "notes": "AI Tools pillar live (id:214, 18 internal links). 30 published, 8 drafts. Replit AI (226) published 2026-05-28. Claude Opus 4.8 news article written 2026-05-28 (id:323, draft) — breaking news, same-day publish candidate. Next: Sora 2 (289) — major rewrite required. All 4 AI Tools sub-pillar articles written 2026-05-18.",
 
   "execution_order": {
     "next_actions": [
@@ -67,6 +67,7 @@
             {"title": "Claude Cowork Review: What GA Actually Means for Your Workflow", "slug": "claude-cowork-review-2026", "status": "published", "published_date": "2026-04-14", "wordpress_post_id": 179},
             {"title": "Claude Code Pricing and Capabilities in 2026: The Honest Verdict", "slug": "claude-code-what-it-can-do-2026", "status": "published", "published_date": "2026-04-16", "wordpress_post_id": 170, "search_volume": 368000},
             {"title": "Claude Opus 4.7 Is Out: Better Coding, Same Price, and Still Not Mythos", "slug": "claude-opus-47-release", "status": "published", "published_date": "2026-04-16", "wordpress_post_id": 193, "notes": "News article added reactively — Opus 4.7 released after plan was written."},
+            {"title": "Claude Opus 4.8 Is Out: Better Coding, Mythos-Grade Honesty, and a 3x Cheaper Fast Mode", "slug": "claude-opus-48-release", "status": "draft", "wordpress_post_id": 323, "written_date": "2026-05-28", "search_volume": null, "notes": "Breaking news — Opus 4.8 released same day. Preflight clean. Same-day publish candidate."},
             {"title": "Claude Sonnet 4.6 vs Opus 4.7: Is Opus 4.7 actually good?", "slug": "claude-sonnet-vs-opus-46", "status": "published", "published_date": "2026-04-20", "wordpress_post_id": 175, "search_volume": 12100},
             {"title": "Claude API: Your Guide to Getting Started in 2026", "slug": "anthropic-api-developer-guide", "status": "draft", "wordpress_post_id": 172, "search_volume": 18100, "notes": "Ready to publish. Review and push."},
             {

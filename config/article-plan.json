@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.24",
-  "last_updated": "2026-05-28",
-  "notes": "AI Tools pillar live (id:214, 18 internal links). 31 published, 7 drafts. Replit AI (226) + Claude Opus 4.8 (323) both published 2026-05-28. Pillar 69 updated with Opus 4.8. Next: Sora 2 (289) — major rewrite required (Sora discontinued April 2026). All 4 AI Tools sub-pillar articles written 2026-05-18.",
+  "plan_version": "5.25",
+  "last_updated": "2026-06-01",
+  "notes": "AI Tools pillar live (id:214, 19 internal links). 32 published, 6 drafts. Sora 2 (289) fully rewritten + published 2026-06-01 — pivoted to Sora shutdown + alternatives (Veo 3.1, Kling 3.0, Runway). Pillar 214 updated with Sora shutdown note. All 4 AI Tools sub-pillar articles written 2026-05-18.",
 
   "execution_order": {
     "next_actions": [
@@ -187,7 +187,7 @@
             {"title": "Grammarly AI in 2026: Still Worth Paying For, or Has Claude Killed It?", "slug": "grammarly-ai-2026-review", "status": "published", "wordpress_post_id": 239, "published_url": "https://aspirii.com/grammarly-ai-2026-review/", "published_date": "2026-04-29", "search_volume": 135000, "competition": "LOW"},
             {"title": "Canva AI in 2026: What Magic Studio Actually Does for Small Teams", "slug": "canva-ai-2026-review", "status": "published", "wordpress_post_id": 241, "published_url": "https://aspirii.com/canva-ai-2026-review/", "published_date": "2026-04-24", "search_volume": 110000, "competition": "LOW"},
             {"title": "DALL-E in 2026", "slug": "dall-e-2026-review", "status": "unpublished", "search_volume": 60500},
-            {"title": "Sora 2 in 2026: OpenAI's Video Model and Whether It's Worth $20+/Month", "slug": "sora-ai-2026-review", "status": "draft", "wordpress_post_id": 289, "search_volume": 368000, "competition": "LOW", "notes": "Drafted 2026-05-11. Largest LOW-comp opportunity."},
+            {"title": "OpenAI Shut Down Sora: What Happened and the Best Alternatives in 2026", "slug": "sora-ai-2026-review", "status": "published", "wordpress_post_id": 289, "published_url": "https://aspirii.com/sora-ai-2026-review/", "published_date": "2026-06-01", "search_volume": 368000, "competition": "LOW", "notes": "Full rewrite 2026-06-01 — pivoted from Sora review to Sora shutdown + alternatives (Veo 3.1, Kling 3.0, Runway Gen-4.5). Pillar 214 updated."},
             {"title": "Adobe Firefly in 2026: The Multi-Model AI Studio for Commercial Work", "slug": "adobe-firefly-2026-review", "status": "published", "wordpress_post_id": 291, "published_url": "https://aspirii.com/adobe-firefly-2026-review/", "published_date": "2026-05-13", "search_volume": 110000, "competition": "LOW", "notes": "Drafted 2026-05-11, factcheck added Firefly AI Assistant + 30-model roster + AI Translation/Dubbing news; stripped Sora 2 references."},
             {"title": "ElevenLabs in 2026: The Voice AI Worth Knowing", "slug": "elevenlabs-2026-review", "status": "planned", "search_volume": 301000, "competition": "MEDIUM", "notes": "Voice AI category leader."}
           ]

@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.25",
+  "plan_version": "5.26",
   "last_updated": "2026-06-01",
-  "notes": "AI Tools pillar live (id:214, 19 internal links). 32 published, 6 drafts. Sora 2 (289) fully rewritten + published 2026-06-01 — pivoted to Sora shutdown + alternatives (Veo 3.1, Kling 3.0, Runway). Pillar 214 updated with Sora shutdown note. All 4 AI Tools sub-pillar articles written 2026-05-18.",
+  "notes": "AI Tools pillar live (id:214, 20 internal links). 33 published. Best AI Coding Assistants sub-pillar (328) published 2026-06-01. Remaining written sub-pillars: agents, creative, productivity. Next: push remaining 3 sub-pillar articles. Then write new cluster articles.",
 
   "execution_order": {
     "next_actions": [
@@ -165,7 +165,7 @@
         {
           "sub_cluster_id": "ai-coding-tools",
           "sub_cluster_name": "AI Coding Tools",
-          "sub_pillar": {"title": "Best AI Coding Assistants in 2026: IDEs, Agents, and Plugins Compared", "slug": "best-ai-coding-assistants-2026", "status": "written", "search_volume": 22200, "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-coding-assistants-2026.md"},
+          "sub_pillar": {"title": "Best AI Coding Assistants in 2026: IDEs, Agents, and Plugins Compared", "slug": "best-ai-coding-assistants-2026", "status": "published", "wordpress_post_id": 328, "published_url": "https://aspirii.com/best-ai-coding-assistants-2026/", "published_date": "2026-06-01", "search_volume": 22200, "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-coding-assistants-2026.md"},
           "articles": [
             {"title": "Cursor vs GitHub Copilot: Which AI Coding Tool Actually Saves Time?", "slug": "cursor-vs-github-copilot", "status": "published", "wordpress_post_id": 225, "published_url": "https://aspirii.com/cursor-vs-github-copilot/", "published_date": "2026-05-22", "search_volume": 2400, "notes": "Factcheck: GPT-4o→GPT-5 (5 occurrences), Claude 3.7 Sonnet→4.6, Copilot June 1 usage-based billing + Pro+ $39 added, JetBrains market share data added. Replit draft link stripped by preflight. Pillar 214 linked."},
             {"title": "Replit AI: Can You Build a Full App Without Local Setup?", "slug": "replit-ai-2026-review", "status": "published", "wordpress_post_id": 226, "search_volume": 12100, "published_url": "https://aspirii.com/replit-ai-2026-review/", "published_date": "2026-05-28", "changelog": "Agent 3→4, $400M/$9B funding added, Core pricing clarified ($25/month or $20/mo annual), early internal link added, preflight clean."},

@@ -4,7 +4,7 @@
 
 ---
 
-Cursor hit $1 billion in ARR faster than any SaaS product in history. GitHub Copilot has 15 million active developers. Claude Code just posted the highest SWE-bench score ever recorded for a consumer tool. And Windsurf — a product most people had never heard of a year ago — jumped to the #1 spot in LogRocket's AI Dev Tool Power Rankings in February 2026.
+Cursor hit $1 billion in ARR faster than any SaaS product in history. GitHub Copilot has 15 million active developers. Claude Code running on Opus 4.8 posts above 87% on SWE-bench Verified — the highest of any consumer coding tool. And Windsurf — a product most people had never heard of a year ago — jumped to the #1 spot in LogRocket's AI Dev Tool Power Rankings in February 2026.
 
 The AI coding assistant market is the most competitive category in all of AI tooling right now, and the options are genuinely different from each other. This isn't a case of picking the one with the best marketing.
 
@@ -64,9 +64,9 @@ Best for: developers who want the fastest autocomplete, a lower price than Curso
 
 Claude Code is different in kind from the other tools here. It runs in the terminal, not an IDE. You give it a task — "add authentication to this Express app," "refactor this module to use the new API," "write tests for this service" — and it runs autonomously, reading files, making edits, and running commands.
 
-The 80.8% SWE-bench Verified score is the highest recorded for a consumer tool. The 1 million token context window means it can hold a large codebase in context simultaneously. These aren't marketing numbers; they translate to better performance on real-world tasks that involve understanding a lot of existing code before writing new code.
+Running on Claude Opus 4.8, it scores above 87% on SWE-bench Verified — among the highest for any consumer coding tool. The 1 million token context window means it can hold a large codebase in context simultaneously. These aren't marketing numbers; they translate to better performance on real-world tasks that involve understanding a lot of existing code before writing new code.
 
-The limitation is the workflow: you're not in a flow state with Claude Code the way you are with Cursor. It's best used for specific, bounded tasks where you can hand off and review the result, not for the fast back-and-forth of active feature development.
+The limitation is the workflow: you're not in a flow state with Claude Code the way you are with Cursor. It's best used for specific, bounded tasks where you can hand off and review the result, not for the fast back-and-forth of active feature development. Our [Claude Code review](/claude-code-what-it-can-do-2026/) covers the pricing and what it realistically handles end-to-end.
 
 Best for: senior developers tackling complex refactors, migrations, and debugging sessions where context depth matters more than speed.
 
@@ -98,4 +98,4 @@ One observation: the developers getting the most out of AI coding tools in 2026 
 
 The cursor vs. Copilot debate gets a lot of attention, but for most teams it's the wrong comparison. Pick the right type of tool first (IDE vs plugin vs agent), then pick the best in that category for your specific workflow.
 
-We'll be adding reviews of Windsurf and Devin as separate entries in this sub-cluster shortly. Pricing is current as of May 2026.
+Windsurf and Devin reviews are coming to this sub-cluster shortly. Pricing is current as of June 2026.

@@ -26,7 +26,7 @@ This category covers tools that do real multi-step work on your behalf, without 
 
 **OpenClaw** is the one that caught everyone off guard in early 2026. It targets the research-heavy and browser-based use cases — competitive analysis, prospect research, monitoring news across sources and surfacing summaries — and it handles them well. The agent loop is fast and the context window is large enough that it rarely loses track of a multi-step task mid-run. It's not designed for workflows that touch internal systems, but for external information work, nothing we've tested comes close at the price point. Full breakdown in our [OpenClaw review](/openclaw-ai-agent-review/).
 
-**Manus AI** plays in a different lane. Where OpenClaw does research, Manus handles multi-stage operational tasks: pulling data from connected apps, processing it, drafting outputs, and routing them on. The platform went through a rough launch earlier this year — the initial hype cycle was painful to watch — but the underlying product is solid. The Meta acquisition attempt and subsequent Cloud Computer launch actually improved it, adding persistent compute that makes long-running tasks far more reliable. We ran it through a due diligence workflow involving 14 source documents and it produced a coherent summary memo without hallucinating a single citation. [Our Manus AI review](/manus-ai-2026-review/) covers the current state in detail.
+**Manus AI** plays in a different lane. Where OpenClaw does research, Manus handles multi-stage operational tasks: pulling data from connected apps, processing it, drafting outputs, and routing them on. The platform went through a rough launch earlier in the year — the initial hype cycle was painful to watch — but the underlying product is solid. Meta acquired Manus for $2 billion in December 2025, then Chinese regulators blocked the deal in April 2026. The company now operates independently again, and the March 2026 desktop app launch — which added persistent computer-use capability for long-running tasks — has made the agent substantially more reliable. We ran it through a due diligence workflow involving 14 source documents and it produced a coherent summary memo without hallucinating a single citation. [Our Manus AI review](/manus-ai-2026-review/) covers the current state in detail.
 
 The honest limitation of both: anything involving real financial consequences or legally sensitive decisions needs a human in the loop. These tools will confidently do the wrong thing and not flag that they've done the wrong thing.
 
@@ -40,7 +40,7 @@ If you're a developer — or you're working with one — you probably don't want
 
 **CrewAI** is worth a serious look if you're building multi-agent systems where different agents take different roles. The role-based metaphor (each agent has a job title, a goal, and a backstory) maps well onto workflows that mirror how human teams operate. It hit 47.8K GitHub stars and 2 billion agent runs by mid-2026, which suggests the model resonates beyond toy demos. The weak point is anything requiring fine-grained control over agent-to-agent communication — the abstraction hides that.
 
-**n8n** occupies a middle ground: visual workflow builder with genuine AI node support, so non-developers can wire together agentic workflows without writing Python. It's especially strong for teams already running automation workflows who want to add AI steps without rebuilding everything.
+**n8n** occupies a middle ground: visual workflow builder with genuine AI node support, so non-developers can wire together agentic workflows without writing Python. It's especially strong for teams already running automation workflows who want to add AI steps without rebuilding everything. See our [n8n review](/n8n-ai-automation-review/) for the full agent workflow setup.
 
 ---
 
@@ -100,4 +100,4 @@ No. Tools like OpenClaw, Manus AI, and n8n are built for non-technical users. If
 
 ---
 
-The agent space moves fast. The tools in this guide were tested and verified as of May 2026 — check individual reviews for the latest pricing and feature updates before committing.
+The agent space moves fast. The tools in this guide were tested and verified as of June 2026 — check individual reviews for the latest pricing and feature updates before committing.

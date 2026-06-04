@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.27",
-  "last_updated": "2026-06-03",
-  "notes": "AI Tools pillar live (id:214, 21 internal links). 34 published. Best AI Agents sub-pillar (331) published 2026-06-03. Remaining written sub-pillars: creative tools, productivity. Next: push those 2 then write new cluster articles.",
+  "plan_version": "5.28",
+  "last_updated": "2026-06-04",
+  "notes": "AI Tools pillar live (id:214, 22 internal links). 35 published. Creative Tools sub-pillar (334) published 2026-06-04. One written sub-pillar remaining: productivity. Next: publish productivity sub-pillar, then write new cluster articles.",
 
   "execution_order": {
     "next_actions": [
@@ -179,7 +179,7 @@
         {
           "sub_cluster_id": "ai-creative-tools",
           "sub_cluster_name": "AI Writing & Creative Tools",
-          "sub_pillar": {"title": "Best AI Creative Tools in 2026: Writing, Image, Video, and Audio Tested", "slug": "best-ai-creative-tools-2026", "status": "written", "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-creative-tools-2026.md"},
+          "sub_pillar": {"title": "Best AI Creative Tools in 2026: Writing, Image, Video, and Audio Tested", "slug": "best-ai-creative-tools-2026", "status": "published", "wordpress_post_id": 334, "published_url": "https://aspirii.com/best-ai-creative-tools-2026/", "published_date": "2026-06-04", "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-creative-tools-2026.md"},
           "articles": [
             {"title": "Runway AI: The Video Generation Tool That's Actually Usable", "slug": "runway-ai-2026-review", "status": "draft", "wordpress_post_id": 216, "search_volume": 40500},
             {"title": "Jasper AI: Is It Still Worth Paying For in 2026?", "slug": "jasper-ai-2026-review", "status": "published", "wordpress_post_id": 220, "published_url": "https://aspirii.com/jasper-ai-2026-review/", "published_date": "2026-05-20", "search_volume": 27100, "notes": "Factcheck: GPT-4→frontier models (GPT-5/Claude), ChatGPT-4o model name updated, Jasper Grid (Q1 2026) added, Surfer SEO pricing updated to $79/mo annual. Pillar 214 linked."},

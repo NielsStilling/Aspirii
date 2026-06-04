@@ -6,7 +6,7 @@
 
 The creative tool category is the messiest corner of AI in 2026. Every major platform has bolted AI onto its existing product, dozens of standalone tools have launched in the past 18 months, and the gap between what works and what's demo-ware is wider than in any other category.
 
-This guide maps the tools we've actually used — not everything, but the ones that matter — across writing, image generation, video, and audio. For context on how these fit into the broader landscape of AI software, our [guide to the best AI tools in 2026](/best-ai-tools-2026/) is the starting point.
+This guide maps the tools we've actually used — not everything, but the ones that matter — across writing, image generation, video, and audio. For context on how these fit into the broader picture of AI software, our [guide to the best AI tools in 2026](/best-ai-tools-2026/) is the starting point.
 
 ---
 
@@ -34,15 +34,15 @@ Midjourney is the one we haven't reviewed yet, but it's worth naming here becaus
 
 ---
 
-## Video generation: useful now, transformative in 12 months
+## Video generation: useful now, a step change coming
 
 Video is where expectations and reality are still most misaligned. The tools have improved dramatically in the past year, but consistent, controllable, production-ready video generation is still harder than the marketing suggests.
 
-**Runway** is the tool most working video professionals use when they need AI-generated footage. Gen-4 is noticeably better than Gen-3 at maintaining subject consistency across shots — the thing that made earlier versions painful for narrative work. The Motion Brush feature for adding controlled motion to still images is genuinely useful for short-form social content. Where it still struggles: anything requiring multiple cuts with the same characters, or footage that needs to match a specific visual style precisely. Our [Runway AI review](/runway-ai-2026-review/) runs through the specific workflows where it earns its cost.
+**Runway** is the tool most working video professionals use when they need AI-generated footage. Gen-4.5 made a meaningful jump on Gen-4 — subject consistency across cuts is now reliable enough for narrative work, which wasn't true before. The Motion Brush for adding controlled motion to still images is genuinely useful for short-form social content. Where it still struggles: footage requiring a precise visual style across a full sequence. Our [Runway AI review](/runway-ai-2026-review/) runs through the specific workflows where it earns its cost.
 
-**Sora 2** from OpenAI is the biggest addition to this category in 2026. The narrative and storytelling quality is a step above anything Runway produces at equivalent prompts. The catch is the pricing — Sora 2 is bundled with ChatGPT Pro, meaning you're paying $200/month for the full feature set. At that price, it's a professional tool. The [Sora 2 review](/sora-ai-2026-review/) digs into whether it's worth it depending on how much video you're producing.
+**Sora** was OpenAI's entry in this category, but it shut down on April 26, 2026 — the economics didn't work out ($8–12M/month in compute against less than $2M in revenue). The space it vacated has been filled quickly. Our [Sora shutdown guide](/sora-ai-2026-review/) covers what happened and the best replacements, including Veo 3.1 and Kling AI 3.0.
 
-Google Veo 3.1 is making noise as a strong contender, particularly for its combined video and audio generation. Not yet covered in depth on this site, but worth watching if you're evaluating video tools.
+**Google Veo 3.1** is now the strongest standalone video tool alongside Runway. The differentiator is native synchronized audio — dialogue, sound effects, and ambient sound generated in one pass. Free tier available via Google AI Studio; AI Pro at $19.99/month gives full access. For most use cases where Sora would previously have been the answer, Veo 3.1 is the replacement.
 
 ---
 
@@ -68,7 +68,7 @@ The one thing that holds across categories: the tools that survive are the ones 
 
 ## What's coming
 
-The creative tool space in the next 12 months is mostly about video catching up to the quality level that image generation already has. Sora 2, Veo 3, Runway Gen-4 — they're all closing in on footage that passes a casual eye test. The tools that figure out character consistency and directed camera movement first will own the professional video market.
+The creative tool space in the next 12 months is mostly about video catching up to the quality level that image generation already has. Veo 3.1, Runway Gen-4.5, and Kling 3.0 are all closing in on footage that passes a casual eye test. The tools that figure out character consistency and directed camera movement first will own the professional video market.
 
 ElevenLabs' expansion into full voice agents (not just TTS) is the other trajectory worth watching. The line between "voice tool" and "voice AI product" is collapsing.
 

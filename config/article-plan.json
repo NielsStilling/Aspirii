@@ -1,7 +1,7 @@
 {
-  "plan_version": "5.28",
-  "last_updated": "2026-06-04",
-  "notes": "AI Tools pillar live (id:214, 22 internal links). 35 published. Creative Tools sub-pillar (334) published 2026-06-04. One written sub-pillar remaining: productivity. Next: publish productivity sub-pillar, then write new cluster articles.",
+  "plan_version": "5.29",
+  "last_updated": "2026-06-05",
+  "notes": "AI Tools pillar live (id:214, 23 internal links). 36 published. All 4 AI Tools sub-pillars now published: coding (328), agents (331), creative (334), productivity (337). Pillar 214 links to all sub-pillars. Next: write new cluster articles — highest priority: Claude MCP Servers (5.4K), Claude API Pricing (5.4K), Midjourney (301K), Microsoft Copilot sub-cluster.",
 
   "execution_order": {
     "next_actions": [
@@ -195,7 +195,7 @@
         {
           "sub_cluster_id": "ai-business-tools",
           "sub_cluster_name": "AI Business & Productivity Tools",
-          "sub_pillar": {"title": "Best AI Productivity Tools for Teams in 2026: Meetings, Writing, and Workflows", "slug": "best-ai-productivity-tools-2026", "status": "written", "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-productivity-tools-2026.md"},
+          "sub_pillar": {"title": "Best AI Productivity Tools for Teams in 2026: Meetings, Writing, and Workflows", "slug": "best-ai-productivity-tools-2026", "status": "published", "wordpress_post_id": 337, "published_url": "https://aspirii.com/best-ai-productivity-tools-2026/", "published_date": "2026-06-05", "notes": "Written 2026-05-18. Ready to push to WordPress. File: workspace/best-ai-productivity-tools-2026.md"},
           "articles": [
             {"title": "Notion AI in 2026: Is the Built-In AI Worth the Upgrade?", "slug": "notion-ai-2026-review", "status": "published", "wordpress_post_id": 219, "published_url": "https://aspirii.com/notion-ai-2026-review/", "published_date": "2026-05-19", "search_volume": 27100, "notes": "Factcheck: pricing updated ($10 add-on retired → Business $20/user), GPT-4o→GPT-5, Custom Agents updated for May 13 Developer Platform launch. Pillar 214 updated with link + pricing fix."},
             {"title": "Microsoft Copilot in 2026: Worth $30/User/Month, or Expensive Autocomplete?", "slug": "microsoft-copilot-2026-review", "status": "published", "wordpress_post_id": 243, "published_url": "https://aspirii.com/microsoft-copilot-2026-review/", "published_date": "2026-05-11", "search_volume": 823000, "competition": "LOW", "notes": "CPC $0.38 signals mostly navigational intent — angled for 'microsoft copilot review 2026' long-tail."},

@@ -32,9 +32,9 @@ The second category of AI productivity tools isn't standalone software — it's 
 
 **Microsoft Copilot** is the biggest bet in this space. At $30/user/month on top of existing Microsoft 365 subscriptions, it's a significant line item. What you get: AI woven into Word, Excel, PowerPoint, Teams, Outlook, and the rest of the suite. Copilot in Excel for data analysis, Copilot in Teams for meeting summaries, Copilot in Outlook for email drafting.
 
-The honest read: the individual features are useful but rarely transformative on their own. The value case is cumulative — if your team is heavy Microsoft 365 users and they each save 30 minutes a day across the suite, the math works. If you're already paying for 365 Business Premium, it's worth evaluating. Our [Microsoft Copilot review](/microsoft-copilot-2026-review/) runs the detailed analysis of where the time savings actually materialise.
+The honest read: the individual features are useful but rarely decisive on their own. The value case is cumulative — if your team is heavy Microsoft 365 users and they each save 30 minutes a day across the suite, the math works. If you're already paying for 365 Business Premium, it's worth evaluating. Our [Microsoft Copilot review](/microsoft-copilot-2026-review/) runs the detailed analysis of where the time savings actually materialise.
 
-**Notion AI** is the answer for teams whose work lives in Notion. Drafting, summarising docs, answering questions about your Notion workspace, filling in project templates from a brief. The integration is tight enough that it doesn't feel like a bolt-on — it just does what Notion was already doing, faster. The catch is that it requires your team to actually live in Notion; the value collapses if people are using Notion alongside five other tools.
+**Notion AI** is the answer for teams whose work lives in Notion. Drafting, summarising docs, answering questions about your Notion workspace, filling in project templates from a brief. The integration is tight enough that it doesn't feel like a bolt-on — it just does what Notion was already doing, faster. The catch is that it requires your team to actually live in Notion; the value collapses if people are using Notion alongside five other tools. Full details in our [Notion AI review](/notion-ai-2026-review/).
 
 ---
 
@@ -48,7 +48,7 @@ The alternative worth knowing for any team doing more than basic automation: **n
 
 ## CRM and sales
 
-**Apollo AI** has built AI prospecting into the existing Apollo sales intelligence platform. The AI-powered lead scoring, email personalisation, and sequence optimisation mean it's more than a database of contacts — it's a system that helps prioritise who to contact and what to say. At $12,100/month average search volume for the keyword, plenty of sales teams are looking for it. We haven't published a full review yet, but it's in the pipeline.
+**Apollo AI** has built AI prospecting into the existing Apollo sales intelligence platform. The AI-powered lead scoring, email personalisation, and sequence optimisation mean it's more than a database of contacts — it's a system that helps prioritise who to contact and what to say. It's one of the most searched-for sales AI tools right now. We haven't published a full review yet, but it's in the pipeline.
 
 **Fathom AI** also appears in sales contexts as a Salesforce integration for deal intelligence, though the core product remains meeting notes. Worth checking if you're already using both.
 
@@ -70,4 +70,4 @@ The teams seeing the biggest productivity gains from AI in 2026 are the ones who
 
 ---
 
-Reviews of Otter AI, Fireflies, Apollo AI, and Fathom AI are coming to this cluster shortly. Pricing and features current as of May 2026.
+Reviews of Otter AI, Fireflies, Apollo AI, and Fathom AI are coming to this cluster shortly. Pricing and features current as of June 2026.
